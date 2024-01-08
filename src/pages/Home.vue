@@ -1,16 +1,16 @@
 <template>
   <div>
-    <HelloWorld msg="STUCKON LIVE" />
+    <Main />
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld'
+import Main from '@/components/Main'
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>

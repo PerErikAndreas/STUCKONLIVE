@@ -20,7 +20,9 @@ const router = new Router({
       path: '/',
       component: Layout,
       children: [
-        route('/', 'Home')
+        route('/', 'Home'),
+        route('/about', 'About'), // Add an 'About' page
+        route('/contact', 'Contact') // Add a 'Contact' page
       ]
     }
   ],

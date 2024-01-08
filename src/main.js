@@ -3,12 +3,10 @@ import App from './App'
 import router from './router'
 
 import Header from './components/Header'
-import Footer from './components/Footer'
-import HelloWorld from './components/HelloWorld'
+import Main from './components/Main'
 
 Vue.component("Header", Header)
-Vue.component("Footer", Footer)
-Vue.component("HelloWorld", HelloWorld)
+Vue.component("Main", Main)
 
 Vue.config.productionTip = false
 
