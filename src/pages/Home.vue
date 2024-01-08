@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld msg="HelloWorld" />
+    <HelloWorld msg="STUCKON LIVE" />
   </div>
 </template>
 
