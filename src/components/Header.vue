@@ -1,220 +1,58 @@
 <template>
-  <header>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/About">ABOUT</a></li>
-                <li><a href="/contact">CONTACT</a></li>
+    <header>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+          <nav class="my-navbar">
+            <span class="my-navbar-toggle" id="js-navbar-toggle">
+              ≡
+            </span>
+            <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/triangelloggo.png"></a>
+            <ul class="my-main-nav" id="js-menu">
+              <li>
+                <a href="/#aboutMe" class="my-nav-links">About</a>
+              </li>
+              <li>
+                <a href="/#servicesArea" class="my-nav-links">Services</a>
+              </li>
+              <li>
+                <a href="/#portfolio" class="my-nav-links">Portfolio</a>
+              </li>
+              <li>
+                <a async href="/contact.html" class="my-nav-links">Contact</a>
+              </li>
+              <li>
+                <a href="/blogs" class="my-nav-links">Blog</a>
+              </li>
             </ul>
-            <img class="logo" alt="logo" src="../assets/triangelloggo.png">
-        </div>
-    </nav>
-</body>
-</html>
-  </header>
-</template>
-
-<script>
-export default {
-  name: "Header"
-}
-</script>
+          </nav>
+        </body>
+      </html>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    name: "Header",
+    mounted() {
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+  
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    }
+  }
+  </script>
 
 <style scoped>
-*,
-*::after,
-*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.html{
-    font-size: 62.5%;
-}
-
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines{
-    display: none;
-}
-
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-}
-
-.navbar{
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.90;
-    z-index: 100;
-}
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
-}
-
-.menu-items{
-    order: 2;
-    display: flex;
-}
-.logo{
-    order: 1;
-    font-size: 2.3rem;
-}
-
-.menu-items li{
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.3rem;
-}
-
-.navbar a{
-    color: #444;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover{
-    color: red;
-}
-
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
-    }
-
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines{
-        display: block;
-    }
-
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
-    }
-
-    .navbar-container input[type="checkbox"]{
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 30px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    .navbar-container .hamburger-lines{
-        display: block;
-        height: 28px;
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .navbar-container .hamburger-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
-    
-    .navbar-container .hamburger-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line2{
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        overflow: scroll;
-    }
-
-    .navbar .menu-items li{
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
-        transform: rotate(45deg);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
-        transform: scaleY(0);
-    }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
-        transform: rotate(-45deg);
-    }
+.stuckon-logo {
+    width: 35px;
 
 }
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
-    }
-}
-.logo {
-  width: 45px;
-
-}
+.my-navbar{font-size:18px;}.my-main-nav{list-style-type:none;display:none}.my-logo{padding-bottom:6px;color:#000;font-weight:bold;text-decoration:none;}.my-nav-links{text-decoration:none;color:#000}.my-main-nav li{text-align:right;padding-right:15px;margin:15px auto}.my-logo{display:inline-block;font-size:22px;margin-top:10px;margin-left:20px}.my-navbar-toggle{position:absolute;top:10px;right:20px;cursor:pointer;color:#000;font-size:40px}.active{display:block}@media screen and (min-width:768px){.my-navbar{display:flex;justify-content:space-between;padding:15px;align-items:center}.my-main-nav{display:flex;margin-right:30px;flex-direction:row;justify-content:flex-end}.my-main-nav li{margin:0}.my-nav-links{margin-left:40px}.my-logo{margin-top:0;padding-bottom:11px;}.my-navbar-toggle{display:none}.my-logo:hover,.my-nav-links:hover{color:#0275d8}}
 </style>

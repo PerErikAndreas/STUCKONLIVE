@@ -26,31 +26,31 @@
       <div class="picture-div"><img src="https://assets.codepen.io/8685843/Dahmers.jpeg" class="posters" alt="The Dahmers"></div>
       <div class="picture-div"><img src="https://assets.codepen.io/8685843/DanielRomanosOutfit.jpeg" class="posters" alt="Daniel Romanos Outfit"></div>
       <div class="picture-div"><img src="https://assets.codepen.io/8685843/LudwigHart.jpeg" class="posters" alt="Ludwig Hart"></div>
-</div>
-<div class="grid-container"><br>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/Strom.jpeg" class="posters" alt="Ström"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/MargoClicer.jpeg" class="posters" alt="Margo Clicer"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/LesBigByrds.jpg" class="posters" alt="Les Big Byrd"></div> 
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/Deportees.jpg" class="posters" alt="Deportees"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/CalebC.jpg" class="posters" alt="Caleb Caud"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/GrandeRoses.jpg" class="posters" alt="Grande Roses"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/KristofferA.jpg" class="posters" alt="Kristoffer Åström"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/NationalReserve.jpg" class="posters" alt="National Reserve"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/AncientShapes.jpg" class="posters" alt="Ancient Shapes"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/Halm.jpg" class="posters" alt="Halm"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/WilliamCrighton.jpg" class="posters" alt="William Crighton"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/MotoBoy.jpg" class="posters" alt="Moto Boy"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/SvartKatt.jpg" class="posters" alt="Svart Katt"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/JerryLeger.jpg" class="posters" alt="Jerry Leger"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/AndrewCombs.jpg" class="posters" alt="Andreas Combs"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/WillieWattson.jpg" class="posters" alt="Willie Wattson"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/DawnLandes.jpg" class="posters" alt="Dawn Landes"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/Skraekodlan.jpg" class="posters" alt="Skraekodlan"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/AvantGardet.jpg" class="posters" alt="Avant Gardet"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/ChristianKjellvander.jpeg" class="posters" alt="Christian Kjellvander"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/DeepDarkWoods.jpeg" class="posters" alt="Deep Dark Woods"></div>
-  <div class="picture-div"><img src="https://assets.codepen.io/8685843/AnnaugkondaBrattland.jpeg" class="posters" alt="Annaugkonda/Brattland"></div>
-      </div>
+    </div>
+    <div class="grid-container"><br>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Strom.jpeg" class="posters" alt="Ström"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/MargoClicer.jpeg" class="posters" alt="Margo Clicer"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/LesBigByrds.jpg" class="posters" alt="Les Big Byrd"></div> 
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Deportees.jpg" class="posters" alt="Deportees"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/CalebC.jpg" class="posters" alt="Caleb Caud"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/GrandeRoses.jpg" class="posters" alt="Grande Roses"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/KristofferA.jpg" class="posters" alt="Kristoffer Åström"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/NationalReserve.jpg" class="posters" alt="National Reserve"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AncientShapes.jpg" class="posters" alt="Ancient Shapes"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Halm.jpg" class="posters" alt="Halm"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/WilliamCrighton.jpg" class="posters" alt="William Crighton"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/MotoBoy.jpg" class="posters" alt="Moto Boy"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/SvartKatt.jpg" class="posters" alt="Svart Katt"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/JerryLeger.jpg" class="posters" alt="Jerry Leger"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AndrewCombs.jpg" class="posters" alt="Andreas Combs"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/WillieWattson.jpg" class="posters" alt="Willie Wattson"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/DawnLandes.jpg" class="posters" alt="Dawn Landes"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Skraekodlan.jpg" class="posters" alt="Skraekodlan"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AvantGardet.jpg" class="posters" alt="Avant Gardet"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/ChristianKjellvander.jpeg" class="posters" alt="Christian Kjellvander"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/DeepDarkWoods.jpeg" class="posters" alt="Deep Dark Woods"></div>
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AnnaugkondaBrattland.jpeg" class="posters" alt="Annaugkonda/Brattland"></div>
+    </div>
   </div>
 </template>
 
@@ -64,6 +64,41 @@ export default {
 </script>
 
 <style scoped>
+
+  .hello {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .flex-container>div {
+    padding: 0;
+    margin: 0;
+  }
+  .posters {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .picture-div {
+    padding: 0;
+    margin: 0;
+  }
 
 .grid-container{
     display: grid;
