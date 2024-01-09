@@ -3,10 +3,14 @@ import App from './App'
 import router from './router'
 
 import Header from './components/Header'
-import Main from './components/Main'
-
+import Welcome from './components/Welcome'
+import Footer from './components/Footer'
+import VueCarousel from 'vue-carousel';
+ 
+Vue.use(VueCarousel);
 Vue.component("Header", Header)
-Vue.component("Main", Main)
+Vue.component("Welcome", Welcome)
+Vue.component("Footer", Footer)
 
 Vue.config.productionTip = false
 

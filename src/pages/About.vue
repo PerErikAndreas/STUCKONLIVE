@@ -1,17 +1,12 @@
 <template>
     <div class="main">
-      <About />
     </div>
   </template>
   
   <script>
-  import About from '@/components/About'
   
   export default {
-    name: "Home",
-    components: {
-      About
-    }
+    name: "Home"
   }
   </script>
 
@@ -22,7 +17,6 @@
   align-items: center;
 }
 </style>
-```
 
 
   

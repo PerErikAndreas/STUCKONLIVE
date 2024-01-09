@@ -23,8 +23,7 @@ const router = new Router({
         route('/', 'Home'),
         route('/About', 'About'), // Add an 'About' page
         route('/Contact', 'Contact'), // Add a 'Contact' page
-        route('/PastShows', 'PastShows') // Add a 'Contact' page
-
+        route('/Tickets', 'Tickets') // Add a 'Contact' page
       ]
     }
   ],
