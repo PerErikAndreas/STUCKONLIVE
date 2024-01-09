@@ -14,19 +14,13 @@
             <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/triangelloggo.png"></a>
             <ul class="my-main-nav" id="js-menu">
               <li>
-                <a href="/#aboutMe" class="my-nav-links">About</a>
+                <a href="/About" class="my-nav-links">About</a>
               </li>
               <li>
-                <a href="/#servicesArea" class="my-nav-links">Services</a>
+                <a href="/PastShows" class="my-nav-links">Past Shows</a>
               </li>
               <li>
-                <a href="/#portfolio" class="my-nav-links">Portfolio</a>
-              </li>
-              <li>
-                <a async href="/contact.html" class="my-nav-links">Contact</a>
-              </li>
-              <li>
-                <a href="/blogs" class="my-nav-links">Blog</a>
+                <a async href="/Contact" class="my-nav-links">Contact</a>
               </li>
             </ul>
           </nav>
@@ -54,5 +48,15 @@
     width: 35px;
 
 }
-.my-navbar{font-size:18px;}.my-main-nav{list-style-type:none;display:none}.my-logo{padding-bottom:6px;color:#000;font-weight:bold;text-decoration:none;}.my-nav-links{text-decoration:none;color:#000}.my-main-nav li{text-align:right;padding-right:15px;margin:15px auto}.my-logo{display:inline-block;font-size:22px;margin-top:10px;margin-left:20px}.my-navbar-toggle{position:absolute;top:10px;right:20px;cursor:pointer;color:#000;font-size:40px}.active{display:block}@media screen and (min-width:768px){.my-navbar{display:flex;justify-content:space-between;padding:15px;align-items:center}.my-main-nav{display:flex;margin-right:30px;flex-direction:row;justify-content:flex-end}.my-main-nav li{margin:0}.my-nav-links{margin-left:40px}.my-logo{margin-top:0;padding-bottom:11px;}.my-navbar-toggle{display:none}.my-logo:hover,.my-nav-links:hover{color:#0275d8}}
+.my-navbar{font-size:18px;}
+.my-main-nav{list-style-type:none;display:none}
+.my-logo{padding-bottom:6px;color:#000;font-weight:bold;text-decoration:none;}
+.my-nav-links{text-decoration:none;color:#000}
+.my-main-nav li{text-align:right;padding-right:15px;margin:15px auto}
+.my-logo{display:inline-block;font-size:22px;margin-top:10px;margin-left:20px}
+.my-navbar-toggle{position:absolute;top:10px;right:20px;cursor:pointer;color:#000;font-size:40px}
+.active{display:block}
+@media screen and (min-width:768px){
+  .my-navbar{display:flex;justify-content:space-between;padding:15px;align-items:center}
+  .my-main-nav{display:flex;margin-right:30px;flex-direction:row;justify-content:flex-end}.my-main-nav li{margin:0}.my-nav-links{margin-left:40px}.my-logo{margin-top:0;padding-bottom:11px;}.my-navbar-toggle{display:none}.my-logo:hover,.my-nav-links:hover{color:#0275d8}}
 </style>

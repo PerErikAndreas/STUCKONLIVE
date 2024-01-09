@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
       CONTACT
   </div>
 </template>
@@ -9,4 +9,13 @@
     name: "Contact"
   }
   </script>
+  <style scoped>
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20vw;
+      margin-right: 20vw;
+    }
+    </style>
   

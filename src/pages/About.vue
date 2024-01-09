@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
       <About />
     </div>
   </template>
@@ -14,4 +14,15 @@
     }
   }
   </script>
+
+<style scoped>
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+```
+
+
   

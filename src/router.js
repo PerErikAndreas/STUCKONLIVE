@@ -21,8 +21,10 @@ const router = new Router({
       component: Layout,
       children: [
         route('/', 'Home'),
-        route('/about', 'About'), // Add an 'About' page
-        route('/contact', 'Contact') // Add a 'Contact' page
+        route('/About', 'About'), // Add an 'About' page
+        route('/Contact', 'Contact'), // Add a 'Contact' page
+        route('/PastShows', 'PastShows') // Add a 'Contact' page
+
       ]
     }
   ],
