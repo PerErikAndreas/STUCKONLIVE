@@ -1,6 +1,7 @@
 <template>
   <div class="main-footer">
-    <p class="Footer-text">CONTACT</p>
+    <p class="Footer-text"><img alt="Regionen logo" class="regionenlogo" src="../assets/regionen.png"></p>
+    <p class="Footer-text"><img alt="Regionen logo" class="sensuslogo" src="../assets/SENSUS_LOGGO.png"></p>
   </div>
 </template>
 
@@ -22,5 +23,13 @@ export default {
 
 .Footer-text {
   margin: 0;
+}
+
+.regionenlogo {
+  width: 50px;
+}
+.sensuslogo {
+  width: 50px;
+  filter: invert(100%);
 }
 </style>

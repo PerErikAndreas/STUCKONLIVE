@@ -40,7 +40,7 @@
 <slide>
   <div class="four-four">
     <div class="two-two">
-      <img src="https://assets.codepen.io/8685843/DawnLandes.jpg" class="posters" alt="Dawn Landes">
+      <img src="https://assets.codepen.io/8685843/MargoClicer.jpeg" class="posters" alt="Dawn Landes">
     <img src="https://assets.codepen.io/8685843/Skraekodlan.jpg" class="posters" alt="Skraekodlan">
     </div>
     <div class="two-two">
@@ -52,7 +52,7 @@
 <slide>
   <div class="four-four">
     <div class="two-two">
-      <img src="https://assets.codepen.io/8685843/Strom.jpeg" class="posters" alt="Ström">
+      <img src="https://assets.codepen.io/8685843/LesBigByrds.jpg" class="posters" alt="Ström">
       <img src="https://assets.codepen.io/8685843/MargoClicer.jpeg" class="posters" alt="Margo Clicer">
     </div>
     <div class="two-two">
@@ -61,17 +61,159 @@
     </div>
   </div>
 </slide>
+</carousel>
+<carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/JoelAlme.jpg" class="posters" alt="Joel Alme"></div> 
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Sodrasverige.jpg" class="posters" alt="Södra Sverige"></div>
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Kazzivalazza.jpeg" class="posters" alt="Kassi Valazza"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/SarahKlang.jpg" class="posters" alt="Sarah Klang"></div>
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/JoshuaRayWalkers.jpg" class="posters" alt="Joshua Ray Walkers"></div>
+
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Spiders.jpg" class="posters" alt="The Spiders"></div>
+
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AnnaVonHauswolf.jpg" class="posters" alt="Anna Von Hauswolf"></div>
+
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Tallestman.jpg" class="posters" alt="Tallest Man On Earth"></div>
+
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/TeoLawrense.jpeg" class="posters" alt="Teo Lawrense"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Vasterbron.jpg" class="posters" alt="Västerbron"></div>
+
+    </div>
+  </div>
+</slide>
+
+
+
+
+
+
+
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/BrorGunnar.jpeg" class="posters" alt="Bror Gunnar Jansson"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/AstaKask.jpg" class="posters" alt="Asta Kask"></div>
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/JoshuaRayWalkers.jpg" class="posters" alt="Joshua Ray Walkers"></div>
+
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Henning.jpg" class="posters" alt="Henning"></div>
+
+    </div>
+  </div>
+</slide><slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/MattiasAlkberg.jpg" class="posters" alt="Mattias Alkberg"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Slowgold.jpg" class="posters" alt="Slowgold"></div>
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/CharlesW.jpg" class="posters" alt="Charlie Watson"></div>
+
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Tonbruket.jpg" class="posters" alt="Tonbruket"></div>
+
+    </div>
+  </div>
+</slide><slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/DavidRitchards.jpg" class="posters" alt="David Ritchard"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/VannaInget.jpeg" class="posters" alt="Vånna Inget"></div>         
+    </div>
+  </div>
+</slide>
 <!-- <slide>
   <div class="four-four">
     <div class="two-two">
-      <img src="https://assets.codepen.io/8685843/LesBigByrds.jpg" class="posters" alt="Les Big">
-      <img src="https://assets.codepen.io/8685843/Deportees.jpg" class="posters" alt="Deportees">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/WhitneyRose.jpg" class="posters" alt="Whitney Rose"></div>
+
     </div>
     <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Trummor%26Orgel.jpeg" class="posters" alt="Trummor & Orgel"></div>
 
     </div>
   </div>
 </slide> -->
+
+
+
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Treburt.jpeg" class="posters" alt="Tré Burt"></div>
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/Dahmers.jpeg" class="posters" alt="The Dahmers"></div>
+    </div>
+  </div>
+</slide>
+<slide>
+  <div class="four-four">
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/DanielRomanosOutfit.jpeg" class="posters" alt="Daniel Romanos Outfit"></div>
+
+    </div>
+    <div class="two-two">
+      <div class="picture-div"><img src="https://assets.codepen.io/8685843/LudwigHart.jpeg" class="posters" alt="Ludwig Hart"></div>
+
+    </div>
+  </div>
+</slide>
 </carousel>
 </div>
 </template>

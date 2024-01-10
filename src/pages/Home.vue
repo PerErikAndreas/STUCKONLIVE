@@ -1,24 +1,20 @@
 <template>
   <div class="main">
   <Welcome />
-  <Carousel />
-  <Instagram />
+  <H1>KOMMANDE EVENTS</H1>
+
   <Footer />
   </div>
 </template>
 
 <script>
 import Welcome from '@/components/Welcome'
-import Carousel from '@/components/Carousel'
 import Footer from '@/components/Footer'
-import Instagram from '@/components/Instagram'
 
 export default {
   name: "Home",
   components: {
     Welcome,
-    Carousel,
-    Instagram,
     Footer
   }
 }
@@ -47,8 +43,11 @@ export default {
     align-items: center;
     width: 100vw;
   }
-  .posters {
-      max-width: 100%;
-      max-height: 100vh;
-    }
+
+  .H1 {
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
 </style>

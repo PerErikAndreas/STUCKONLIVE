@@ -20,6 +20,9 @@
                 <a href="/PastShows" class="my-nav-links">Past Shows</a>
               </li>
               <li>
+                <a href="/Scener" class="my-nav-links">Scener</a>
+              </li>
+              <li>
                 <a async href="/Contact" class="my-nav-links">Contact</a>
               </li>
             </ul>
@@ -50,7 +53,7 @@
 
 }
 .my-navbar{font-size:18px;}
-.my-main-nav{list-style-type:none;display:none}
+.my-main-nav{list-style-type:none;display:none; z-index: 1000;}
 .my-logo{padding-bottom:6px;color:#000;font-weight:bold;text-decoration:none;}
 .my-nav-links{text-decoration:none;color:#000}
 .my-main-nav li{text-align:right;padding-right:15px;margin:15px auto}
