@@ -2,6 +2,8 @@
     <div class="main">
       <div id="about-section">
         <h2>About</h2>
+        <p>Stuck-On är samlingsplatsen för musikälskare i hjärtat av Östersund. Med över 100 framgångsrika arrangemang under våra vingar har vi etablerat oss som en central kraft inom den lokala musikscenen. Vår förening grundades med visionen att skapa en gemenskap för likasinnade som delar kärleken till musik och samtidigt göra staden mer levande genom att arrangera evenemang på flera scener.</p>
+
         <p>Vår förening grundades med visionen att skapa en gemenskap för likasinnade som delar kärleken till musik. Genom åren har vi växt och utvecklats, samtidigt som vi förblir trogna vårt uppdrag att främja musikkulturen i Östersund.</p>
 
         <p>Våra arrangemang spänner över olika genrer och stilar för att tillgodose den breda smaken hos vårt publikspektrum. Från intima konserter till livliga musikfestivaler strävar vi alltid efter att erbjuda en oförglömlig upplevelse för både artister och publik.</p>

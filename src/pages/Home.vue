@@ -49,7 +49,6 @@ export default {
 
   .H1 {
     font-size: 3rem;
-    margin-top: 5vh;
     margin-bottom: 5vh;
   }
 

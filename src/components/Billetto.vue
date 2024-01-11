@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="calendar-main">
       <!-- Your other Vue components go here -->
       <billetto-organiser-widget
         v-if="billettoScriptLoaded"
@@ -35,4 +35,10 @@
     },
   };
   </script>
+  <style scoped>
+  .calendar-main {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+</style>
   
