@@ -2,19 +2,22 @@
   <div class="main">
   <Welcome />
   <H1>KOMMANDE EVENTS</H1>
-
+  <Billetto />
   <Footer />
   </div>
 </template>
 
 <script>
 import Welcome from '@/components/Welcome'
+import Billetto from '@/components/Billetto'
+
 import Footer from '@/components/Footer'
 
 export default {
   name: "Home",
   components: {
     Welcome,
+    Billetto,
     Footer
   }
 }
