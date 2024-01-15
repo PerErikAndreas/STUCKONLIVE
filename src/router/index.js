@@ -1,21 +1,28 @@
 import { createRouter, createWebHistory } from 'vue-router'; // Updated import
+import HomePage from '@/pages/HomePage.vue';
+import AboutPage from '@/pages/AboutPage.vue';
+import ContactPage from '@/pages/ContactPage.vue';
+import ScenerPage from '@/pages/ScenerPage.vue';
+import PastShows from '@/pages/PastShows.vue';
 
 const routes = [
   {
     path: '/',
     component: () => import('../templates/Default.vue'),
     children: [
-      { path: '', component: () => import('@/pages/HomePage.vue') },
-      { path: 'About', component: () => import('@/pages/AboutPage.vue') },
-      { path: 'Contact', component: () => import('@/pages/ContactPage.vue') },
-      { path: 'Scener', component: () => import('@/pages/ScenerPage.vue') },
-      { path: 'PastShows', component: () => import('@/pages/PastShows.vue') }
+      { path: '', component: HomePage },
+      { path: 'About', component: AboutPage },
+      { path: 'Contact', component: ContactPage },
+      { path: 'Scener', component: ScenerPage },
+      { path: 'PastShows', component: PastShows }
     ]
   }
 ];
 
+
 const router = createRouter({
   history: createWebHistory(),
+  base: process.env.NODE_ENV === 'production' ? '/subdirectory/' : '/',
   routes
 });
 
