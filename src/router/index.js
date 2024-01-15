@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'; // Updated import
-import HomePage from '@/pages/HomePage.vue';
-import AboutPage from '@/pages/AboutPage.vue';
-import ContactPage from '@/pages/ContactPage.vue';
-import ScenerPage from '@/pages/ScenerPage.vue';
-import PastShows from '@/pages/PastShows.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '../pages/HomePage.vue';
+import AboutPage from '../pages/AboutPage.vue';
+import ContactPage from '../pages/ContactPage.vue';
+import ScenerPage from '../pages/ScenerPage.vue';
+import PastShows from '../pages/PastShows.vue';
 
 const routes = [
   {
@@ -19,10 +19,8 @@ const routes = [
   }
 ];
 
-
 const router = createRouter({
   history: createWebHistory(),
-  base: process.env.NODE_ENV === 'production' ? '/subdirectory/' : '/',
   routes
 });
 
