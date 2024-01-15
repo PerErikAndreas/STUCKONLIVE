@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '../pages/HomePage.vue';
-import AboutPage from '../pages/AboutPage.vue';
-import ContactPage from '../pages/ContactPage.vue';
-import ScenerPage from '../pages/ScenerPage.vue';
-import PastShows from '../pages/PastShows.vue';
+import HomePage from '../Pages/HomePage.vue';
+import AboutPage from '../Pages/AboutPage.vue';
+import ContactPage from '../Pages/ContactPage.vue';
+import ScenerPage from '../Pages/ScenerPage.vue';
+import PastShows from '../Pages/PastShows.vue';
 
 const routes = [
   {
