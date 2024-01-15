@@ -1,24 +1,24 @@
 <template>
   <div class="main">
-  <Welcome />
+  <WelcomeComponent />
   <H1>KOMMANDE EVENTS</H1>
-  <Billetto />
-  <Footer />
+  <BillettoComponent />
+  <FooterComponent />
   </div>
 </template>
 
 <script>
-import Welcome from '@/components/Welcome'
-import Billetto from '@/components/Billetto'
+import WelcomeComponent from '../components/WelcomeComponent.vue'
+import BillettoComponent from '../components/BillettoComponent.vue'
 
-import Footer from '@/components/Footer'
+import FooterComponent from '../components/FooterComponent.vue'
 
 export default {
-  name: "Home",
+  name: "HomePage",
   components: {
-    Welcome,
-    Billetto,
-    Footer
+    WelcomeComponent,
+    BillettoComponent,
+    FooterComponent
   }
 }
 </script>

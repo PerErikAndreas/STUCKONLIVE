@@ -220,7 +220,7 @@
 
 <script>
 export default {
-  name: "Carosel"
+  name: "CaroselComponent"
 }
 </script>
 

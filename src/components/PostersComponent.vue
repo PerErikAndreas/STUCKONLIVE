@@ -56,7 +56,7 @@
   
   <script>
   export default {
-    name: 'PastShows',
+    name: 'PostersComponent',
     props: {
       msg: String
     }

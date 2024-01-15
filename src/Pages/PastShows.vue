@@ -1,20 +1,20 @@
 <template>
     <div class="main-pastshows">
-      <Carousel />
-      <Footer />
+      <CarouselComponent />
+      <FooterComponent />
 
     </div>
   </template>
   
   <script>
-  import Carousel from '@/components/Carousel'
-  import Footer from '@/components/Footer'
+  import CarouselComponent from '../components/CarouselComponent.vue'
+  import FooterComponent from '../components/FooterComponent.vue'
   
   export default {
     name: "PastShows",
     components: {
-        Carousel,
-        Footer
+        CarouselComponent,
+        FooterComponent
     }
   }
   </script>

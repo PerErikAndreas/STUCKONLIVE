@@ -34,7 +34,7 @@
   
   <script>
   export default {
-    name: "Header",
+    name: "HeaderComponent",
     mounted() {
       let mainNav = document.getElementById("js-menu");
       let navBarToggle = document.getElementById("js-navbar-toggle");

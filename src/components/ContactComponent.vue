@@ -6,7 +6,7 @@
 
   <script>
   export default {
-    name: "Contact"
+    name: "ContactComponent"
   }
   </script>
   <style scoped>

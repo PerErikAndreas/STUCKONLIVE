@@ -21,19 +21,19 @@
       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum nisi.</div>
     </div>
   </div>
-  <Footer />
+  <FooterComponent />
 
     </div>
   </template>
   
   <script>
-    import Footer from '@/components/Footer'
+    import FooterComponent from '../components/FooterComponent.vue'
 
   
   export default {
-    name: "Scener",
+    name: "ScenerPage",
     components: {
-      Footer
+      FooterComponent
     }
 
   }

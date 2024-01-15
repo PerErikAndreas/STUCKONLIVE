@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "Welcome",
+  name: "WelcomeComponent",
 }
 </script>
 

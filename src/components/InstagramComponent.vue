@@ -16,7 +16,7 @@
  import VueInstagram from 'vue-instagram'
  
  export default {
-   name: 'App',
+   name: 'InstagramComponents',
  
    components: {
      VueInstagram
