@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+# Ignore the source files
+/src/
 
 # local env files
 .env.local
