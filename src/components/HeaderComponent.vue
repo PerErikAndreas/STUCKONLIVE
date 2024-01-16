@@ -23,7 +23,7 @@
                 <a href="/Scener" class="my-nav-links">Scener</a>
               </li>
               <li>
-                <a async href="/Contact" class="my-nav-links">Contact</a>
+                <a href="/Contact" class="my-nav-links">Contact</a>
               </li>
             </ul>
           </nav>

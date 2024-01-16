@@ -26,10 +26,10 @@ export default {
 }
 
 .regionenlogo {
-  width: 50px;
+  width: 60px;
 }
 .sensuslogo {
-  width: 50px;
+  width: 60px;
   filter: invert(100%);
 }
 </style>

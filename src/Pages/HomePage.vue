@@ -10,7 +10,6 @@
 <script>
 import WelcomeComponent from '../components/WelcomeComponent.vue'
 import BillettoComponent from '../components/BillettoComponent.vue'
-
 import FooterComponent from '../components/FooterComponent.vue'
 
 export default {
