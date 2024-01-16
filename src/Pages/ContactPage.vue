@@ -1,16 +1,19 @@
 <template>
     <div>
-      <ContactPage />
+      <ContactComponent />
+      <FooterComponent />
     </div>
   </template>
   
   <script>
-  import ContactPage from '../components/ContactComponent.vue'
+  import ContactComponent from '../components/ContactComponent.vue'
+  import FooterComponent from '../components/FooterComponent.vue'
   
   export default {
     name: "ContactPage",
     components: {
-      ContactPage
+      ContactComponent,
+      FooterComponent
     }
   }
   </script>
