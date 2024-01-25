@@ -1,5 +1,5 @@
 <template>
-    <div class="hello">
+    <div class="postercomponent-main">
       <div class="grid-container">
         <div class="picture-div"><img src="https://assets.codepen.io/8685843/JoelAlme.jpg" class="posters" alt="Joel Alme"></div> 
         <div class="picture-div"><img src="https://assets.codepen.io/8685843/Kazzivalazza.jpeg" class="posters" alt="Kassi Valazza"></div>
@@ -65,7 +65,7 @@
   
   <style scoped>
   
-    .hello {
+    .postercomponent-main {
       font-family: 'Roboto', sans-serif;
       color: #fff;
       text-align: center;

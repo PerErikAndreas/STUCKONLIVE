@@ -5,16 +5,13 @@
         <div class="join-container">
             <div class="title">ABOUT</div>
             <div>
-              <p>Stuck-On är samlingsplatsen för musikälskare i hjärtat av Östersund...</p>
-              <p>Vår förening grundades med visionen att skapa en gemenskap för likasinnade...</p>
-              <p>Våra arrangemang spänner över olika genrer och stilar för att tillgodose den breda smaken...</p>
-              <p>Vi är stolta över vårt engagemang för att stödja och främja lokala talanger...</p>
-              <p>Stuck-On är mer än bara en förening; det är en plattform för kreativitet, gemenskap och musikalisk utforskning...</p>
-              <p>Gå med oss i vår resa att hylla musikens kraft och skapa minnen som varar livet ut...</p>
+              <p>Välkommen till Stuck-On, Östersunds pulserande musikförening!
+    Stuck-On är en passionerad samlingsplats för musikälskare i hjärtat av Östersund. Med över 100 framgångsrika arrangemang under våra vingar har vi etablerat oss som en central kraft inom den lokala musikscenen.
+    Vår förening grundades med visionen att skapa en gemenskap för likasinnade som delar kärleken till musik.</p>
             </div>
+            SKRYT: https://www.ltz.se/2020-01-21/stuck-on-drar-igang-varens-livescen-vi-bokar-bara-det-som-ar-riktigt-bra
           </div>
       </div>
-
       <div id="join-section">
         <h2>Få nyhetsbrev!</h2>
         <p>Here you can provide information about how people can join your music community...</p>

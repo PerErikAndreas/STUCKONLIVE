@@ -14,16 +14,16 @@
             <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/STUCKONLOGO.png"></a>
             <ul class="my-main-nav" id="js-menu">
               <li>
-                <a href="/About" class="my-nav-links">About</a>
+                <a href="/About" class="my-nav-links">OmOss</a>
               </li>
               <li>
-                <a href="/PastShows" class="my-nav-links">Past Shows</a>
+                <a href="/PastShows" class="my-nav-links">GenomfördaEvenemang</a>
               </li>
               <li>
                 <a href="/Scener" class="my-nav-links">Scener</a>
               </li>
               <li>
-                <a href="/Contact" class="my-nav-links">Contact</a>
+                <a href="/Contact" class="my-nav-links">Kontakt</a>
               </li>
             </ul>
           </nav>

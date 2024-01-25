@@ -3,12 +3,18 @@
         <div class="grid-container">
     <div class="grid-item">
       <div class="title">STORSJÖTEATERN</div>
-      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum nisi.</div>
+      <div> 
+        Storsjöteatern är Östersunds teaterhus som ligger mitt i hjärtat av staden vid Stortorget. 
+        Storsjöteatern är en förstklassig teater med en så kallad A-scen och en salong som rymmer 425 personer.
+      </div>
     </div>
 
     <div class="grid-item">
       <div class="title">STUDIOSCENEN</div>
-      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum nisi.</div>
+        <div> 
+          I Storsjöteaterns källarvåning hittar du Studioscen. Genom åren har vi arrangerat många minnesvärda spelningar, 
+          från lokala evenemang till internationella framträdanden. Studioscenen utgör även del av Storsjöytan. Lokalen är 220 kvadratmeter med scen och bar.
+        </div>
     </div>
 
     <div class="grid-item">
@@ -22,7 +28,6 @@
     </div>
   </div>
   <FooterComponent />
-
     </div>
   </template>
   
