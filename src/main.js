@@ -1,20 +1,26 @@
-import Vue from 'vue'
-import App from './App'
-import router from './router'
-
-import Header from './components/Header'
-import Welcome from './components/Welcome'
-import Footer from './components/Footer'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 import VueCarousel from 'vue-carousel';
- 
-Vue.use(VueCarousel);
-Vue.component("Header", Header)
-Vue.component("Welcome", Welcome)
-Vue.component("Footer", Footer)
 
-Vue.config.productionTip = false
+// Import components
+import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import Footer from './components/Footer.vue';
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+// Create Vue application
+const app = createApp(App);
+
+// Use VueCarousel
+app.use(VueCarousel);
+
+// Register global components
+app.component('Navbar', Navbar);
+app.component('Hero', Hero);
+app.component('Footer', Footer);
+
+// Use router
+app.use(router);
+
+// Mount the app
+app.mount('#app');

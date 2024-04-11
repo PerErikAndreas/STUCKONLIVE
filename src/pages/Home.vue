@@ -1,24 +1,28 @@
 <template>
   <div class="main">
-  <Welcome />
-  <H1>KOMMANDE EVENTS</H1>
-  <Billetto />
+  <Hero />
+  <Tickets />
+  <Instagram />
+  <Carousel />
   <Footer />
   </div>
 </template>
 
 <script>
-import Welcome from '@/components/Welcome'
-import Billetto from '@/components/Billetto'
-
+import Hero from '@/components/Hero'
+import Tickets from '@/components/Tickets'
+import Instagram from '@/components/Instagram'
+import Carousel from '@/components/Carousel'
 import Footer from '@/components/Footer'
 
 export default {
   name: "Home",
   components: {
-    Welcome,
-    Billetto,
-    Footer
+    Hero,
+    Tickets,
+    Instagram,
+    Carousel,
+    Footer,
   }
 }
 </script>
@@ -45,6 +49,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    color: #FFFFFF;
   }
 
   .H1 {

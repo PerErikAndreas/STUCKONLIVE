@@ -1,6 +1,8 @@
 <template>
     <div class="calendar-main">
-      <!-- Your other Vue components go here -->
+      <div class="calendar-title">
+      <H1>BILJETTER</H1>
+      </div>
       <billetto-organiser-widget
         v-if="billettoScriptLoaded"
         type="calendar"
@@ -8,7 +10,8 @@
         organization="billetto.se"
         lang="sv"
         theme="light"
-        color="#FCC134"
+        color="#e7492e"
+        whitelabel
       ></billetto-organiser-widget>
     </div>
   </template>
@@ -39,6 +42,12 @@
   .calendar-main {
     padding-left: 7vw;
     padding-right: 7vw;
+  }
+
+  .calendar-title {
+    display: flex;
+    justify-content: start;
+    color: #e7492e;
   }
 </style>
   

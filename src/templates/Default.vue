@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Header />
+    <Navbar />
     <router-view />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Navbar from '@/components/Navbar'
 
 export default {
   name: "DefaultTemplates",
   components: {
-    Header,
+    Navbar,
   }
 }
 </script>

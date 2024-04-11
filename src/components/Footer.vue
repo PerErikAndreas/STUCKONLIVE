@@ -1,7 +1,7 @@
 <template>
   <div class="main-footer">
-    <p class="Footer-text"><img alt="Regionen logo" class="regionenlogo" src="../assets/regionen.png"></p>
-    <p class="Footer-text"><img alt="Regionen logo" class="sensuslogo" src="../assets/SENSUS_LOGGO.png"></p>
+    <!-- <p class="Footer-text"><img alt="Regionen logo" class="regionenlogo" src="../assets/regionen.png"></p>
+    <p class="Footer-text"><img alt="Regionen logo" class="sensuslogo" src="../assets/SENSUS_LOGGO.png"></p> -->
   </div>
 </template>
 
