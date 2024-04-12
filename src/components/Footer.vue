@@ -14,9 +14,9 @@
         <a href="/privacy-policy">Privacy Policy</a>
       </div>
       <div class="footer-social">
-        <a href="/instagram" aria-label="Instagram"><img src="path/to/instagram-icon.png" alt="Instagram" /></a>
-        <a href="/youtube" aria-label="Youtube"><img src="path/to/youtube-icon.png" alt="Youtube" /></a>
-        <a href="/facebook" aria-label="Facebook"><img src="path/to/facebook-icon.png" alt="Facebook" /></a>
+        <a href="/instagram" aria-label="Instagram"><img src="../assets/instagram-icon.png" alt="Instagram" /></a>
+        <a href="/youtube" aria-label="Youtube"><img src="../assets/youtube-icon.png" alt="Youtube" /></a>
+        <a href="/facebook" aria-label="Facebook"><img src="../assets/facebook-icon.png" alt="Facebook" /></a>
       </div>
     </div>
     <div class="footer-copy">

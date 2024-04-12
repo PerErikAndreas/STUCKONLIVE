@@ -11,7 +11,7 @@
 <style>
 /* Global styles for the entire application */
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: 
