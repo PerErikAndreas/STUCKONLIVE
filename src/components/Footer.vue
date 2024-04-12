@@ -1,35 +1,77 @@
 <template>
-  <div class="main-footer">
-    <!-- <p class="Footer-text"><img alt="Regionen logo" class="regionenlogo" src="../assets/regionen.png"></p>
-    <p class="Footer-text"><img alt="Regionen logo" class="sensuslogo" src="../assets/SENSUS_LOGGO.png"></p> -->
-  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/tickets">Köp Biljett</a></li>
+          <li><a href="/about">Om oss</a></li>
+          <li><a href="/scenes">Scener</a></li>
+        </ul>
+      </nav>
+      <div class="footer-policies">
+        <a href="/cookie-policy">Cookie Policy</a> •
+        <a href="/accessibility-statement">Accessibility Statement</a> •
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+      <div class="footer-social">
+        <a href="/instagram" aria-label="Instagram"><img src="path/to/instagram-icon.png" alt="Instagram" /></a>
+        <a href="/youtube" aria-label="Youtube"><img src="path/to/youtube-icon.png" alt="Youtube" /></a>
+        <a href="/facebook" aria-label="Facebook"><img src="path/to/facebook-icon.png" alt="Facebook" /></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2024 Stuck On Live. All Rights Reserved.
+    </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: 'Footer'
 }
 </script>
 
 <style scoped>
-.main-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  padding: 10px;
-  text-align: right;
+.footer {
+  background-color: #E7492E;
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
-
-.Footer-text {
-  margin: 0;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
-.regionenlogo {
-  width: 50px;
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
-.sensuslogo {
-  width: 50px;
-  filter: invert(100%);
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+.footer-policies a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.footer-policies {
+  margin-bottom: 1rem;
+}
+.footer-social a {
+  margin: 0 0.5rem;
+}
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+.footer-copy {
+  font-size: 0.75rem;
+  margin-top: 1rem;
 }
 </style>

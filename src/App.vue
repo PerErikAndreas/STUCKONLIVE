@@ -14,15 +14,16 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle 1050px at center top, #E7492E 50%, transparent 50%);
-    /* The background size controls the size of the circle. 100% width ensures the circle spans the width, 
-       and the height (200%) makes the circle tall enough that only half is visible at the top. */
+  background: 
+        radial-gradient(circle 1050px at center top, #E7492E 50%, transparent 50%), 
+        radial-gradient(circle 1050px at center bottom, #E7492E 50%, transparent 50%);
+    /* Set the background size for each circle to ensure they span the full width and half the height is visible */
     background-size: 100% 200%;
-    /* Prevent the background from repeating. */
+    /* Prevent the backgrounds from repeating */
     background-repeat: no-repeat;
-    /* Position the background to start from the top. */
-    background-position: top center;
-    /* Set the minimum height to full viewport height to ensure full coverage. */
+    /* Position each background correctly */
+    background-position: top center, bottom center;
+    /* Set the minimum height to ensure full coverage of the viewport */
     min-height: 50vh;
 }
 

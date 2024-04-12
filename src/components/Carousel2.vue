@@ -66,6 +66,7 @@ export default defineComponent({
       max-width: 90%;
       max-height: 100vh;
       object-fit: cover; /* This ensures the aspect ratio is preserved */
+      margin-bottom: 600px;
 
     }
 
@@ -75,6 +76,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     width: 60vw;
+    margin-bottom: 200px;
   }
 
   .calendar-title {
