@@ -40,7 +40,7 @@
       align-items: center;
       background: #E7492E;
       width: 100%;
-      padding: 20px 0px 20px 0px;
+      padding: 40px 0px 40px 0px;
     }
     </style>
   

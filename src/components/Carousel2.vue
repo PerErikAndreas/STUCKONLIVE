@@ -38,8 +38,6 @@ export default defineComponent({
         { image: 'https://assets.codepen.io/8685843/Tallestman.jpg', alt: 'Tallest Man On Earth' },
         { image: 'https://assets.codepen.io/8685843/TeoLawrense.jpeg', alt: 'Teo Lawrense' },
         { image: 'https://assets.codepen.io/8685843/Vasterbron.jpg', alt: 'Västerbron' },
-        { image: 'https://assets.codepen.io/8685843/BrorGunnar.jpeg', alt: 'Bror Gunnar Jansson' },
-        { image: 'https://assets.codepen.io/8685843/AstaKask.jpg', alt: 'Asta Kask' },
         { image: 'https://assets.codepen.io/8685843/Henning.jpg', alt: 'Henning' },
         { image: 'https://assets.codepen.io/8685843/MattiasAlkberg.jpg', alt: 'Mattias Alkberg' },
         { image: 'https://assets.codepen.io/8685843/Slowgold.jpg', alt: 'Slowgold' },
@@ -63,7 +61,7 @@ export default defineComponent({
 
 <style scoped>
     .carousel__item img {
-      max-width: 90%;
+      width: 95%;
       max-height: 100vh;
       object-fit: cover; /* This ensures the aspect ratio is preserved */
       margin-bottom: 600px;

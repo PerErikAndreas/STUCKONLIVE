@@ -23,6 +23,7 @@ export default {
 .container {
   margin-top: 62px;
   display: flex;
+  font-family: futura;
   flex-direction: column;
   gap: 50px;
   align-items: center;
@@ -47,6 +48,8 @@ export default {
 
 .text-content p {
   color: white;
+  font-family: Helvetica;
+
   /* Add more styles for your paragraph */
 }
 
