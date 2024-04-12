@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="carousell-title-container">
     <div class="calendar-title">
-      <h1>GENOMFÖRDA</h1>
+      <h2>GENOMFÖRDA</h2>
     </div>
     <Carousel :autoplay="2000" :wrap-around="true">
       <Slide v-for="(slide, index) in slides" :key="index">
@@ -62,7 +62,7 @@ export default defineComponent({
 <style scoped>
 
 .carousel__item{
-margin: 0 10px 0 10px;
+margin: 0 15px 0 15px;
 }
 
     .carousel__item img {
@@ -84,7 +84,27 @@ margin: 0 10px 0 10px;
     display: flex;
     justify-content: flex-end;
     color: #e7492e;
-    margin-right: 20px;
+    margin-right: 10px;
     font-family: futura;
+  }
+
+  .calendar-title h2{
+    margin: 0;
+  }
+
+  @media (min-width: 700px) {
+    .calendar-title {
+    display: flex;
+    justify-content: flex-end;
+    color: #e7492e;
+    margin-right: 50px;
+    font-family: futura;
+  }
+  .carousel__item img {
+      max-width: 92%;
+      max-height: 100vh;
+      object-fit: cover; /* This ensures the aspect ratio is preserved */
+
+    }
   }
 </style>

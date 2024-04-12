@@ -25,8 +25,6 @@ const router = createRouter({
         route('/', 'Home'),
         route('/About', 'About'), // Corrected the comment to match the route
         route('/Contact', 'Contact'),
-        route('/Scener', 'Scener'),
-        route('/PastShows', 'PastShows')
       ]
     },
     { path: '/:pathMatch(.*)*', redirect: '/' } // Handle all other paths

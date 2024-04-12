@@ -11,7 +11,7 @@
             <span class="my-navbar-toggle" id="js-navbar-toggle">
               ≡
             </span>
-            <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/logo.png"></a>
+            <a href="/" class="my-logo"><img class="stuckon-logowhite" src="../assets/logo.png"><img class="stuckon-logored" src="../assets/STUCKONLOGGORED.png"></a>
             <ul class="my-main-nav" id="js-menu">
               <li>
                 <a href="/About" class="my-nav-links">About</a>
@@ -41,12 +41,16 @@
   </script>
 
 <style scoped>
-.stuckon-logo {
+.stuckon-logowhite {
     width: auto;
     margin-top: 15px;
     height: 22px; /* Adjust based on your navbar height */
-
-
+}
+.stuckon-logored {
+  display:none;
+  width: auto;
+    margin-top: 15px;
+    height: 22px; /* Adjust based on your navbar height */
 }
 .my-navbar{
   flex: 1;
@@ -77,9 +81,22 @@
   display:block; z-index: 1000;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:700px){
   .my-navbar{
     display:flex;justify-content:space-between;padding:15px;
 }
-  .my-main-nav{display:flex;margin-right:30px;flex-direction:row;justify-content:flex-end}.my-main-nav li{margin:0}.my-nav-links{margin-left:40px}.my-logo{margin-top:0;padding-bottom:11px;}.my-navbar-toggle{display:none}.my-logo:hover,.my-nav-links:hover{color:#982815}}
+  .my-main-nav{display:flex;margin-right:30px;flex-direction:row;justify-content:flex-end}.my-main-nav li{margin:0}.my-nav-links{margin-left:40px}.my-logo{margin-top:0;padding-bottom:11px;}.my-navbar-toggle{display:none}.my-logo:hover,.my-nav-links:hover{color:#982815}
+  .stuckon-logowhite {
+    display: none;
+    width: auto;
+    margin-top: 15px;
+    height: 22px; /* Adjust based on your navbar height */
+}
+.stuckon-logored {
+  display: inline;
+  width: auto;
+    margin-top: 15px;
+    height: 22px; /* Adjust based on your navbar height */
+}
+  }
 </style>

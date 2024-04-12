@@ -14,18 +14,26 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: 
-        radial-gradient(circle 1050px at center top, #E7492E 50%, transparent 50%), 
-        radial-gradient(circle 1050px at center bottom, #E7492E 50%, transparent 50%);
-    /* Set the background size for each circle to ensure they span the full width and half the height is visible */
-    background-size: 100% 200%;
-    /* Prevent the backgrounds from repeating */
-    background-repeat: no-repeat;
-    /* Position each background correctly */
-    background-position: top center, bottom center;
-    /* Set the minimum height to ensure full coverage of the viewport */
-    min-height: 50vh;
+  background: radial-gradient(circle 1050px at center top, #E7492E 50%, transparent 50%), 
+              radial-gradient(circle 1050px at center bottom, #E7492E 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-position: top center, bottom center;
+  min-height: 50vh;
 }
+
+/* Media query for screens with a max-width of 400px */
+@media (min-width: 700px) {
+  body {
+    background: radial-gradient(circle 950px at right top, #E7492E 50%, transparent 50%),
+                radial-gradient(circle 1050px at center bottom, #E7492E 50%, transparent 50%);
+
+    background-size: 200% 200%; /* Adjust the size so only a quarter is visible */
+    background-repeat: no-repeat;
+    background-position: right top; /* Reposition to upper right corner */
+  }
+}
+
 
 #app {
   text-align: center;

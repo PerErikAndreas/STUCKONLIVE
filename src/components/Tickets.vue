@@ -1,7 +1,7 @@
 <template>
     <div class="calendar-main">
       <div class="calendar-title">
-      <H1>BILJETTER</H1>
+      <H2>BILJETTER</H2>
       </div>
       <billetto-organiser-widget
         v-if="billettoScriptLoaded"
@@ -9,6 +9,7 @@
         organiser="652330"
         organization="billetto.se"
         lang="sv"
+        background="none"
         theme="light"
         color="#e7492e"
         whitelabel
@@ -49,6 +50,18 @@
     justify-content: start;
     color: #e7492e;
     font-family: futura;
+
+  }
+  .calendar-title h2 {
+margin: 0;
+
+  }
+
+  @media (min-width: 700px) {
+    .calendar-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   }
 </style>
