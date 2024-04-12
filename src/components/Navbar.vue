@@ -17,12 +17,6 @@
                 <a href="/About" class="my-nav-links">About</a>
               </li>
               <li>
-                <a href="/PastShows" class="my-nav-links">Past Shows</a>
-              </li>
-              <li>
-                <a href="/Scener" class="my-nav-links">Scener</a>
-              </li>
-              <li>
                 <a async href="/Contact" class="my-nav-links">Contact</a>
               </li>
             </ul>

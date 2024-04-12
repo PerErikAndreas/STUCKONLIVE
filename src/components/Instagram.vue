@@ -3,7 +3,7 @@
     <div class="circle-section">
       <div class="text-content">
         <h1>FÖLJ OSS!</h1>
-        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry's standard ever since the an unknown printer galley of type and survived not only the leap into</p>
+        <p>På vår instagram postar vi dagliga musiktips, kommande spelningar och evenemang @stuckonlive</p>
       </div>
     </div>
     <div class="phone-section">
@@ -32,8 +32,8 @@ export default {
 
   background-color: #E7492E; /* The red background color */
   border-radius: 50%;
-  width: 300px; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  width: 350px; /* Adjust as needed */
+  height: 350px; /* Adjust as needed */
   display: flex;
   align-items: center;
   justify-content: center;

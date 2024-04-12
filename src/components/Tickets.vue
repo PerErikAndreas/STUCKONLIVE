@@ -40,14 +40,16 @@
   </script>
   <style scoped>
   .calendar-main {
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .calendar-title {
     display: flex;
     justify-content: start;
     color: #e7492e;
+    font-family: futura;
+
   }
 </style>
   

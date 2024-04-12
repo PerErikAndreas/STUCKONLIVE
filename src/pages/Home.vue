@@ -4,6 +4,9 @@
   <Tickets />
   <Instagram />
   <Carousel />
+  <Contact />
+  <Carousel2 />
+
   <Footer />
   </div>
 </template>
@@ -13,6 +16,8 @@ import Hero from '@/components/Hero'
 import Tickets from '@/components/Tickets'
 import Instagram from '@/components/Instagram'
 import Carousel from '@/components/Carousel'
+import Contact from '@/components/Contact'
+import Carousel2 from '@/components/Carousel2'
 import Footer from '@/components/Footer'
 
 export default {
@@ -22,6 +27,8 @@ export default {
     Tickets,
     Instagram,
     Carousel,
+    Contact,
+    Carousel2,
     Footer,
   }
 }

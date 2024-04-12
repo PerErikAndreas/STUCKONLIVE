@@ -1,6 +1,23 @@
 <template>
-    <div class="main">
-      CONTACT
+    <div class="main-1">
+      <div class="icon-container">
+        <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/musicnote.png"></a>
+        120 SPELNINGAR
+
+      </div>
+
+      <div class="icon-container">
+        <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/musicnote.png"></a>
+
+3000 BESÖKARE
+      </div>
+
+      <div class="icon-container"> 
+        <a href="/" class="my-logo"><img class="stuckon-logo" src="../assets/musicnote.png"></a>
+
+4 SCENER
+      </div>
+
   </div>
 </template>
 
@@ -10,12 +27,20 @@
   }
   </script>
   <style scoped>
-    .main {
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    font-family: futura;  }
+    .main-1 {
+      margin-top: 62px;
+      margin-bottom: 62px;
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-      margin-left: 20vw;
-      margin-right: 20vw;
+      background: #E7492E;
+      width: 100%;
+      padding: 20px 0px 20px 0px;
     }
     </style>
   
