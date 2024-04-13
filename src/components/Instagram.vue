@@ -3,7 +3,10 @@
     <div class="circle-section">
       <div class="text-content">
         <h1>FÖLJ OSS!</h1>
-        <p>På vår instagram postar vi dagliga musiktips, kommande spelningar och evenemang @stuckonlive</p>
+        <p>
+          På vår instagram postar vi dagliga musiktips, kommande spelningar och
+          evenemang @stuckonlive
+        </p>
       </div>
     </div>
     <div class="phone-section">
@@ -14,9 +17,9 @@
 
 <script>
 export default {
-  name: 'Instagram',
+  name: "Instagram",
   // Component data and methods would go here
-}
+};
 </script>
 
 <style scoped>
@@ -30,8 +33,7 @@ export default {
 }
 
 .circle-section {
-
-  background-color: #E7492E; /* The red background color */
+  background-color: #e7492e; /* The red background color */
   border-radius: 50%;
   width: 350px; /* Adjust as needed */
   height: 350px; /* Adjust as needed */
