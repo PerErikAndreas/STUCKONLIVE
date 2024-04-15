@@ -40,8 +40,8 @@ export default {
 </script>
 <style scoped>
 .calendar-main {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .calendar-title {

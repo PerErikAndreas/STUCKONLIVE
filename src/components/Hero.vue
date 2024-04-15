@@ -73,7 +73,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
-  padding: 0 10vw 0 10vw;
+  padding: 0 20px 0 20px;
 }
 .input {
   border: 2px solid #e7492e;
@@ -122,6 +122,10 @@ export default {
     width: 300px;
     height: auto;
   }
+
+  .input {
+  max-width: 400px;
+}
   .Welcometext-container {
     padding: 100px 0px 0px 0px;
     display: flex;
@@ -165,7 +169,6 @@ export default {
   .arrow-container {
     display: flex;
     justify-content: center;
-    margin: 74px 0 74px 0;
     width: 100%;
   }
 }

@@ -106,7 +106,7 @@ export default {
   .my-navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 10px  0 20px;
   }
   .my-main-nav {
     display: flex;
@@ -142,6 +142,14 @@ export default {
     width: auto;
     margin-top: 15px;
     height: 22px; /* Adjust based on your navbar height */
+  }
+}
+@media (min-width: 1075px) { /* Target screens larger than 1024px */
+  .my-navbar {
+    width: 1075px; /* Set a max width of 1024px for larger screens */
+    margin: 0 auto; /* Auto margins to horizontally center the #app element */
+    padding: 15px 10px 0 50px;
+
   }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
 }
 .main-1 {
   margin-top: 62px;
-  margin-bottom: 62px;
+  margin-bottom: 410px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

@@ -114,7 +114,6 @@ export default defineComponent({
 
 <style scoped>
 .carousel__item {
-  margin: 0 15px;
 }
 
 .carousel__item img {
@@ -128,7 +127,11 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60vw;
+  max-width: 1075px;
+}
+.carousell-title-container {
+  max-width: 1075px;
+  margin: 0 20px 0 20px;
 }
 
 .calendar-title {
@@ -140,8 +143,9 @@ export default defineComponent({
 }
 
 @media (min-width: 700px) {
-  .calendar-title {
-    margin-right: 50px;
-  }
+  .carousell-title-container {
+  max-width: 1075px;
+  margin: 0 50px 0 50px;
+}
 }
 </style>
