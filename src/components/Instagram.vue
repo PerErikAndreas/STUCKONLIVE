@@ -41,7 +41,7 @@ export default {
 }
 
 .container {
-  margin-top: 62px;
+  margin-top: 82px;
   display: flex;
   font-family: futura;
   flex-direction: column;
@@ -94,6 +94,13 @@ margin-left: 50px;
 
 .instagram-post-container {
 margin-right: 50px;
+}
+}
+@media (min-width: 700px) and (max-width: 1016px) {
+  .arrow-right {
+  display: none;
+}
+.circle-section {
 }
 }
 </style>

@@ -111,7 +111,7 @@ export default defineComponent({
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%; /* Ensures that the carousel item takes full width */
+  width: 90%; /* Ensures that the carousel item takes full width */
   height: auto; /* Allows the height to adjust based on the image */
   margin: 10px
 }
@@ -135,17 +135,20 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw; /* Adjusted for better control over size */
+  width: 90vw; /* Adjusted for better control over size */
   margin: 0 10px 0 10px;
 }
 
 .calendar-title {
   display: flex;
   font-family: futura;
-  margin-top: 62px;
+  margin-top: 92px;
   color: #e7492e;
-  margin-left: 15px;
-  width: 100%;
+  width: 90%;
+}
+
+.calendar-title h2 {
+margin-bottom: 0px;
 }
 </style>
 

@@ -37,14 +37,13 @@ export default {
   font-family: futura;
 }
 .main-1 {
-  margin-top: 62px;
-  margin-bottom: 410px;
+  margin: 62px 0px 410px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background: #e7492e;
-  width: 100%;
+  width: 90%;
   padding: 40px 0px 40px 0px;
 }
 

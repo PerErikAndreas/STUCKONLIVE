@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .arrow-container {
-  margin: 74px 0 74px 0;
+  margin: 94px 0 74px 0;
   display: flex; /* Ensures the container is suitable for flex children */
   align-items: center; /* Centers the arrow vertically */
   justify-content: center; /* Centers the arrow horizontally */
