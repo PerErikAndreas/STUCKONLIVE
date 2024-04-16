@@ -1,8 +1,6 @@
 <template>
-  <div class="carousel-container">
     <div class="calendar-title">
       <h2>GENOMFÖRDA</h2>
-    </div>
     </div>
     <Carousel :autoplay="2000" :wrap-around="true">
       <Slide v-for="(group, index) in slides" :key="index">
@@ -144,8 +142,9 @@ export default defineComponent({
 .calendar-title {
   display: flex;
   font-family: futura;
-  justify-content: flex-end;
+  margin-top: 62px;
   color: #e7492e;
+  margin-left: 15px;
   width: 100%;
 }
 </style>
