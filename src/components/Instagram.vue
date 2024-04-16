@@ -9,20 +9,37 @@
         </p>
       </div>
     </div>
-    <div class="phone-section">
-      <!-- <img src="../assets/Mockup.png" alt="Phone" /> -->
+    <div class="arrow-container">
+      <img class="arrow-right" src="../assets/down-arrow.png" />
     </div>
+    <div className="instagram-post-container">
+    <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed>
   </div>
+</div>
 </template>
 
 <script>
+import InstagramEmbed from './InstagramEmbed.vue';
+
 export default {
+  components: {
+    InstagramEmbed
+  },
   name: "Instagram",
   // Component data and methods would go here
 };
 </script>
 
 <style scoped>
+.instagram-post-container {
+  padding: 20px 20px 10px 20px;
+  border-radius: 12px;
+  background: #e7492e;
+}
+.arrow-right {
+  transform: rotate(0deg); /* Initial rotation */
+}
+
 .container {
   margin-top: 62px;
   display: flex;
@@ -35,8 +52,8 @@ export default {
 .circle-section {
   background-color: #e7492e; /* The red background color */
   border-radius: 50%;
-  width: 350px; /* Adjust as needed */
-  height: 350px; /* Adjust as needed */
+  width: 375px; /* Adjust as needed */
+  height: 375px; /* Adjust as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,5 +76,24 @@ export default {
   width: 200px;
   height: auto;
   z-index: 1; /* To ensure it's above the circle */
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.arrow-right {
+  transform: rotate(270deg); /* Initial rotation */
+}
+.circle-section {
+margin-left: 50px;
+}
+
+.instagram-post-container {
+margin-right: 50px;
+}
 }
 </style>

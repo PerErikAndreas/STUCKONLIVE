@@ -172,4 +172,15 @@ export default {
     width: 100%;
   }
 }
+
+@media (min-width: 1020px) {
+  .Welcometext {
+  font-family: futura;
+  font-size: 68px;
+  line-height: 62px;
+  font-weight: 900;
+  margin-bottom: 62px;
+  letter-spacing: -5%;
+}
+}
 </style>

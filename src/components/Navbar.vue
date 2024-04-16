@@ -100,6 +100,7 @@ export default {
 .active {
   display: block;
   z-index: 1000;
+  position: relative;
 }
 
 @media screen and (min-width: 700px) {

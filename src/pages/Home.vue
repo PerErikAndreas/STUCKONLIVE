@@ -55,10 +55,10 @@ export default {
   color: #ffffff;
 }
 
-@media (min-width: 1075px) { /* Target screens larger than 1024px */
+@media (min-width: 1075px) {
   .main {
-    width: 1075px; /* Set a max width of 1024px for larger screens */
-    margin: 0 auto; /* Auto margins to horizontally center the #app element */
+    width: 1075px;
+    margin: 0 auto;
   }
 }
 

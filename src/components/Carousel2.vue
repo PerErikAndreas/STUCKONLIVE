@@ -115,6 +115,7 @@ export default defineComponent({
   align-items: center;
   width: 100%; /* Ensures that the carousel item takes full width */
   height: auto; /* Allows the height to adjust based on the image */
+  margin: 10px
 }
 
 .image-container {
@@ -138,8 +139,6 @@ export default defineComponent({
   align-items: center;
   width: 100vw; /* Adjusted for better control over size */
   margin: 0 10px 0 10px;
-  padding: 0 10px; /* Padding on the sides of the carousel */
-
 }
 
 .calendar-title {
@@ -147,7 +146,6 @@ export default defineComponent({
   font-family: futura;
   justify-content: flex-end;
   color: #e7492e;
-  margin-right: 20px;
   width: 100%;
 }
 </style>

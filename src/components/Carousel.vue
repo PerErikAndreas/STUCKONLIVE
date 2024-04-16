@@ -138,7 +138,7 @@ export default defineComponent({
   display: flex;
   justify-content: flex-end;
   color: #e7492e;
-  margin-right: 10px;
+  margin-right: 20px;
   font-family: futura;
 }
 

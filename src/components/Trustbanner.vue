@@ -9,7 +9,7 @@
 
     <div class="icon-container">
       <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/musicnote.png"
+        ><img class="stuckon-logo" src="../assets/people.png"
       /></a>
 
       3000 BESÖKARE
@@ -17,7 +17,7 @@
 
     <div class="icon-container">
       <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/musicnote.png"
+        ><img class="stuckon-logo" src="../assets/location.png"
       /></a>
 
       4 SCENER
@@ -46,5 +46,11 @@ export default {
   background: #e7492e;
   width: 100%;
   padding: 40px 0px 40px 0px;
+}
+
+@media (min-width: 700px) {
+  .main-1 {
+border-radius: 24px;;
+}
 }
 </style>
