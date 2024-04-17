@@ -121,7 +121,7 @@ export default defineComponent({
  }
 
 .image-container.single-image {
-  flex: 0 0 96%; /* Takes almost the full width of the slide */
+  flex: 1 0 96%; /* Takes almost the full width of the slide */
 }
 
 .image-container img {
