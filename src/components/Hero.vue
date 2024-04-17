@@ -1,21 +1,27 @@
 <template>
-  <div class="Welcometext-container">
-    <img class="triangle" src="../assets/triangle.png" />
-
-    <div class="Welcometext">
-      UTFORSKA
-      <div>DIN&nbsp;LOKALA</div>
-      MUSIKSCEN
+  <div class="hero-container">
+    <img class="triangle-graphic" src="../assets/triangle-graphic.png" />
+    <div class="title-container">
+      <h1>
+        Utforska
+        <div>din&nbsp;lokala</div>
+        musikscen
+      </h1>
     </div>
     <div class="paragraph-container">
-      Mer än 100 genomförda konserter med internationella och lokala akter –
-      upplev musiken på nära håll!
+      <p>
+        Mer än 100 genomförda konserter med internationella och lokala akter –
+        upplev musiken på nära håll!
+      </p>
     </div>
     <div class="input-and-ctabutton-container">
-      <input class="input" /><button class="cta-button">FÅ NYHETSBREV</button>
+      <!-- <input class="input" />
+      <button class="cta-button">Få nyhetsbrev</button> -->
+      <div class="ml-embedded" data-form="X9IuFM"></div>
+
     </div>
     <div class="arrow-container">
-      <img class="stuckon-logo" src="../assets/down-arrow.png" />
+      <img src="../assets/arrow-graphic.png" />
     </div>
   </div>
 </template>
@@ -24,16 +30,25 @@
 export default {
   name: "Hero",
 };
+
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '912655');
 </script>
 
 <style scoped>
+.ml-embedded {
+  width: 100%;
+}
 .arrow-container {
   margin: 94px 0 74px 0;
-  display: flex; /* Ensures the container is suitable for flex children */
-  align-items: center; /* Centers the arrow vertically */
-  justify-content: center; /* Centers the arrow horizontally */
-  animation: bounce 10s infinite; /* Apply the bounce animation */
-  -webkit-animation: bounce 10s infinite; /* For Safari and older Chrome browsers */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 10s infinite;
+  -webkit-animation: bounce 10s infinite;
 }
 
 @keyframes bounce {
@@ -43,7 +58,7 @@ export default {
   80%,
   100% {
     transform: translateY(0);
-    -webkit-transform: translateY(0); /* For Safari and older Chrome browsers */
+    -webkit-transform: translateY(0);
   }
   40% {
     transform: translateY(-30px);
@@ -55,11 +70,11 @@ export default {
   }
 }
 
-.triangle {
+.triangle-graphic {
   display: none;
   position: absolute;
-  top: 70px; /* Percentage of the container's height */
-  right: 80px; /* Percentage of the viewport's width */
+  top: 70px;
+  right: 80px;
   width: 300px;
   height: auto;
 }
@@ -75,11 +90,6 @@ export default {
   margin-bottom: 200px;
   padding: 0 20px 0 20px;
 }
-.input {
-  border: 2px solid #e7492e;
-  border-radius: 12px;
-  height: 44px;
-}
 
 .cta-button {
   border: 2px solid #e7492e;
@@ -90,74 +100,53 @@ export default {
   font-size: 16px;
   padding: 0 30px 0 30px;
   font-family: futura;
+  text-transform: uppercase;
 }
-.Welcometext-container {
+
+.hero-container {
   padding: 100px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center; /* This centers the content vertically within the container */
-  color: #ffffff; /* Text color is white */
-  /* If you want the container itself to be centrally aligned within its parent, 
-     and if its parent is also a flex container, you might not need additional settings here.
-     However, if the container's parent isn't styled with flexbox, consider adding margins: */
-  /* Height is necessary if you want to ensure vertical centering within a specific size. */
+  justify-content: center;
+  color: #ffffff;
 }
 
-.Welcometext {
+.title-container h1 {
   font-family: futura;
   font-size: 48px;
   line-height: 42px;
   font-weight: 900;
   margin-bottom: 62px;
   letter-spacing: -5%;
+  text-transform: uppercase;
 }
 
 @media (min-width: 700px) {
-  .triangle {
+  .triangle-graphic {
     display: inline;
-    position: absolute;
-    top: 70px; /* Percentage of the container's height */
-    right: 80px; /* Percentage of the viewport's width */
-    width: 300px;
-    height: auto;
   }
 
-  .input {
-  max-width: 400px;
-}
-  .Welcometext-container {
+  .hero-container {
     padding: 100px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
     text-align: start;
     width: 90%;
-    justify-content: start; /* This centers the content vertically within the container */
-    color: #e7492e; /* Text color is white */
-    /* If you want the container itself to be centrally aligned within its parent, 
-     and if its parent is also a flex container, you might not need additional settings here.
-     However, if the container's parent isn't styled with flexbox, consider adding margins: */
-    /* Height is necessary if you want to ensure vertical centering within a specific size. */
+    justify-content: start;
+    color: #e7492e;
   }
+
   .paragraph-container {
-    display: flex;
     margin-bottom: 100px;
     padding: 0px;
     width: 50%;
   }
-  .Welcometext {
-    font-family: futura;
+
+  .title-container h1 {
     font-size: 38px;
     line-height: 42px;
-    font-weight: 900;
-    margin-bottom: 62px;
-    letter-spacing: -5%;
   }
 
-  .input {
-    border: 2px solid #e7492e;
-    border-radius: 12px;
-    height: 44px;
+  .ml-embedded {
     width: 40vw;
   }
 
@@ -174,13 +163,9 @@ export default {
 }
 
 @media (min-width: 1020px) {
-  .Welcometext {
-  font-family: futura;
-  font-size: 68px;
-  line-height: 62px;
-  font-weight: 900;
-  margin-bottom: 62px;
-  letter-spacing: -5%;
-}
+  .title-container h1 {
+    font-size: 68px;
+    line-height: 62px;
+  }
 }
 </style>

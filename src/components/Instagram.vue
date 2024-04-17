@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="arrow-container">
-      <img class="arrow-right" src="../assets/down-arrow.png" />
+      <img class="arrow-right" src="../assets/arrow-graphic.png" />
     </div>
     <div className="instagram-post-container">
     <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed>

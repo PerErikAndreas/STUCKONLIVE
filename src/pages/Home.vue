@@ -13,7 +13,6 @@
 import Hero from "@/components/Hero";
 import Tickets from "@/components/Tickets";
 import Instagram from "@/components/Instagram";
-import Carousel from "@/components/Carousel";
 import Trustbanner from "@/components/Trustbanner";
 import Carousel2 from "@/components/Carousel2";
 import Footer from "@/components/Footer";

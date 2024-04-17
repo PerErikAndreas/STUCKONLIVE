@@ -147,7 +147,6 @@ export default {
 }
 @media (min-width: 1075px) { /* Target screens larger than 1024px */
   .my-navbar {
-    width: 1075px; /* Set a max width of 1024px for larger screens */
     margin: 0 auto; /* Auto margins to horizontally center the #app element */
     padding: 15px 10px 0 50px;
 
