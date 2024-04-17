@@ -18,7 +18,6 @@
       <!-- <input class="input" />
       <button class="cta-button">Få nyhetsbrev</button> -->
       <div class="ml-embedded" data-form="X9IuFM"></div>
-
     </div>
     <div class="arrow-container">
       <img src="../assets/arrow-graphic.png" />
@@ -39,11 +38,16 @@ export default {
 </script>
 
 <style scoped>
-.ml-embedded {
-  width: 100%;
-}
+  .ml-embedded {
+    width: 100%;
+  }
+
+  .ml-form-align-center {
+    width: 100%;
+  }
+
 .arrow-container {
-  margin: 94px 0 74px 0;
+  margin: 74px 0 74px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,24 +91,17 @@ export default {
 .paragraph-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 0 20px 0 20px;
 }
 
-.cta-button {
-  border: 2px solid #e7492e;
-  border-radius: 12px;
-  height: 50px;
-  color: #ffffff;
-  background: #e7492e;
-  font-size: 16px;
-  padding: 0 30px 0 30px;
-  font-family: futura;
-  text-transform: uppercase;
+.paragraph-container p {
+  max-width: 300px;
 }
 
 .hero-container {
-  padding: 100px 20px 20px 20px;
+  padding: 52px 0px 0px 0px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -117,7 +114,7 @@ export default {
   font-size: 48px;
   line-height: 42px;
   font-weight: 900;
-  margin-bottom: 62px;
+  margin-bottom: 44px;
   letter-spacing: -5%;
   text-transform: uppercase;
 }
@@ -125,6 +122,10 @@ export default {
 @media (min-width: 700px) {
   .triangle-graphic {
     display: inline;
+  }
+
+  .paragraph-container p {
+  max-width: 100%;
   }
 
   .hero-container {
@@ -136,7 +137,7 @@ export default {
   }
 
   .paragraph-container {
-    margin-bottom: 100px;
+    margin-bottom: 42px;
     padding: 0px;
     width: 50%;
   }
@@ -148,12 +149,15 @@ export default {
 
   .ml-embedded {
     width: 40vw;
+    display: flex;
+    flex-direction: row;
   }
 
   .input-and-ctabutton-container {
     display: flex;
     gap: 10px;
     flex-direction: row;
+    margin-left: -20px;
   }
   .arrow-container {
     display: flex;

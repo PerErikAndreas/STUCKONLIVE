@@ -47,13 +47,13 @@ export default {
 <style scoped>
 .stuckon-logowhite {
   width: auto;
-  margin-top: 15px;
+  margin-top: 20px;
   height: 22px; /* Adjust based on your navbar height */
 }
 .stuckon-logored {
   display: none;
   width: auto;
-  margin-top: 15px;
+  margin-top: 20px;
   height: 22px; /* Adjust based on your navbar height */
 }
 .my-navbar {
@@ -91,7 +91,7 @@ export default {
 }
 .my-navbar-toggle {
   position: absolute;
-  top: 10px;
+  top: 17px;
   right: 20px;
   cursor: pointer;
   color: #ffffff;
@@ -107,7 +107,7 @@ export default {
   .my-navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px  0 20px;
+    padding: 22px 10px  0 20px;
   }
   .my-main-nav {
     display: flex;

@@ -15,12 +15,12 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(
-      circle 1050px at center top,
+      circle 950px at center top,
       #e7492e 50%,
       transparent 50%
     ),
     radial-gradient(
-      circle 1050px at center bottom,
+      circle 950px at center bottom,
       #e7492e 50%,
       transparent 50%
     );

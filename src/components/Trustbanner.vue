@@ -4,7 +4,7 @@
       <a href="/" class="my-logo"
         ><img class="stuckon-logo" src="../assets/musicnote.png"
       /></a>
-      120 SPELNINGAR
+      120 <br>SPELNINGAR
     </div>
 
     <div class="icon-container">
@@ -12,7 +12,7 @@
         ><img class="stuckon-logo" src="../assets/people.png"
       /></a>
 
-      3000 BESÖKARE
+      3000 <br>BESÖKARE
     </div>
 
     <div class="icon-container">
@@ -20,7 +20,7 @@
         ><img class="stuckon-logo" src="../assets/location.png"
       /></a>
 
-      4 SCENER
+      4 <br>SCENER
     </div>
   </div>
 </template>
@@ -43,6 +43,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   background: #e7492e;
+  border-radius: 24px;;
   width: 90%;
   padding: 40px 0px 40px 0px;
 }
