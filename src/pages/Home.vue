@@ -31,20 +31,6 @@ export default {
 </script>
 
 <style scoped>
-.two-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.four-four {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .main {
   display: flex;
   flex-direction: column;

@@ -3,16 +3,18 @@
     <div class="calendar-title">
       <H2>BILJETTER</H2>
     </div>
-    <billetto-organiser-widget
-      v-if="billettoScriptLoaded"
-      type="calendar"
-      organiser="652330"
-      organization="billetto.se"
-      lang="sv"
-      theme="light"
-      color="#e7492e"
-      whitelabel
-    ></billetto-organiser-widget>
+    <div class="billeto-widget-container">
+      <billetto-organiser-widget
+        v-if="billettoScriptLoaded"
+        type="calendar"
+        organiser="652330"
+        organization="billetto.se"
+        lang="sv"
+        theme="light"
+        color="#e7492e"
+        whitelabel
+      ></billetto-organiser-widget>
+    </div>
   </div>
 </template>
 
@@ -39,6 +41,11 @@ export default {
 };
 </script>
 <style scoped>
+
+.billeto-widget-container .flex-grow.card-content.px-4.py-5.sm\:px-6.lg\:px-8 {
+  background-color: blue !important; /* Intended to override Tailwind's background utility class */
+}
+
 .calendar-main {
   padding-left: 20px;
   padding-right: 20px;

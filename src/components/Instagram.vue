@@ -33,10 +33,12 @@ export default {
 <style scoped>
 .instagram-post-container {
   padding: 20px 20px 10px 20px;
-  border-radius: 12px;
-  background: #e7492e;
+  border-radius: 4px;
+  border: solid 1px transparent; /* Transparent border by default */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
 .arrow-right {
+  margin: 40px 0 30px 0;
   transform: rotate(0deg); /* Initial rotation */
 }
 
@@ -45,15 +47,14 @@ export default {
   display: flex;
   font-family: futura;
   flex-direction: column;
-  gap: 50px;
   align-items: center;
 }
 
 .circle-section {
   background-color: #e7492e; /* The red background color */
   border-radius: 50%;
-  width: 375px; /* Adjust as needed */
-  height: 375px; /* Adjust as needed */
+  width: 340px; /* Adjust as needed */
+  height: 340px; /* Adjust as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +102,7 @@ margin-right: 50px;
   display: none;
 }
 .circle-section {
+ scale: 0.8;
 }
 }
 </style>

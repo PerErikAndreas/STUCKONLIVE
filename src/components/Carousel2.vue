@@ -142,7 +142,7 @@ export default defineComponent({
 .calendar-title {
   display: flex;
   font-family: futura;
-  margin-top: 92px;
+  margin-top: 72px;
   color: #e7492e;
   width: 90%;
 }

@@ -3,10 +3,10 @@
       <blockquote class="instagram-media" 
         :data-instgrm-permalink="permalink" 
         data-instgrm-version="14" 
-        style="background:#FFF; border:0; border-radius:3px; 
+        style="background:#FFF; border:1px; border-radius:12px; 
                box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
-               margin: 1px; max-width:340px; min-width:300px; padding:0;
-               width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);
+               margin: 1px; max-width:300px; min-width:280px; padding:0px;
+               width:99.375%; width:-webkit-calc(90% - 2px); width:calc(90% - 2px);
                height: 350px;"> <!-- Adjust the height here -->
       </blockquote>
     </div>

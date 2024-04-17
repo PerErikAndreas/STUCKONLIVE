@@ -18,10 +18,10 @@
           /></a>
           <ul class="my-main-nav" id="js-menu">
             <li>
-              <a href="/Om-oss" class="my-nav-links">Om oss</a>
+              <a href="/om-oss" class="my-nav-links">Om oss</a>
             </li>
             <li>
-              <a async href="/Kontakt" class="my-nav-links">Kontakt</a>
+              <a async href="/kontakt" class="my-nav-links">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -57,6 +57,7 @@ export default {
   height: 22px; /* Adjust based on your navbar height */
 }
 .my-navbar {
+  position: relative; /* New positioning context for the absolute elements */
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -65,8 +66,14 @@ export default {
 }
 .my-main-nav {
   list-style-type: none;
-  display: none;
-  z-index: 1000;
+  display: none; /* Initially hidden */
+  position: absolute; /* Positioned absolutely */
+  margin-right: 20px;
+  top: 40px; /* Start just below the navbar */
+  right: 0; /* Align to the left of the parent */
+  background: white;
+  border-radius: 12px 0px 12px 12px;
+  z-index: 1000; /* Ensure it's above other content */
 }
 .my-logo {
   padding-bottom: 6px;
@@ -76,7 +83,7 @@ export default {
 }
 .my-nav-links {
   text-decoration: none;
-  color: #ffffff;
+  color: #e7492e;
 }
 .my-main-nav li {
   text-align: right;
@@ -89,6 +96,11 @@ export default {
   margin-top: 10px;
   margin-left: 20px;
 }
+
+.my-main-nav li {
+    margin-bottom: 5;
+  }
+
 .my-navbar-toggle {
   position: absolute;
   top: 17px;
@@ -99,8 +111,10 @@ export default {
 }
 .active {
   display: block;
-  z-index: 1000;
-  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 @media screen and (min-width: 700px) {
