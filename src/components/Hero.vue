@@ -128,7 +128,7 @@ export default {
 
   .field-graphic {
   display: inline;
-  background: #FAFAFA;
+  background: #e7492e;
   margin: 20px 0 0 0;
   border-radius: 20px;
   width: 100%;
