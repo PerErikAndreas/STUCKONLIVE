@@ -3,9 +3,8 @@
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
-          <li><a href="/tickets">Köp Biljett</a></li>
-          <li><a href="/about">Om oss</a></li>
-          <li><a href="/scenes">Scener</a></li>
+          <li><a href="/Contact">Kontakt</a></li>
+          <li><a href="/About">Om oss</a></li>
         </ul>
       </nav>
       <div class="footer-policies">
@@ -14,13 +13,13 @@
         <a href="/privacy-policy">Privacy Policy</a>
       </div>
       <div class="footer-social">
-        <a href="/instagram" aria-label="Instagram">
+        <a href="https://www.instagram.com/stuckonlive/" aria-label="Instagram">
           <img src="../assets/instagram-icon.png" alt="Instagram"/>
         </a>
-        <a href="/youtube" aria-label="Youtube">
-          <img src="../assets/youtube-icon.png" alt="Youtube" />
+        <a href="https://open.spotify.com/playlist/2M6Ea4H70MDyu970RII008?si=Un3DR2bkQ1i3-h8_PyuClw&nd=1&dlsi=1c1ff4dcabcd408a" aria-label="Spotify">
+          <img src="../assets/spotify.png" alt="Spotify" />
         </a>
-        <a href="/facebook" aria-label="Facebook">
+        <a href="https://www.facebook.com/stuckonlive" aria-label="Facebook">
           <img src="../assets/facebook-icon.png" alt="Facebook" />
         </a>
       </div>

@@ -185,6 +185,11 @@ export default {
   .hero-container {
   padding: 32px 0px 0px 0px;
 }
+
+.paragraph-container p {
+  font-size: 18px;
+  }
+
 }
 
 @media (min-width: 1180px) {
