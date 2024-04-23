@@ -23,7 +23,7 @@ const router = createRouter({
       component: Layout,
       children: [
         route('/', 'Home'),
-        route('/om-oss', 'Om-oss'), // Corrected the comment to match the route
+        route('/om-oss', 'About'), // Corrected the comment to match the route
         route('/kontakt', 'Kontakt'),
       ]
     },

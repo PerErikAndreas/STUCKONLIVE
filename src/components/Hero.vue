@@ -15,9 +15,8 @@
       </p>
     </div>
     <div class="input-and-ctabutton-container">
-      <!-- <input class="input" />
-      <button class="cta-button">Få nyhetsbrev</button> -->
       <div class="ml-embedded" data-form="X9IuFM"></div>
+      <div class="field-graphic"></div>
     </div>
     <div class="arrow-container">
       <img src="../assets/arrow-graphic.png" />
@@ -98,6 +97,9 @@ export default {
 .paragraph-container p {
   max-width: 300px;
 }
+.field-graphic {
+  display: none;
+}
 
 .hero-container {
   padding: 52px 0px 0px 0px;
@@ -123,6 +125,15 @@ export default {
   .triangle-graphic {
     display: inline;
   }
+
+  .field-graphic {
+  display: inline;
+  background: #FAFAFA;
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 110px;
+}
 
   .paragraph-container p {
   max-width: 100%;
@@ -171,5 +182,47 @@ export default {
     font-size: 68px;
     line-height: 62px;
   }
+  .hero-container {
+  padding: 32px 0px 0px 0px;
+}
+}
+
+@media (min-width: 1180px) {
+  .title-container h1 {
+    font-size: 88px;
+    line-height: 82px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .triangle-graphic {
+    display: none;
+  }
+
+  .title-container h1 {
+    margin-top: 20px;
+    font-size: 88px;
+    line-height: 82px;
+  }
+
+  .hero-container {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+  .paragraph-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  color: white;
+  width: 100%;
+  padding: 0px 20px 0 20px;
+}
+.paragraph-container p {
+  max-width: 300px;
+}
 }
 </style>

@@ -52,6 +52,25 @@ body {
   }
 }
 
+@media (min-width: 1400px) {
+  body {
+    background: radial-gradient(
+        circle 1050px at top,
+        #e7492e 50%,
+        transparent 50%
+        ),
+    radial-gradient(
+      circle 1050px at center bottom,
+      #e7492e 50%,
+      transparent 50%
+      );
+
+    background-size: 200% 200%; /* Adjust the size so only a quarter is visible */
+    background-repeat: no-repeat;
+    background-position: top, bottom center; /* Reposition to upper right corner */
+  }
+}
+
 #app {
   text-align: center;
   color: #2c3e50;

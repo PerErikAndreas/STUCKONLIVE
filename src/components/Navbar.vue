@@ -123,17 +123,27 @@ export default {
     justify-content: space-between;
     padding: 22px 10px  0 20px;
   }
+
   .my-main-nav {
-    display: flex;
+  position: absolute; /* Positioned absolutely */
+  top: 20px; /* Start just below the navbar */
+  right: 0; /* Align to the left of the parent */
+  background: transparent;
+  border-radius: 12px 12px 12px 12px;
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
-  }
+}
+
   .my-main-nav li {
     margin: 0;
   }
   .my-nav-links {
     margin-left: 40px;
+    text-decoration: none;
+    color: white;
   }
   .my-logo {
     margin-top: 0;
@@ -159,11 +169,20 @@ export default {
     height: 22px; /* Adjust based on your navbar height */
   }
 }
-@media (min-width: 1075px) { /* Target screens larger than 1024px */
+@media (min-width: 1395px) { /* Target screens larger than 1024px */
   .my-navbar {
     margin: 0 auto; /* Auto margins to horizontally center the #app element */
-    padding: 15px 10px 0 50px;
+    padding: 22px 10px 0 50px;
 
   }
+  .my-main-nav {
+
+  background: transparent;
+
+}
+.my-nav-links {
+    color: #e7492e;
+  }
+  
 }
 </style>

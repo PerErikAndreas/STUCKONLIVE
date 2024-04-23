@@ -56,6 +56,7 @@ export default {
   justify-content: start;
   color: #e7492e;
   font-family: futura;
+  margin-bottom: 5px;
 }
 .calendar-title h2 {
   margin: 0;

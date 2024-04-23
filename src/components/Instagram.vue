@@ -2,7 +2,7 @@
   <div class="container">
     <div class="circle-section">
       <div class="text-content">
-        <h1>FÖLJ OSS!</h1>
+        <h2>FÖLJ OSS!</h2>
         <p>
           På vår instagram postar vi dagliga musiktips, kommande spelningar och
           evenemang @stuckonlive
@@ -32,8 +32,8 @@ export default {
 
 <style scoped>
 .instagram-post-container {
-  padding: 20px 20px 10px 20px;
-  border-radius: 4px;
+  padding: 5px 5px 0px 5px;
+  border-radius: 8px;
   border: solid 1px transparent; /* Transparent border by default */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
@@ -61,7 +61,7 @@ export default {
   text-align: center;
 }
 
-.text-content h1 {
+.text-content h2 {
   color: white;
   /* Add more styles for your heading */
 }
@@ -71,12 +71,6 @@ export default {
   font-family: Helvetica;
 
   /* Add more styles for your paragraph */
-}
-
-.phone-section img {
-  width: 200px;
-  height: auto;
-  z-index: 1; /* To ensure it's above the circle */
 }
 
 @media (min-width: 700px) {
@@ -95,6 +89,8 @@ margin-left: 50px;
 
 .instagram-post-container {
 margin-right: 50px;
+padding: 0px 20px 0px 20px;
+
 }
 }
 @media (min-width: 700px) and (max-width: 1016px) {
@@ -103,6 +99,16 @@ margin-right: 50px;
 }
 .circle-section {
  scale: 0.8;
+ background: none;
+ 
+}
+.circle-section p{
+ color: #e7492e;
+}
+
+.circle-section h2{
+ color: #e7492e;
 }
 }
+
 </style>

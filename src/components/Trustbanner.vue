@@ -3,24 +3,27 @@
     <div class="icon-container">
       <a href="/" class="my-logo"
         ><img class="stuckon-logo" src="../assets/musicnote.png"
-      /></a>
+      /></a><div class="icons-title">
       120 <br>SPELNINGAR
+    </div>
     </div>
 
     <div class="icon-container">
       <a href="/" class="my-logo"
         ><img class="stuckon-logo" src="../assets/people.png"
-      /></a>
+      /></a><div class="icons-title">
 
       3000 <br>BESÖKARE
+    </div>
     </div>
 
     <div class="icon-container">
       <a href="/" class="my-logo"
         ><img class="stuckon-logo" src="../assets/location.png"
-      /></a>
+      /></a><div class="icons-title">
 
       4 <br>SCENER
+    </div>
     </div>
   </div>
 </template>
@@ -31,6 +34,9 @@ export default {
 };
 </script>
 <style scoped>
+.icons-title {
+  font-size: 14px;
+}
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -51,6 +57,9 @@ export default {
 @media (min-width: 700px) {
   .main-1 {
 border-radius: 24px;;
+}
+.icons-title {
+  font-size: 20px;
 }
 }
 </style>
