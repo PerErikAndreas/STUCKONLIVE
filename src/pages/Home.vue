@@ -2,6 +2,7 @@
   <div class="main">
     <Hero />
     <Tickets />
+    <Sponsorbanner />
     <Instagram />
     <Carousel2 />
     <Trustbanner />
@@ -12,6 +13,7 @@
 <script>
 import Hero from "@/components/Hero";
 import Tickets from "@/components/Tickets";
+import Sponsorbanner from "@/components/Sponsorbanner";
 import Instagram from "@/components/Instagram";
 import Trustbanner from "@/components/Trustbanner";
 import Carousel2 from "@/components/Carousel2";
@@ -22,6 +24,7 @@ export default {
   components: {
     Hero,
     Tickets,
+    Sponsorbanner,
     Instagram,
     Trustbanner,
     Carousel2,

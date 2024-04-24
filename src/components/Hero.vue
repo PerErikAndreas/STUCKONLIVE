@@ -140,7 +140,7 @@ export default {
   }
 
   .hero-container {
-    padding: 100px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     text-align: start;
     width: 90%;
     justify-content: start;
@@ -150,7 +150,7 @@ export default {
   .paragraph-container {
     margin-bottom: 42px;
     padding: 0px;
-    width: 50%;
+    width: 40%;
   }
 
   .title-container h1 {
@@ -177,7 +177,7 @@ export default {
   }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 920px) {
   .title-container h1 {
     font-size: 68px;
     line-height: 62px;

@@ -2,38 +2,33 @@
   <div class="main-1">
     <div class="icon-container">
       <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/musicnote.png"
-      /></a><div class="icons-title">
-      100+ <br>SPELNINGAR
-    </div>
+        ><img class="sponsor-logo" src="../assets/regionen-logo.png"
+      /></a>
     </div>
 
     <div class="icon-container">
       <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/visitors-icon.png"
-      /></a><div class="icons-title">
-
-      10,000+ <br>BESÖKARE
-    </div>
+        ><img class="sponsor-logo" src="../assets/sensus-logo.png"
+      /></a>
     </div>
 
     <div class="icon-container">
       <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/location.png"
-      /></a><div class="icons-title">
-
-      4 <br>SCENER
-    </div>
+        ><img class="sponsor-logo" src="../assets/circle-stuckon-logo.png"
+      /></a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Trustbanner",
+  name: "Sponsorbanner",
 };
 </script>
 <style scoped>
+.sponsor-logo {
+  width: 150px;
+}
 .icons-title {
   font-size: 14px;
 }
@@ -44,7 +39,7 @@ export default {
   font-family: futura;
 }
 .main-1 {
-  margin: 62px 0px 410px 0px;
+  margin: 82px 0px 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
