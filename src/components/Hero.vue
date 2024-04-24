@@ -16,7 +16,7 @@
     </div>
     <div class="input-and-ctabutton-container">
       <div class="ml-embedded" data-form="X9IuFM"></div>
-      <div class="field-graphic"></div>
+      <div class="lottie-container" ref="lottieContainer"></div>
     </div>
     <div class="arrow-container">
       <img src="../assets/arrow-graphic.png" />
@@ -25,10 +25,26 @@
 </template>
 
 <script>
+import lottie from 'lottie-web';
+import animationData from '../assets/animation.json';
+
 export default {
   name: "Hero",
+  mounted() {
+    this.loadAnimation();
+  },
+  methods: {
+    loadAnimation() {
+      lottie.loadAnimation({
+        container: this.$refs.lottieContainer,
+        animationData: animationData,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+      });
+    }
+  }
 };
-
 (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
@@ -37,6 +53,15 @@ export default {
 </script>
 
 <style scoped>
+.lottie-container {
+display: none;
+}
+
+/* Make the SVG inside cover the entire space */
+.lottie-container svg {
+  display: none;
+
+}
   .ml-embedded {
     width: 100%;
   }
@@ -122,6 +147,24 @@ export default {
 }
 
 @media (min-width: 700px) {
+  .lottie-container {
+    display: inline;
+  margin-top: 20px;
+  background: #e7492e;
+  padding: 0 15px 0 15px;
+  border-radius: 20px;
+  height: 110px;
+  width: 100%;
+  overflow: hidden; /* Add overflow: hidden to crop any overflow */
+}
+
+/* Make the SVG inside cover the entire space */
+.lottie-container svg {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
+}
   .triangle-graphic {
     display: inline;
   }
