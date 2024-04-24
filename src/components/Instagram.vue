@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <div class="instagram-post-container">
+      <div class="greybackground">
     <div class="circle-section">
       <div class="text-content">
         <h2>FÖLJ OSS!</h2>
@@ -9,12 +11,9 @@
         </p>
       </div>
     </div>
-    <div class="arrow-container">
-      <img class="arrow-right" src="../assets/arrow-graphic.png" />
-    </div>
-    <div className="instagram-post-container">
     <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed>
   </div>
+</div>
 </div>
 </template>
 
@@ -32,26 +31,38 @@ export default {
 
 <style scoped>
 .instagram-post-container {
-  padding: 5px 5px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
   border-radius: 8px;
+  width: 80%;
+  margin-top: 62px;
   border: solid 1px transparent; /* Transparent border by default */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
-.arrow-right {
-  margin: 40px 0 30px 0;
-  transform: rotate(0deg); /* Initial rotation */
+
+.greybackground {
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   margin-top: 82px;
   display: flex;
+  width: 100%;
+  margin: 0 15px 0 15px;
   font-family: futura;
   flex-direction: column;
   align-items: center;
 }
 
 .circle-section {
-  background-color: #e7492e; /* The red background color */
+  color: #e7492e; /* The red background color */
   border-radius: 50%;
   width: 340px; /* Adjust as needed */
   height: 340px; /* Adjust as needed */
@@ -62,12 +73,12 @@ export default {
 }
 
 .text-content h2 {
-  color: white;
+  color: #e7492e;
   /* Add more styles for your heading */
 }
 
 .text-content p {
-  color: white;
+  color: #e7492e;
   font-family: Helvetica;
 
   /* Add more styles for your paragraph */
@@ -80,25 +91,29 @@ export default {
     justify-content: space-between;
     flex-direction: row;
 }
+.greybackground {
+  flex-direction: row;
+  justify-content: space-between;
+}
 .arrow-right {
   transform: rotate(270deg); /* Initial rotation */
-}
-.circle-section {
-margin-left: 50px;
 }
 
 .instagram-post-container {
 margin-right: 50px;
-padding: 0px 20px 0px 20px;
+margin-left: 50px;
+margin-top: 62px;
+width: 100%;
+padding: 20px 24px 20px 24px;
+flex-direction: row;
 
 }
 }
-@media (min-width: 700px) and (max-width: 1016px) {
+@media (min-width: 700px) {
   .arrow-right {
   display: none;
 }
 .circle-section {
- scale: 0.8;
  background: none;
  
 }

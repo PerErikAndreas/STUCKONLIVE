@@ -27,7 +27,7 @@ export default {
 </script>
 <style scoped>
 .sponsor-logo {
-  width: 150px;
+  width: 75px;
 }
 .icons-title {
   font-size: 14px;
@@ -54,8 +54,9 @@ export default {
   .main-1 {
 border-radius: 24px;;
 }
-.icons-title {
-  font-size: 20px;
+
+.sponsor-logo {
+  width: 100px;
 }
 }
 </style>

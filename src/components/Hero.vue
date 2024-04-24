@@ -162,6 +162,7 @@ display: none;
 .lottie-container svg {
   display: inline;
   width: 100%;
+  border-radius: 20px;
   height: 100%;
   object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
