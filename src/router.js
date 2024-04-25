@@ -24,7 +24,7 @@ const router = createRouter({
       children: [
         route('/', 'Home'),
         route('/om-oss', 'About'), // Corrected the comment to match the route
-        route('/kontakt', 'Kontakt'),
+        route('/kontakt', 'Contact'),
       ]
     },
     { path: '/:pathMatch(.*)*', redirect: '/' } // Handle all other paths

@@ -64,8 +64,8 @@ export default {
 .circle-section {
   color: #e7492e; /* The red background color */
   border-radius: 50%;
-  width: 340px; /* Adjust as needed */
-  height: 340px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,8 @@ flex-direction: row;
 }
 .circle-section {
  background: none;
- 
+ width: 350px; /* Adjust as needed */
+  height: 350px; /* Adjust as needed */
 }
 .circle-section p{
  color: #e7492e;
