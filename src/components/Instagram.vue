@@ -78,7 +78,7 @@ export default {
 }
 
 .text-content p {
-  color: #e7492e;
+  color: #3F3F46;
   font-family: Helvetica;
 
   /* Add more styles for your paragraph */
@@ -117,13 +117,6 @@ flex-direction: row;
  background: none;
  width: 350px; /* Adjust as needed */
   height: 350px; /* Adjust as needed */
-}
-.circle-section p{
- color: #e7492e;
-}
-
-.circle-section h2{
- color: #e7492e;
 }
 }
 

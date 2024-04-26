@@ -1,31 +1,27 @@
 <template>
-  <div class="main-1">
-    <div class="icon-container">
-      <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/musicnote.png"
-      /></a><div class="icons-title">
+<div class="main-1">
+  <div class="icon-container">
+    <img class="stuckon-logo" src="../assets/musicnote.png" alt="Music Note Icon" aria-label="100+ Spelningar">
+    <div class="icons-title">
       100+ <br>SPELNINGAR
     </div>
-    </div>
+  </div>
 
-    <div class="icon-container">
-      <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/visitors-icon.png"
-      /></a><div class="icons-title">
-
+  <div class="icon-container">
+    <img class="stuckon-logo" src="../assets/visitors-icon.png" alt="Visitors Icon" aria-label="10,000+ Besökare">
+    <div class="icons-title">
       10,000+ <br>BESÖKARE
     </div>
-    </div>
+  </div>
 
-    <div class="icon-container">
-      <a href="/" class="my-logo"
-        ><img class="stuckon-logo" src="../assets/location.png"
-      /></a><div class="icons-title">
-
+  <div class="icon-container">
+    <img class="stuckon-logo" src="../assets/location.png" alt="Location Icon" aria-label="4 Scener">
+    <div class="icons-title">
       4 <br>SCENER
     </div>
-    </div>
   </div>
+</div>
+
 </template>
 
 <script>

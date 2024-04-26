@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <Info />
+    <Contact />
    </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Contact from "@/components/Contact";
 
 export default {
-  name: "Contact",
+  name: "ContactPage",
   components: {
     Contact,
   }

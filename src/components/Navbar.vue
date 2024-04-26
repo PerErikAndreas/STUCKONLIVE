@@ -8,22 +8,19 @@
       </head>
       <body>
         <nav class="my-navbar">
-          <span class="my-navbar-toggle" id="js-navbar-toggle"> ≡ </span>
-          <a href="/" class="my-logo"
-            ><img
-              class="stuckon-logowhite"
-              src="../assets/stuckon-logo-white.png" /><img
-              class="stuckon-logored"
-              src="../assets/stuckon-logo-red.png"
-          /></a>
-          <ul class="my-main-nav" id="js-menu">
-            <li>
-              <a href="/om-oss" class="my-nav-links">Om oss</a>
-            </li>
-            <li>
-              <a async href="/kontakt" class="my-nav-links">Kontakt</a>
-            </li>
-          </ul>
+          <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
+        <a href="/" class="my-logo" alt="Stuckon Logo White" aria-label="Stuckon Logo">
+          <img class="stuckon-logowhite" src="../assets/stuckon-logo-white.png" alt="Stuckon Logo White" aria-label="Stuckon Logo">
+          <img class="stuckon-logored" src="../assets/stuckon-logo-red.png" alt="Stuckon Logo Red" aria-hidden="true">
+        </a>
+        <ul class="my-main-nav" id="js-menu">
+          <li>
+            <a href="/om-oss" class="my-nav-links">Om oss</a>
+          </li>
+          <li>
+            <a href="/kontakt" class="my-nav-links">Kontakt</a>
+          </li>
+        </ul>
         </nav>
       </body>
     </html>

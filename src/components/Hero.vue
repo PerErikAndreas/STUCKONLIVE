@@ -1,27 +1,27 @@
 <template>
-  <div class="hero-container">
-    <img class="triangle-graphic" src="../assets/triangle-graphic.png" />
-    <div class="title-container">
-      <h1>
-        Utforska
-        <div>din&nbsp;lokala</div>
-        musikscen
-      </h1>
-    </div>
-    <div class="paragraph-container">
-      <p>
-        Mer än 100 genomförda konserter med internationella och lokala akter –
-        upplev musiken på nära håll!
-      </p>
-    </div>
-    <div class="input-and-ctabutton-container">
-      <div class="ml-embedded" data-form="X9IuFM"></div>
-      <div class="lottie-container" ref="lottieContainer"></div>
-    </div>
-    <div class="arrow-container">
-      <img src="../assets/arrow-graphic.png" />
-    </div>
+<div class="hero-container">
+  <img class="triangle-graphic" src="../assets/triangle-graphic.png" alt="White Triangle Graphic Element" aria-label="Utforska din lokala musikscen">
+  <div class="title-container">
+    <h1>
+      Utforska
+      <div>din&nbsp;lokala</div>
+      musikscen
+    </h1>
   </div>
+  <div class="paragraph-container">
+    <p>
+      Mer än 100 genomförda konserter med internationella och lokala akter –
+      upplev musiken på nära håll!
+    </p>
+  </div>
+  <div class="input-and-ctabutton-container">
+    <div class="ml-embedded" data-form="X9IuFM"></div>
+    <div class="lottie-container" ref="lottieContainer"></div>
+  </div>
+  <div class="arrow-container">
+    <img src="../assets/arrow-graphic.png" alt="Red Arrow Pointing Down" aria-label="Scroll down">
+  </div>
+</div>
 </template>
 
 <script>
@@ -121,6 +121,7 @@ display: none;
 
 .paragraph-container p {
   max-width: 300px;
+  color: #3F3F46;
 }
 .field-graphic {
   display: none;
