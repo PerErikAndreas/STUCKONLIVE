@@ -121,7 +121,7 @@ display: none;
 
 .paragraph-container p {
   max-width: 300px;
-  color: #3F3F46;
+  color: #FFFFFF;
 }
 .field-graphic {
   display: none;
@@ -182,6 +182,7 @@ display: none;
 
   .paragraph-container p {
   max-width: 100%;
+  color: #3F3F46;
   }
 
   .hero-container {

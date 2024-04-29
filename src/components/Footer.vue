@@ -3,8 +3,8 @@
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
-          <li><a href="/Contact">Kontakt</a></li>
-          <li><a href="/About">Om oss</a></li>
+          <li><a href="/Kontakt">Kontakt</a></li>
+          <li><a href="/Om-oss">Om oss</a></li>
         </ul>
       </nav>
       <div class="footer-policies">
@@ -24,7 +24,6 @@
         </a>
       </div>
     </div>
-    <div class="footer-copy">© 2024 Stuck On Live. All Rights Reserved.</div>
   </footer>
 </template>
 
@@ -40,6 +39,7 @@ export default {
   color: white;
   padding: 2rem;
   text-align: center;
+  margin-bottom: 30px;
 }
 .footer-content {
   max-width: 1200px;
@@ -57,11 +57,13 @@ export default {
 .footer-nav a {
   color: white;
   text-decoration: none;
+  font-family: futura;
+  font-size: 22px;
 }
 .footer-policies a {
   color: white;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 16px;
 }
 .footer-policies {
   margin-bottom: 1rem;
@@ -70,8 +72,8 @@ export default {
   margin: 0 0.5rem;
 }
 .footer-social img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 .footer-copy {
   font-size: 0.75rem;

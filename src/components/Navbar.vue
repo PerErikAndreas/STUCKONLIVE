@@ -81,6 +81,8 @@ export default {
 .my-nav-links {
   text-decoration: none;
   color: #e7492e;
+  font-family: futura;
+  font-size: 22px;
 }
 .my-main-nav li {
   text-align: right;
@@ -89,6 +91,7 @@ export default {
 }
 .my-logo {
   display: inline-block;
+  font-family: futura;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
@@ -123,7 +126,7 @@ export default {
 
   .my-main-nav {
   position: absolute; /* Positioned absolutely */
-  top: 20px; /* Start just below the navbar */
+  top: 15px; /* Start just below the navbar */
   right: 0; /* Align to the left of the parent */
   background: transparent;
   border-radius: 12px 12px 12px 12px;

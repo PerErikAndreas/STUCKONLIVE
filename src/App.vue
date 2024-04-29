@@ -24,13 +24,16 @@ body {
       #e7492e 50%,
       transparent 50%
     );
-  background-size: 100% 200%;
+  background-size: 
+    100% 50%, /* Top circle */
+    100% 50%; /* Bottom circle, reduced in height */
   background-repeat: no-repeat;
-  background-position:
-    top center,
+  background-position: 
+    top center, 
     bottom center;
   min-height: 50vh;
 }
+
 
 /* Media query for screens with a max-width of 400px */
 @media (min-width: 700px) {
@@ -41,7 +44,7 @@ body {
         transparent 50%
         ),
     radial-gradient(
-      circle 1050px at center bottom,
+      circle 950px at center bottom,
       #e7492e 50%,
       transparent 50%
       );

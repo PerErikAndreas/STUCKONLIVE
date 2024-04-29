@@ -40,7 +40,7 @@ export default {
   font-family: futura;
 }
 .main-1 {
-  margin: 62px 0px 410px 0px;
+  margin: 62px 0px 360px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
