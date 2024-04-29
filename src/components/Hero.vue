@@ -205,7 +205,7 @@ display: none;
   }
 
   .ml-embedded {
-    width: 40vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
   }
