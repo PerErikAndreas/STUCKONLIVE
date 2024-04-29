@@ -1,12 +1,5 @@
 <template>
   <header>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
-      <body>
         <nav class="my-navbar">
           <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
         <a href="/" class="my-logo" alt="Stuckon Logo White" aria-label="Stuckon Logo">
@@ -22,8 +15,6 @@
           </li>
         </ul>
         </nav>
-      </body>
-    </html>
   </header>
 </template>
 
@@ -61,6 +52,7 @@ export default {
   font-size: 18px;
   align-items: center;
 }
+
 .my-main-nav {
   list-style-type: none;
   display: none; /* Initially hidden */
@@ -83,6 +75,7 @@ export default {
   color: #e7492e;
   font-family: futura;
   font-size: 22px;
+
 }
 .my-main-nav li {
   text-align: right;
@@ -152,9 +145,8 @@ export default {
   .my-navbar-toggle {
     display: none;
   }
-  .my-logo:hover,
   .my-nav-links:hover {
-    color: #982815;
+    text-decoration: underline;
   }
   .stuckon-logowhite {
     display: none;

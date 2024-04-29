@@ -2,7 +2,7 @@
   <div class="container">
     <div class="instagram-post-container">
       <div class="greybackground">
-    <div class="circle-section">
+    <div class="text-section">
       <div class="text-content">
         <h2>FÖLJ OSS!</h2>
         <p>
@@ -33,7 +33,7 @@ export default {
 .instagram-post-container {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 15px 20px 15px;
   border-radius: 8px;
   width: 80%;
   margin-top: 62px;
@@ -61,30 +61,36 @@ export default {
   align-items: center;
 }
 
-.circle-section {
+.text-section {
   color: #e7492e; /* The red background color */
-  border-radius: 50%;
-  width: 300px; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.text-content {
+  margin: 80px 0 80px 0;
+}
+
 .text-content h2 {
   color: #e7492e;
+  margin-top: 20px;
   /* Add more styles for your heading */
 }
 
 .text-content p {
   color: #3F3F46;
   font-family: Helvetica;
+  max-width: 300px;
+
 
   /* Add more styles for your paragraph */
 }
 
 @media (min-width: 700px) {
+
   .container {
     width: 100%;
     display: flex;

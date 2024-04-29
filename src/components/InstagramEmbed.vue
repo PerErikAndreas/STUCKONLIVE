@@ -3,11 +3,11 @@
       <blockquote class="instagram-media" 
         :data-instgrm-permalink="permalink" 
         data-instgrm-version="14" 
-        style="background:#FFF; border:1px; border-radius:12px; 
-               box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); scale: 0.9;
-               margin: 1px; max-width:300px; min-width:280px; padding:0px;
-               width:90.375%; width:-webkit-calc(90% - 2px); width:calc(90% - 2px);
-               height: 350px;"> <!-- Adjust the height here -->
+        style="background:#FFF; border:1px solid black; border-radius:12px; 
+         box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); transform: scale(0.9);
+         margin: 1px; max-width:290px; min-width:280px; padding:0;
+         width:calc(90% - 2px);
+         height: 340px;">
       </blockquote>
     </div>
   </template>

@@ -20,13 +20,13 @@ body {
       transparent 50%
     ),
     radial-gradient(
-      circle 950px at center bottom,
+      circle 750px at center bottom,
       #e7492e 50%,
       transparent 50%
     );
   background-size: 
     100% 50%, /* Top circle */
-    100% 50%; /* Bottom circle, reduced in height */
+    100% 30%; /* Bottom circle, reduced in height */
   background-repeat: no-repeat;
   background-position: 
     top center, 

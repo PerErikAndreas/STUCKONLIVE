@@ -3,7 +3,7 @@
   <div class="icon-container">
     <img class="stuckon-logo" src="../assets/musicnote.png" alt="Music Note Icon" aria-label="100+ Spelningar">
     <div class="icons-title">
-      100+ <br>SPELNINGAR
+      100+ <br>EVENTS
     </div>
   </div>
 
@@ -40,7 +40,7 @@ export default {
   font-family: futura;
 }
 .main-1 {
-  margin: 62px 0px 360px 0px;
+  margin: 62px 0px 240px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,6 +53,8 @@ export default {
 
 @media (min-width: 700px) {
   .main-1 {
+    margin: 62px 0px 340px 0px;
+
 border-radius: 24px;;
 }
 .icons-title {

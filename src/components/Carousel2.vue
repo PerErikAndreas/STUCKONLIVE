@@ -1,6 +1,6 @@
 <template>
     <div class="calendar-title">
-      <h2>GENOMFÖRDA</h2>
+      <h2>TIDIGARE EVENTS</h2>
     </div>
     <Carousel :autoplay="2000" :wrap-around="true">
       <Slide v-for="(group, index) in slides" :key="index">

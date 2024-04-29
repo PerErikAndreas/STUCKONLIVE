@@ -20,6 +20,7 @@ export default {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
   gap: 20px;
   height: 100vh;
 }

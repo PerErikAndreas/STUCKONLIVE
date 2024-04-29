@@ -19,7 +19,7 @@
     <div class="lottie-container" ref="lottieContainer"></div>
   </div>
   <div class="arrow-container">
-    <img src="../assets/arrow-graphic.png" alt="Red Arrow Pointing Down" aria-label="Scroll down">
+    <!-- <img src="../assets/arrow-graphic.png" alt="Red Arrow Pointing Down" aria-label="Scroll down"> -->
   </div>
 </div>
 </template>
@@ -71,7 +71,7 @@ display: none;
   }
 
 .arrow-container {
-  margin: 74px 0 74px 0;
+  margin: 0px 0 44px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,9 +212,8 @@ display: none;
 
   .input-and-ctabutton-container {
     display: flex;
-    gap: 10px;
-    flex-direction: row;
-    margin-left: -20px;
+    gap: 5px;
+    flex-direction: row-reverse;
   }
   .arrow-container {
     display: flex;
@@ -274,6 +273,7 @@ display: none;
 }
 .paragraph-container p {
   max-width: 300px;
+  color: #FFFFFF;
 }
 }
 </style>
