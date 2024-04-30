@@ -58,7 +58,7 @@ export default {
     flex-direction: column;
   height: 110px;
   margin-left: 20px;
-  width: 93%;
+  width: 90%;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -190,7 +190,7 @@ export default {
 
   .paragraph-container p {
   max-width: 100%;
-  color: #3F3F46;
+  color: #e7492e;
   }
 
   .hero-container {
