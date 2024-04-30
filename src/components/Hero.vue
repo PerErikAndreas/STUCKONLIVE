@@ -157,10 +157,10 @@ export default {
 
 @media (min-width: 700px) {
   .lottie-container {
-    display: inline;
   margin-top: 20px;
   /* border: 5px solid #e7492e; */
   /* padding: 0 15px 0 15px; */
+  margin-left: 0px;
   border-radius: 20px;
   height: 110px;
   width: 100%;

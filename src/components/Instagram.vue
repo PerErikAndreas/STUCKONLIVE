@@ -52,7 +52,7 @@ export default {
 }
 
 .container {
-  margin-top: 82px;
+  margin-top: 72px;
   display: flex;
   width: 100%;
   margin: 0 15px 0 15px;
