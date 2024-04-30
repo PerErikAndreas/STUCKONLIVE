@@ -161,7 +161,7 @@ export default {
     height: 22px; /* Adjust based on your navbar height */
   }
 }
-@media (min-width: 1395px) { /* Target screens larger than 1024px */
+@media (min-width: 1400px) { /* Target screens larger than 1024px */
   .my-navbar {
     margin: 0 auto; /* Auto margins to horizontally center the #app element */
     padding: 22px 10px 0 20px;
@@ -176,5 +176,12 @@ export default {
     color: #e7492e;
   }
   
+}
+
+@media (min-width: 1400px) and (max-width: 1490px) {
+
+  .my-main-nav {
+  flex-direction: column;
+}
 }
 </style>
