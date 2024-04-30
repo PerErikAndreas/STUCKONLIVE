@@ -53,14 +53,22 @@ export default {
 </script>
 
 <style scoped>
-.lottie-container {
-display: none;
+  .lottie-container {
+    display: flex;
+    flex-direction: column;
+  height: 110px;
+  margin-left: 20px;
+  width: 93%;
+  overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
 /* Make the SVG inside cover the entire space */
 .lottie-container svg {
-  display: none;
-
+  display: inline;
+  width: 100%;
+  border-radius: 20px;
+  height: 120%;
+  object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
   .ml-embedded {
     width: 100%;
