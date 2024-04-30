@@ -148,7 +148,7 @@ export default defineComponent({
 }
 
 .calendar-title h2 {
-margin-bottom: 0px;
+margin-bottom: 5px;
 }
 </style>
 

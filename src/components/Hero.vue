@@ -151,8 +151,8 @@ display: none;
   .lottie-container {
     display: inline;
   margin-top: 20px;
-  background: #e7492e;
-  padding: 0 15px 0 15px;
+  /* border: 5px solid #e7492e; */
+  /* padding: 0 15px 0 15px; */
   border-radius: 20px;
   height: 110px;
   width: 100%;
@@ -164,7 +164,7 @@ display: none;
   display: inline;
   width: 100%;
   border-radius: 20px;
-  height: 100%;
+  height: 120%;
   object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
   .triangle-graphic {
