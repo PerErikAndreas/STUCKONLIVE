@@ -1,0 +1,27 @@
+{
+    "name": "Stuck On - Live",
+    "short_name": "Stuckons",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "description": "An page about StockOn Live with tickes and past shows",
+    "dir": "ltr",
+    "lang": "sv-SV",
+    "orientation": "any",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "icon/lowres.webp",
+        "sizes": "48x48",
+        "type": "image/webp"
+      },
+      {
+        "src": "icon/hd_hi.ico",
+        "sizes": "72x72 96x96 128x128 256x256",
+        "type": "image/x-icon"
+      }
+    ],
+    "scope": "/",
+    "prefer_related_applications": false
+  }
+  

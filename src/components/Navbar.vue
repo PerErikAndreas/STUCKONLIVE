@@ -64,16 +64,16 @@ export default {
   border-radius: 12px 0px 12px 12px;
   z-index: 1000; /* Ensure it's above other content */
 }
-.my-logo {
+/* .my-logo {
   padding-bottom: 6px;
   color: #e7492e;
   font-weight: bold;
   text-decoration: none;
-}
+} */
 .my-nav-links {
   text-decoration: none;
   color: #e7492e;
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   font-size: 22px;
 
 }
@@ -84,7 +84,7 @@ export default {
 }
 .my-logo {
   display: inline-block;
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
@@ -152,13 +152,13 @@ export default {
     display: none;
     width: auto;
     margin-top: 15px;
-    height: 22px; /* Adjust based on your navbar height */
+    height: 32px; /* Adjust based on your navbar height */
   }
   .stuckon-logored {
     display: inline;
     width: auto;
     margin-top: 15px;
-    height: 22px; /* Adjust based on your navbar height */
+    height: 32px; /* Adjust based on your navbar height */
   }
 }
 @media (min-width: 1400px) { /* Target screens larger than 1024px */

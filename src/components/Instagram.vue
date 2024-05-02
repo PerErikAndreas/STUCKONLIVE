@@ -56,7 +56,7 @@ export default {
   display: flex;
   width: 100%;
   margin: 0 15px 0 15px;
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   flex-direction: column;
   align-items: center;
 }

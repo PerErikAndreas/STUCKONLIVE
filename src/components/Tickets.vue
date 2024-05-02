@@ -55,7 +55,7 @@ export default {
   display: flex;
   justify-content: start;
   color: #e7492e;
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   margin-bottom: 5px;
 }
 .calendar-title h2 {

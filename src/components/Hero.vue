@@ -83,27 +83,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: bounce 10s infinite;
-  -webkit-animation: bounce 10s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-  }
 }
 
 .triangle-graphic {
@@ -146,11 +125,11 @@ export default {
 }
 
 .title-container h1 {
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   font-size: 48px;
   line-height: 42px;
   font-weight: 900;
-  margin-bottom: 44px;
+  margin-bottom: 24px;
   letter-spacing: -5%;
   text-transform: uppercase;
 }
@@ -220,7 +199,8 @@ export default {
 
   .input-and-ctabutton-container {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    margin-left: 10px;
     flex-direction: row-reverse;
   }
   .arrow-container {

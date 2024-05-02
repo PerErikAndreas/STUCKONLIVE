@@ -37,7 +37,7 @@ export default {
   flex: 1; /* Each container takes up an equal amount of space */
   flex-direction: column;
   text-align: center; /* Center the content horizontally */
-  font-family: futura;
+  font-family: "Sora", sans-serif;
 }
 .main-1 {
   margin: 62px 0px 240px 0px;

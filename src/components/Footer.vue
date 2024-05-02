@@ -57,7 +57,7 @@ export default {
 .footer-nav a {
   color: white;
   text-decoration: none;
-  font-family: futura;
+  font-family: "Sora", sans-serif;
   font-size: 22px;
 }
 .footer-policies a {
