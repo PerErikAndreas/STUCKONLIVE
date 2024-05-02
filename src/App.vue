@@ -16,12 +16,12 @@ body {
   padding: 0;
   background: radial-gradient(
       circle 950px at center top,
-      #8E9AAD 50%,
+      #e7492e 50%,
       transparent 50%
     ),
     radial-gradient(
       circle 750px at center bottom,
-      #8E9AAD 50%,
+      #e7492e 50%,
       transparent 50%
     );
   background-size: 
@@ -40,12 +40,12 @@ body {
   body {
     background: radial-gradient(
         circle 950px at right top,
-        #8E9AAD 50%,
+        #e7492e 50%,
         transparent 50%
         ),
     radial-gradient(
       circle 950px at center bottom,
-      #8E9AAD 50%,
+      #e7492e 50%,
       transparent 50%
       );
 
@@ -59,12 +59,12 @@ body {
   body {
     background: radial-gradient(
         circle 1050px at top,
-        #8E9AAD 50%,
+        #e7492e 50%,
         transparent 50%
         ),
     radial-gradient(
       circle 1050px at center bottom,
-      #8E9AAD 50%,
+      #e7492e 50%,
       transparent 50%
       );
 
