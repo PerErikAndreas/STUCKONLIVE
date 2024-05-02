@@ -156,7 +156,6 @@ margin-bottom: 5px;
   .carousel__item {
 border-radius: 8px;
 width: 90%;
-max-width: 923px;
 
 }
 }
@@ -164,7 +163,7 @@ max-width: 923px;
 @media (min-width: 1000px) {
   .calendar-title h2 {
 margin-bottom: 5px;
-margin-left: 20px;
+margin-left: 10px;
 }
 
 }
