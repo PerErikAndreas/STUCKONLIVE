@@ -181,7 +181,7 @@ export default {
   }
 
   .paragraph-container {
-    margin-bottom: 42px;
+    margin-bottom: 52px;
     padding: 0px;
     width: 40%;
   }
