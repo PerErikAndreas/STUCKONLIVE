@@ -1,7 +1,7 @@
 <template>
   <div class="calendar-main">
     <div class="calendar-title">
-      <H2>BILJETTER</H2>
+      <H2>KOMMANDE EVENTS</H2>
     </div>
     <div class="billeto-widget-container">
       <billetto-organiser-widget

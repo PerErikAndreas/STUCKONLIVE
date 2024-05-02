@@ -169,7 +169,7 @@ export default {
 
   .paragraph-container p {
   max-width: 100%;
-  color: #e7492e;
+  color: #8E9AAD;
   }
 
   .hero-container {

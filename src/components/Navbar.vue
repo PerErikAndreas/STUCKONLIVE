@@ -119,7 +119,7 @@ export default {
 
   .my-main-nav {
   position: absolute; /* Positioned absolutely */
-  top: 15px; /* Start just below the navbar */
+  top: 22px; /* Start just below the navbar */
   right: 0; /* Align to the left of the parent */
   background: transparent;
   border-radius: 12px 12px 12px 12px;
