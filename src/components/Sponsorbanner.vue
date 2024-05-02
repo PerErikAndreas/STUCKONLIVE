@@ -46,18 +46,27 @@ export default {
   justify-content: space-around;
   align-items: center;
   background: #e7492e;
-  border-radius: 24px;;
-  width: 90%;
+  border-radius: 6px;;
+  width: 92%;
   padding: 40px 0px 40px 0px;
 }
 
 @media (min-width: 700px) {
   .main-1 {
-border-radius: 24px;;
+border-radius: 8px;
+width: 90%;
 }
 
 .sponsor-logo {
   width: 100px;
+}
+}
+
+@media (min-width: 900px) {
+  .main-1 {
+width: 92%;
+max-width: 923px;
+
 }
 }
 </style>

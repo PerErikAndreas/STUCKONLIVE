@@ -111,7 +111,7 @@ export default defineComponent({
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%; /* Ensures that the carousel item takes full width */
+  width: 92%; /* Ensures that the carousel item takes full width */
   height: auto; /* Allows the height to adjust based on the image */
   margin: 10px
 }
@@ -127,6 +127,7 @@ export default defineComponent({
 .image-container img {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
   object-fit: cover; /* Ensures images cover the area without distorting */
 }
 
@@ -150,5 +151,23 @@ export default defineComponent({
 .calendar-title h2 {
 margin-bottom: 5px;
 }
+
+@media (min-width: 700px) {
+  .carousel__item {
+border-radius: 8px;
+width: 90%;
+max-width: 923px;
+
+}
+}
+
+@media (min-width: 1000px) {
+  .calendar-title h2 {
+margin-bottom: 5px;
+margin-left: 20px;
+}
+
+}
+
 </style>
 

@@ -64,8 +64,8 @@ export default {
 
 @media (min-width: 700px) {
   .calendar-main {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 </style>

@@ -46,16 +46,18 @@ export default {
   justify-content: space-around;
   align-items: center;
   background: #e7492e;
-  border-radius: 24px;;
-  width: 90%;
+  border-radius: 8px;;
+  width: 92%;
   padding: 40px 0px 40px 0px;
 }
 
 @media (min-width: 700px) {
   .main-1 {
     margin: 62px 0px 340px 0px;
+    width: 90%;
+    max-width: 923px;
 
-border-radius: 24px;;
+border-radius: 8px;
 }
 .icons-title {
   font-size: 20px;

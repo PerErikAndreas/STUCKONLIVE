@@ -14,14 +14,14 @@
       upplev musiken på nära håll!
     </p>
   </div>
-  <div class="input-and-ctabutton-container">
+</div>
+<div class="input-and-ctabutton-container">
     <div class="ml-embedded" data-form="X9IuFM"></div>
     <div class="lottie-container" ref="lottieContainer"></div>
   </div>
   <div class="arrow-container">
     <!-- <img src="../assets/arrow-graphic.png" alt="Red Arrow Pointing Down" aria-label="Scroll down"> -->
   </div>
-</div>
 </template>
 
 <script>
@@ -58,7 +58,7 @@ export default {
     flex-direction: column;
   height: 110px;
   margin-left: 20px;
-  width: 90%;
+  width: 93%;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -169,15 +169,16 @@ export default {
 
   .paragraph-container p {
   max-width: 100%;
-  color: #8E9AAD;
+  color: #e7492e;
   }
 
   .hero-container {
     padding: 80px 0px 0px 0px;
     text-align: start;
-    width: 90%;
+    width: 89%;
     justify-content: start;
     color: #e7492e;
+    max-width: 923px;
   }
 
   .paragraph-container {
@@ -199,8 +200,9 @@ export default {
 
   .input-and-ctabutton-container {
     display: flex;
-    gap: 10px;
-    margin-left: 10px;
+    gap: 16px;
+    width: 92%;
+    margin-left: 20px;
     flex-direction: row-reverse;
   }
   .arrow-container {
@@ -221,6 +223,12 @@ export default {
 
 .paragraph-container p {
   font-size: 18px;
+  }
+
+  .input-and-ctabutton-container {
+    width: 94%;
+    max-width: 923px;
+
   }
 
 }
@@ -257,7 +265,7 @@ export default {
   margin-bottom: 100px;
   color: white;
   width: 100%;
-  padding: 0px 20px 0 20px;
+  padding: 0px;
 }
 .paragraph-container p {
   max-width: 300px;

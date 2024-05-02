@@ -34,8 +34,8 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px 15px 20px 15px;
-  border-radius: 8px;
-  width: 80%;
+  border-radius: 0px;
+  width: 85%;
   margin-top: 62px;
   border: solid 1px transparent; /* Transparent border by default */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
@@ -94,8 +94,9 @@ export default {
   .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }
 .greybackground {
   flex-direction: row;
@@ -106,10 +107,12 @@ export default {
 }
 
 .instagram-post-container {
-margin-right: 50px;
-margin-left: 50px;
+margin-right: 40px;
+margin-left: 40px;
 margin-top: 62px;
-width: 100%;
+width: 92%;
+max-width: 923px;
+border-radius: 8px;
 padding: 20px 24px 20px 24px;
 flex-direction: row;
 
@@ -123,6 +126,19 @@ flex-direction: row;
  background: none;
  width: 350px; /* Adjust as needed */
   height: 350px; /* Adjust as needed */
+}
+}
+
+@media (min-width: 1000px) {
+  .instagram-post-container {
+    margin-right: 40px;
+margin-left: 40px;
+margin-top: 62px;
+width: 92%;
+max-width: 883px;
+border-radius: 8px;
+padding: 20px 20px 20px 20px;
+flex-direction: row;
 }
 }
 
