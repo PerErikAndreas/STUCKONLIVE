@@ -178,7 +178,7 @@ export default {
   
 }
 
-@media (min-width: 1400px) and (max-width: 1490px) {
+@media (min-width: 1400px) and (max-width: 1540px) {
 
   .my-main-nav {
   flex-direction: column;

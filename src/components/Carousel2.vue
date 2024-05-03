@@ -2,7 +2,7 @@
     <div class="calendar-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
-    <Carousel :autoplay="2000" :wrap-around="true">
+    <Carousel :autoplay="3000" :wrap-around="true">
       <Slide v-for="(group, index) in slides" :key="index">
         <div class="carousel__item">
           <div v-for="(image, idx) in group" :key="idx"
@@ -14,8 +14,6 @@
       </Slide>
     </Carousel>
 </template>
-
-
 
 <script>
 import { defineComponent } from "vue";
@@ -163,8 +161,13 @@ width: 90%;
 @media (min-width: 1000px) {
   .calendar-title h2 {
 margin-bottom: 5px;
-margin-left: 10px;
+margin-left: 12px;
 }
+.carousel__item {
+border-radius: 8px;
+width: 87%;
+}
+
 
 }
 

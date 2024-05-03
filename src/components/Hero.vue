@@ -246,7 +246,7 @@ export default {
   }
 
   .title-container h1 {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 88px;
     line-height: 82px;
   }
@@ -268,7 +268,7 @@ export default {
   padding: 0px;
 }
 .paragraph-container p {
-  max-width: 300px;
+  max-width: 350px;
   color: #FFFFFF;
 }
 }
