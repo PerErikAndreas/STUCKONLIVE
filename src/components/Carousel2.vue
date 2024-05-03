@@ -1,4 +1,5 @@
 <template>
+  <div class="carousel-container">
     <div class="calendar-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
@@ -13,6 +14,7 @@
         </div>
       </Slide>
     </Carousel>
+  </div>
 </template>
 
 
@@ -107,6 +109,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.carousel-container {
+  max-width: 923px;
+}
 .carousel__item {
   display: flex;
   justify-content: space-around;
