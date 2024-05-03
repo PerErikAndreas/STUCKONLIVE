@@ -63,9 +63,4 @@ border-radius: 8px;
   font-size: 20px;
 }
 }
-@media (min-width: 1400px) {
-  .main-1 {
-    margin: 62px 0px 380px 0px;
-  }
-}
 </style>
