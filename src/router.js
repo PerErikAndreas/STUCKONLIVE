@@ -23,8 +23,8 @@ const router = createRouter({
       component: Layout,
       children: [
         route('/', 'Home'),
-        route('/om-oss', 'About'), // Corrected the comment to match the route
-        route('/kontakt', 'ContactPage'),
+        route('/Om-oss', 'About'), // Corrected the comment to match the route
+        route('/Kontakt', 'ContactPage'),
       ]
     },
     { path: '/:pathMatch(.*)*', redirect: '/' } // Handle all other paths
