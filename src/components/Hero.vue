@@ -262,7 +262,7 @@ export default {
   .paragraph-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   color: white;
   width: 100%;
   padding: 0px;
