@@ -37,7 +37,7 @@ export default {
   border-radius: 0px;
   margin-top: 62px;
   width: 85%;
-  margin-bottom: 340px;
+  margin-bottom: 250px;
   border: solid 1px transparent; /* Transparent border by default */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
@@ -112,6 +112,7 @@ margin-left: 40px;
 width: 92%;
 max-width: 923px;
 border-radius: 8px;
+margin-bottom: 350px;
 padding: 20px 24px 20px 24px;
 flex-direction: row;
 

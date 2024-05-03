@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-    <div class="calendar-title">
+    <div class="carousel-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
     <Carousel :autoplay="2000" :wrap-around="true">
@@ -144,7 +144,7 @@ export default defineComponent({
   width: 93%; /* Adjusted for better control over size */
 }
 
-.calendar-title {
+.carousel-tit {
   display: flex;
   font-family: "Sora", sans-serif;
   margin-top: 60px;
@@ -152,7 +152,7 @@ export default defineComponent({
   width: 93%;
 }
 
-.calendar-title h2 {
+.carousel-tit h2 {
 margin-bottom: 5px;
 }
 
@@ -175,7 +175,7 @@ width: 90%;
 max-width: 923px;
 }
 
-.calendar-title {
+.carousel-tit {
   margin-left: 0px;
   width: 100%;
 }
