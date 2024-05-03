@@ -116,7 +116,7 @@ export default defineComponent({
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 92%; /* Ensures that the carousel item takes full width */
+  width: 100%; /* Ensures that the carousel item takes full width */
   height: auto; /* Allows the height to adjust based on the image */
   margin: 10px
 }
@@ -141,16 +141,15 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw; /* Adjusted for better control over size */
-  margin: 0 10px 0 10px;
+  width: 93%; /* Adjusted for better control over size */
 }
 
 .calendar-title {
   display: flex;
   font-family: "Sora", sans-serif;
-  margin-top: 72px;
+  margin-top: 60px;
   color: #e7492e;
-  width: 90%;
+  width: 93%;
 }
 
 .calendar-title h2 {
@@ -164,6 +163,9 @@ width: 90%;
 max-width: 923px;
 
 }
+.carousel-container {
+  width: 90vw;
+}
 }
 
 @media (min-width: 1000px) {
@@ -172,8 +174,10 @@ border-radius: 8px;
 width: 90%;
 max-width: 923px;
 }
-.calendar-title h2{
-  margin-left: 20px;
+
+.calendar-title {
+  margin-left: 0px;
+  width: 100%;
 }
 }
 </style>

@@ -40,7 +40,7 @@ export default {
   font-family: "Sora", sans-serif;
 }
 .main-1 {
-  margin: 62px 0px 240px 0px;
+  margin: 62px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,7 +53,7 @@ export default {
 
 @media (min-width: 700px) {
   .main-1 {
-    margin: 62px 0px 340px 0px;
+    margin: 62px 0px 62px 0px;
     width: 90%;
     max-width: 923px;
 

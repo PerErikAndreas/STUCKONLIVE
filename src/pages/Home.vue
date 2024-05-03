@@ -3,9 +3,9 @@
     <Hero />
     <Tickets />
     <Sponsorbanner />
-    <Instagram />
     <Carousel2 />
     <Trustbanner />
+    <Instagram />
     <Footer />
   </div>
 </template>
