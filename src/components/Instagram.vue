@@ -4,7 +4,7 @@
       <div class="greybackground">
     <div class="text-section">
       <div class="text-content">
-        <h2>FÖLJ OSS!</h2>
+        <h2>MUSIKTIPS!</h2>
         <p>
           På vår instagram postar vi dagliga musiktips, kommande spelningar och
           evenemang @stuckonlive
