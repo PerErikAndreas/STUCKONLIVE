@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="aboutpage-container">
     <Info />
    </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.aboutpage-container {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;

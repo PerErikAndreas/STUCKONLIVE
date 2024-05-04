@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="info-container">
       <h2>Vad är Stuck-On?</h2>
       <p>
         Stuck-On är samlingsplatsen för musikälskare i hjärtat av Östersund. Med
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
- .main {
+ .info-container {
   display: flex;
   flex-direction: column;
   gap: 20px;

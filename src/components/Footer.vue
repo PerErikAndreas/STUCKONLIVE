@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer-container">
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.footer {
+.footer-container {
   background-color: #e7492e;
   color: white;
   padding: 2rem;

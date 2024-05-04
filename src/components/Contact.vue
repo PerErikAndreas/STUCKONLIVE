@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="contact-container">
       <h2>Prata med oss!</h2>
       <p>
         <a href="mailto:morgan.hall@sensus.se">Morgan Hall</a>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
- .main {
+ .contact-container {
   width: 100%;
   display: flex;
   flex-direction: column;

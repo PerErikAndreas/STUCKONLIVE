@@ -1,22 +1,22 @@
 <template>
-<div class="main-1">
+<div class="trustbanner-container">
   <div class="icon-container">
     <img class="stuckon-logo" src="../assets/musicnote.png" alt="Music Note Icon" aria-label="100+ Spelningar">
-    <div class="icons-title">
+    <div class="icon-container-title">
       100+ <br>EVENTS
     </div>
   </div>
 
   <div class="icon-container">
     <img class="stuckon-logo" src="../assets/visitors-icon.png" alt="Visitors Icon" aria-label="10,000+ Besökare">
-    <div class="icons-title">
+    <div class="icon-container-title">
       10,000+ <br>BESÖKARE
     </div>
   </div>
 
   <div class="icon-container">
     <img class="stuckon-logo" src="../assets/location.png" alt="Location Icon" aria-label="4 Scener">
-    <div class="icons-title">
+    <div class="icon-container-title">
       4 <br>SCENER
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
   text-align: center; /* Center the content horizontally */
   font-family: "Sora", sans-serif;
 }
-.main-1 {
+.trustbanner-container {
   margin: 62px 0px 0px 0px;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@ export default {
 }
 
 @media (min-width: 700px) {
-  .main-1 {
+  .trustbanner-container {
     margin: 62px 0px 0px 0px;
     width: 90%;
     max-width: 923px;

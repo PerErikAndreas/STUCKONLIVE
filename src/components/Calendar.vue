@@ -1,6 +1,6 @@
 <template>
-  <div class="calendar-main">
-    <div class="calendar-title">
+  <div class="calendar-container">
+    <div class="calendar-container-title">
       <H2>KOMMANDE EVENTS</H2>
     </div>
     <div class="billeto-widget-container">
@@ -46,24 +46,24 @@ export default {
   background-color: blue !important; /* Intended to override Tailwind's background utility class */
 }
 
-.calendar-main {
+.calendar-container {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.calendar-title {
+.calendar-container-title {
   display: flex;
   justify-content: start;
   color: #e7492e;
   font-family: "Sora", sans-serif;
   margin-bottom: 5px;
 }
-.calendar-title h2 {
+.calendar-container-title h2 {
   margin: 0;
 }
 
 @media (min-width: 700px) {
-  .calendar-main {
+  .calendar-container {
     padding-left: 40px;
     padding-right: 40px;
   }

@@ -1,5 +1,5 @@
 <template>
-<div class="main-1">
+<div class="sponsorbanner-container">
   <div class="icon-container">
     <a href="https://www.regionjh.se/" role="link" aria-label="Regionen">
       <img class="sponsor-logo" src="../assets/regionen-logo.png" alt="Regionen Logo">
@@ -39,7 +39,7 @@ export default {
   text-align: center; /* Center the content horizontally */
   font-family: "Sora", sans-serif;
 }
-.main-1 {
+.sponsorbanner-container {
   margin: 72px 0px 10px 0px;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@ export default {
 }
 
 @media (min-width: 700px) {
-  .main-1 {
+  .sponsorbanner-container {
 border-radius: 8px;
 width: 90%;
 }
@@ -63,7 +63,7 @@ width: 90%;
 }
 
 @media (min-width: 900px) {
-  .main-1 {
+  .sponsorbanner-container {
 width: 92%;
 max-width: 923px;
 

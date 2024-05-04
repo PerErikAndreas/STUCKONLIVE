@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="contactpage-container">
     <Contact />
    </div>
 </template>
@@ -16,11 +16,9 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.contactpage-container {
   display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin: 20px 20px 0 20px;
   gap: 20px;
   height: 100vh;
 }

@@ -1,9 +1,9 @@
 <template>
-  <div class="main">
+  <div class="homepage-container">
     <Hero />
-    <Tickets />
+    <Calendar />
     <Sponsorbanner />
-    <Carousel2 />
+    <Carousel />
     <Trustbanner />
     <Instagram />
     <Footer />
@@ -12,29 +12,29 @@
 
 <script>
 import Hero from "@/components/Hero";
-import Tickets from "@/components/Tickets";
+import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
 import Instagram from "@/components/Instagram";
 import Trustbanner from "@/components/Trustbanner";
-import Carousel2 from "@/components/Carousel2";
+import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 
 export default {
   name: "Home",
   components: {
     Hero,
-    Tickets,
+    Calendar,
     Sponsorbanner,
     Instagram,
     Trustbanner,
-    Carousel2,
+    Carousel,
     Footer,
   },
 };
 </script>
 
 <style scoped>
-.main {
+.homepage-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +44,7 @@ export default {
 }
 
 @media (min-width: 1075px) {
-  .main {
+  .home-container {
     width: 1075px;
     margin: 0 auto;
   }

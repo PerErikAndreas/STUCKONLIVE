@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="instagram-container">
     <div class="instagram-post-container">
       <div class="greybackground">
     <div class="text-section">
@@ -52,7 +52,7 @@ export default {
   align-items: center;
 }
 
-.container {
+.instagram-container {
   display: flex;
   width: 100%;
   margin: 0 15px 0 15px;
@@ -91,7 +91,7 @@ export default {
 
 @media (min-width: 700px) {
 
-  .container {
+  .instagram-container {
     width: 100%;
     display: flex;
     flex-direction: row;

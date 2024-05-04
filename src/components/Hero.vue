@@ -19,9 +19,6 @@
     <div class="ml-embedded" data-form="X9IuFM"></div>
     <div class="lottie-container" ref="lottieContainer"></div>
   </div>
-  <div class="arrow-container">
-    <!-- <img src="../assets/arrow-graphic.png" alt="Red Arrow Pointing Down" aria-label="Scroll down"> -->
-  </div>
 </template>
 
 <script>
@@ -58,7 +55,7 @@ export default {
     flex-direction: column;
   height: 110px;
   margin-left: 20px;
-  width: 93%;
+  width: 87%;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -78,13 +75,6 @@ export default {
     width: 100%;
   }
 
-.arrow-container {
-  margin: 0px 0 44px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .triangle-graphic {
   display: none;
   position: absolute;
@@ -98,6 +88,7 @@ export default {
   display: flex;
   gap: 10px;
   flex-direction: column;
+  margin-bottom: 62px;
 }
 .paragraph-container {
   display: flex;
@@ -204,11 +195,6 @@ export default {
     width: 92%;
     margin-left: 20px;
     flex-direction: row-reverse;
-  }
-  .arrow-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 }
 
