@@ -37,7 +37,7 @@ export default {
   flex: 1; /* Each container takes up an equal amount of space */
   flex-direction: column;
   text-align: center; /* Center the content horizontally */
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
 }
 .trustbanner-container {
   margin: 62px 0px 0px 0px;
@@ -45,8 +45,8 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: #e7492e;
-  border-radius: 8px;;
+  background: var(--primary-color);
+  border-radius: 8px;
   width: 92%;
   padding: 40px 0px 40px 0px;
 }

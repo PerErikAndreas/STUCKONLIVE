@@ -54,8 +54,8 @@ export default {
 .calendar-container-title {
   display: flex;
   justify-content: start;
-  color: #e7492e;
-  font-family: "Sora", sans-serif;
+  color: var(--primary-color);
+  font-family: var(--font-main);
   margin-bottom: 5px;
 }
 .calendar-container-title h2 {

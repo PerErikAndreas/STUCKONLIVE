@@ -73,7 +73,7 @@ export default {
 .my-nav-links {
   text-decoration: none;
   color: #e7492e;
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
   font-size: 22px;
 
 }

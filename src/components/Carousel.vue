@@ -146,9 +146,9 @@ export default defineComponent({
 
 .carousel-tit {
   display: flex;
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
   margin-top: 60px;
-  color: #e7492e;
+  color: var(--primary-color);;
   width: 93%;
 }
 

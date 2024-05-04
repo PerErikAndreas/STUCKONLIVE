@@ -116,7 +116,7 @@ export default {
 }
 
 .title-container h1 {
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
   font-size: 48px;
   line-height: 42px;
   font-weight: 900;
@@ -151,7 +151,7 @@ export default {
 
   .field-graphic {
   display: inline;
-  background: #e7492e;
+  background: var(--primary-color);;
   margin: 20px 0 0 0;
   border-radius: 20px;
   width: 100%;
@@ -160,7 +160,7 @@ export default {
 
   .paragraph-container p {
   max-width: 100%;
-  color: #e7492e;
+  color: var(--primary-color);;
   }
 
   .hero-container {
@@ -168,7 +168,7 @@ export default {
     text-align: start;
     width: 89%;
     justify-content: start;
-    color: #e7492e;
+    color: var(--primary-color);;
     max-width: 923px;
   }
 

@@ -56,7 +56,7 @@ export default {
   display: flex;
   width: 100%;
   margin: 0 15px 0 15px;
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
   flex-direction: column;
   align-items: center;
 }
