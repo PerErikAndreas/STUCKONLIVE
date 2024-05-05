@@ -9,7 +9,6 @@
 </template>
 
 <style>
-/* Global styles for the entire application */
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;

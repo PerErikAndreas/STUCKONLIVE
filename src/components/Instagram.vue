@@ -35,7 +35,6 @@ export default {
   flex-direction: column;
   padding: 20px 15px 20px 15px;
   border-radius: 0px;
-  margin-top: 62px;
   width: 85%;
   margin-bottom: 250px;
   border: solid 1px transparent; /* Transparent border by default */
