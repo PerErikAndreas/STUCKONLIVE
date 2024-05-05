@@ -116,24 +116,24 @@ export default defineComponent({
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%; /* Ensures that the carousel item takes full width */
-  height: auto; /* Allows the height to adjust based on the image */
+  width: 100%;
+  height: auto;
   margin: 10px
 }
 
 .image-container {
-  flex: 1 0 40%; /* Each image takes about half the width minus some margin */
+  flex: 1 0 40%;
  }
 
 .image-container.single-image {
-  flex: 1 0 96%; /* Takes almost the full width of the slide */
+  flex: 1 0 96%;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  object-fit: cover; /* Ensures images cover the area without distorting */
+  object-fit: cover;
 }
 
 .carousel-container {
@@ -141,14 +141,14 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 93%; /* Adjusted for better control over size */
+  width: 93%;
 }
 
 .carousel-tit {
   display: flex;
   font-family: var(--font-main);
   margin-top: 60px;
-  color: var(--primary-color);;
+  color: var(--primary-color);
   width: 93%;
 }
 

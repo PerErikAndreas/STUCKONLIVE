@@ -8,10 +8,10 @@
         </a>
         <ul class="my-main-nav" id="js-menu">
           <li>
-            <a href="/om-oss" class="my-nav-links">Om oss</a>
+            <a href="/Om-oss" class="my-nav-links">Om oss</a>
           </li>
           <li>
-            <a href="/kontakt" class="my-nav-links">Kontakt</a>
+            <a href="/Kontakt" class="my-nav-links">Kontakt</a>
           </li>
         </ul>
         </nav>
@@ -33,16 +33,15 @@ export default {
 </script>
 
 <style scoped>
-.stuckon-logowhite {
+.stuckon-logowhite,
+.stuckon-logored {
   width: auto;
   margin-top: 20px;
   height: 22px; /* Adjust based on your navbar height */
 }
+
 .stuckon-logored {
   display: none;
-  width: auto;
-  margin-top: 20px;
-  height: 22px; /* Adjust based on your navbar height */
 }
 .my-navbar {
   position: relative; /* New positioning context for the absolute elements */
@@ -60,48 +59,45 @@ export default {
   margin-right: 20px;
   top: 40px; /* Start just below the navbar */
   right: 0; /* Align to the left of the parent */
-  background: white;
+  background: var(--background-color);
   border-radius: 12px 0px 12px 12px;
   z-index: 1000; /* Ensure it's above other content */
 }
-/* .my-logo {
-  padding-bottom: 6px;
-  color: #e7492e;
-  font-weight: bold;
-  text-decoration: none;
-} */
+
 .my-nav-links {
   text-decoration: none;
-  color: #e7492e;
+  color: var(--primary-color);
   font-family: var(--font-main);
   font-size: 22px;
-
 }
+
 .my-main-nav li {
   text-align: right;
   padding-right: 0px;
   margin: 15px auto;
 }
+
 .my-logo {
   display: inline-block;
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-main);
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
 }
 
 .my-main-nav li {
-    margin-bottom: 5;
-  }
+  margin-bottom: 5;
+}
 
 .my-navbar-toggle {
   position: absolute;
   top: 17px;
   right: 20px;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--background-color);
   font-size: 40px;
 }
+
 .active {
   display: block;
   padding-left: 10px;
@@ -118,17 +114,17 @@ export default {
   }
 
   .my-main-nav {
-  position: absolute; /* Positioned absolutely */
-  top: 22px; /* Start just below the navbar */
-  right: 0; /* Align to the left of the parent */
-  background: transparent;
-  border-radius: 12px 12px 12px 12px;
-  z-index: 1000; /* Ensure it's above other content */
-  display: flex;
+    position: absolute; /* Positioned absolutely */
+    top: 22px; /* Start just below the navbar */
+    right: 0; /* Align to the left of the parent */
+    background: transparent;
+    border-radius: 12px 12px 12px 12px;
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
-}
+  }
 
   .my-main-nav li {
     margin: 0;
@@ -136,7 +132,7 @@ export default {
   .my-nav-links {
     margin-right: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--background-color);
   }
   .my-logo {
     margin-top: 0;
@@ -173,7 +169,7 @@ export default {
 
 }
 .my-nav-links {
-    color: #e7492e;
+    color: var(--primary-color);
   }
   
 }

@@ -42,13 +42,8 @@ export default {
 </script>
 <style scoped>
 
-.billeto-widget-container .flex-grow.card-content.px-4.py-5.sm\:px-6.lg\:px-8 {
-  background-color: blue !important; /* Intended to override Tailwind's background utility class */
-}
-
 .calendar-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .calendar-container-title {
@@ -64,8 +59,8 @@ export default {
 
 @media (min-width: 700px) {
   .calendar-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px 0 40px;
+
   }
 }
 </style>

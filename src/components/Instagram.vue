@@ -62,7 +62,7 @@ export default {
 }
 
 .text-section {
-  color: #e7492e; /* The red background color */
+  color: var(--primary-color);
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,14 +75,14 @@ export default {
 }
 
 .text-content h2 {
-  color: #e7492e;
+  color: var(--primary-color);
   margin-top: 20px;
   /* Add more styles for your heading */
 }
 
 .text-content p {
   color: #3F3F46;
-  font-family: Helvetica;
+  font-family: var(--font-secondary);
   max-width: 300px;
 
 
@@ -90,13 +90,12 @@ export default {
 }
 
 @media (min-width: 700px) {
-
-  .instagram-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+.instagram-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
 }
 .greybackground {
   flex-direction: row;
@@ -119,26 +118,26 @@ flex-direction: row;
 }
 }
 @media (min-width: 700px) {
-  .arrow-right {
+.arrow-right {
   display: none;
 }
 .circle-section {
- background: none;
- width: 350px; /* Adjust as needed */
+  background: none;
+  width: 350px; /* Adjust as needed */
   height: 350px; /* Adjust as needed */
 }
 }
 
 @media (min-width: 1000px) {
-  .instagram-post-container {
-    margin-right: 40px;
-margin-left: 40px;
-width: 92%;
-max-width: 883px;
-border-radius: 8px;
-padding: 20px 20px 20px 20px;
-flex-direction: row;
-}
+.instagram-post-container {
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 92%;
+  max-width: 883px;
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+  flex-direction: row;
+  }
 }
 
 </style>

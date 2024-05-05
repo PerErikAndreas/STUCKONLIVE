@@ -36,7 +36,7 @@ export default {
 <style scoped>
 .footer-container {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--background-color);
   padding: 2rem;
   text-align: center;
   margin-bottom: 30px;
@@ -55,13 +55,13 @@ export default {
   gap: 2rem;
 }
 .footer-nav a {
-  color: white;
+  color: var(--background-color);
   text-decoration: none;
   font-family: var(--font-main);
   font-size: 22px;
 }
 .footer-policies a {
-  color: white;
+  color: var(--background-color);
   text-decoration: none;
   font-size: 16px;
 }

@@ -99,7 +99,7 @@ export default {
 
 .paragraph-container p {
   max-width: 300px;
-  color: #FFFFFF;
+  color: var(--background-color);
 }
 .field-graphic {
   display: none;
@@ -112,7 +112,7 @@ export default {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .title-container h1 {
@@ -127,10 +127,7 @@ export default {
 
 @media (min-width: 700px) {
   .lottie-container {
-  margin-top: 20px;
-  /* border: 5px solid #e7492e; */
-  /* padding: 0 15px 0 15px; */
-  margin-left: 0px;
+  margin: 20px 0 0 0;
   border-radius: 20px;
   height: 110px;
   width: 100%;
@@ -243,19 +240,19 @@ export default {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--background-color);
 }
   .paragraph-container {
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
-  color: white;
+  color: var(--background-color);
   width: 100%;
   padding: 0px;
 }
 .paragraph-container p {
   max-width: 350px;
-  color: #FFFFFF;
+  color: var(--background-color);
 }
 }
 </style>

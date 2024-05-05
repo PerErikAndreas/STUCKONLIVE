@@ -27,46 +27,47 @@ export default {
 };
 </script>
 <style scoped>
-.sponsor-logo {
-  width: 75px;
-}
-.icons-title {
-  font-size: 14px;
-}
-.icon-container {
-  flex: 1; /* Each container takes up an equal amount of space */
-  flex-direction: column;
-  text-align: center; /* Center the content horizontally */
-  font-family: var(--font-main);
-}
-.sponsorbanner-container {
-  margin: 72px 0px 10px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background: #e7492e;
-  border-radius: 6px;;
-  width: 92%;
-  padding: 40px 0px 40px 0px;
-}
-
-@media (min-width: 700px) {
   .sponsorbanner-container {
-border-radius: 8px;
-width: 90%;
-}
+    margin: 72px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 6px;
+    width: 92%;
+    padding: 40px 0;
+  }
 
-.sponsor-logo {
-  width: 100px;
-}
-}
+  .icon-container {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-main);
+  }
 
-@media (min-width: 900px) {
-  .sponsorbanner-container {
-width: 92%;
-max-width: 923px;
+  .sponsor-logo {
+    width: 75px;
+  }
+  
+  .icons-title {
+    font-size: 14px;
+  }
 
-}
-}
+  @media (min-width: 700px) {
+    .sponsorbanner-container {
+      border-radius: 8px;
+      width: 90%;
+    }
+    .sponsor-logo {
+      width: 100px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .sponsorbanner-container {
+      width: 92%;
+      max-width: 923px;
+    }
+  }
 </style>

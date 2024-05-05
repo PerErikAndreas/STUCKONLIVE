@@ -30,37 +30,39 @@ export default {
 };
 </script>
 <style scoped>
-.icons-title {
-  font-size: 14px;
-}
-.icon-container {
-  flex: 1; /* Each container takes up an equal amount of space */
-  flex-direction: column;
-  text-align: center; /* Center the content horizontally */
-  font-family: var(--font-main);
-}
-.trustbanner-container {
-  margin: 62px 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background: var(--primary-color);
-  border-radius: 8px;
-  width: 92%;
-  padding: 40px 0px 40px 0px;
-}
-
-@media (min-width: 700px) {
   .trustbanner-container {
-    margin: 62px 0px 0px 0px;
-    width: 90%;
-    max-width: 923px;
+    margin: 62px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 8px;
+    width: 92%;
+    padding: 40px 0;
+  }
 
-border-radius: 8px;
-}
-.icons-title {
-  font-size: 20px;
-}
-}
+  .icon-container {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-main);
+  }
+  
+  .icons-title {
+    font-size: 14px;
+  }
+
+  @media (min-width: 700px) {
+    .trustbanner-container {
+      width: 90%;
+      max-width: 923px;
+      border-radius: 8px;
+      margin: 62px 0;
+    }
+    .icons-title {
+      font-size: 20px;
+    }
+  }
 </style>
+
