@@ -61,7 +61,7 @@ body {
 @media (min-width: 1400px) {
   body {
     background: radial-gradient(
-        circle 1050px at top,
+        circle 1000px at top,
         #e7492e 50%,
         transparent 50%
         ),
