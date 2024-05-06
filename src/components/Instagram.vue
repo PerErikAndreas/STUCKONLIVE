@@ -54,7 +54,7 @@ export default {
 .instagram-container {
   display: flex;
   width: 100%;
-  margin: 0 0 250px 0;
+  margin: 0 0 210px 0;
   font-family: var(--font-main);
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@ export default {
   flex-direction: row;
   justify-content:center;
   align-items: center;
-  margin-bottom: 350px;
+  margin-bottom: 250px;
 }
 .greybackground {
   flex-direction: row;
@@ -134,7 +134,14 @@ flex-direction: row;
   flex-direction: row;
   }
 .instagram-container {
-  margin-bottom: 380px;
+  margin-bottom: 250px;
+}
+}
+
+@media (min-width: 1400px) {
+
+.instagram-container {
+  margin-bottom: 360px;
 }
 }
 

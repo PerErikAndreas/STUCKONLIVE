@@ -115,7 +115,7 @@ export default {
 
   .my-main-nav {
     position: absolute; /* Positioned absolutely */
-    top: 22px; /* Start just below the navbar */
+    top: 16px; /* Start just below the navbar */
     right: 0; /* Align to the left of the parent */
     background: transparent;
     border-radius: 12px 12px 12px 12px;
@@ -164,6 +164,8 @@ export default {
 
   }
   .my-main-nav {
+    top: 12px; /* Start just below the navbar */
+
 
   background: transparent;
 
@@ -178,6 +180,7 @@ export default {
 
   .my-main-nav {
   flex-direction: column;
+  top: 7px; /* Start just below the navbar */
 }
 }
 </style>

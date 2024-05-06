@@ -127,7 +127,7 @@ export default {
 
 @media (min-width: 700px) {
   .lottie-container {
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   border-radius: 20px;
   height: 110px;
   width: 100%;
@@ -232,6 +232,7 @@ export default {
   .hero-container {
   padding: 0px 0px 0px 0px;
   display: flex;
+  margin: 0px 0px 0px 0px;
   flex-direction: column;
   text-align: center;
   justify-content: center;

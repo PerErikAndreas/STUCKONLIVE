@@ -47,7 +47,7 @@ body {
         transparent 50%
         ),
     radial-gradient(
-      circle 950px at center bottom,
+      circle 750px at center bottom,
       #e7492e 50%,
       transparent 50%
       );
