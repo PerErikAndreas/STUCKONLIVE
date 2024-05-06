@@ -40,7 +40,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 @media (min-width: 1075px) {
@@ -48,10 +48,5 @@ export default {
     width: 1075px;
     margin: 0 auto;
   }
-}
-
-.H1 {
-  font-size: 3rem;
-  margin-bottom: 5vh;
 }
 </style>

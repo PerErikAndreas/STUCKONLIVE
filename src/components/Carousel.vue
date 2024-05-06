@@ -111,6 +111,7 @@ export default defineComponent({
 <style scoped>
 .carousel-container {
   max-width: 923px;
+  margin-bottom: 62px;
 }
 .carousel__item {
   display: flex;
@@ -144,16 +145,15 @@ export default defineComponent({
   width: 93%;
 }
 
-.carousel-tit {
+.carousel-title {
   display: flex;
   font-family: var(--font-main);
-  margin-top: 60px;
   color: var(--primary-color);
   width: 93%;
 }
 
-.carousel-tit h2 {
-margin-bottom: 5px;
+.carousel-title h2 {
+margin: 0;
 }
 
 @media (min-width: 700px) {
@@ -175,7 +175,7 @@ width: 90%;
 max-width: 923px;
 }
 
-.carousel-tit {
+.carousel-title {
   margin-left: 0px;
   width: 100%;
 }

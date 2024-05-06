@@ -31,7 +31,6 @@ export default {
 </script>
 <style scoped>
   .trustbanner-container {
-    margin: 62px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,6 +39,7 @@ export default {
     border-radius: 8px;
     width: 92%;
     padding: 40px 0;
+    margin-bottom: 62px;
   }
 
   .icon-container {
@@ -58,7 +58,6 @@ export default {
       width: 90%;
       max-width: 923px;
       border-radius: 8px;
-      margin: 62px 0;
     }
     .icons-title {
       font-size: 20px;

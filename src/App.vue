@@ -9,6 +9,10 @@
 </template>
 
 <style>
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;

@@ -54,17 +54,16 @@ export default {
     display: flex;
     flex-direction: column;
   height: 110px;
-  margin-left: 20px;
-  width: 87%;
+  width: 90%;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
+
+
 
 /* Make the SVG inside cover the entire space */
 .lottie-container svg {
   display: inline;
   width: 100%;
-  border-radius: 20px;
-  height: 120%;
   object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
   .ml-embedded {
@@ -86,15 +85,16 @@ export default {
 
 .input-and-ctabutton-container {
   display: flex;
-  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 62px;
 }
 .paragraph-container {
   display: flex;
+  width: 100%;
   justify-content: center;
-  margin-bottom: 150px;
-  padding: 0 20px 0 20px;
 }
 
 .paragraph-container p {
@@ -106,7 +106,7 @@ export default {
 }
 
 .hero-container {
-  padding: 52px 0px 0px 0px;
+  margin: 52px 0px 150px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ export default {
   }
 
   .hero-container {
-    padding: 80px 0px 0px 0px;
+    margin: 52px 0px 72px 0px;
     text-align: start;
     width: 89%;
     justify-content: start;
@@ -170,7 +170,6 @@ export default {
   }
 
   .paragraph-container {
-    margin-bottom: 52px;
     padding: 0px;
     width: 40%;
   }
@@ -190,7 +189,6 @@ export default {
     display: flex;
     gap: 16px;
     width: 92%;
-    margin-left: 20px;
     flex-direction: row-reverse;
   }
 }
@@ -200,9 +198,6 @@ export default {
     font-size: 68px;
     line-height: 62px;
   }
-  .hero-container {
-  padding: 32px 0px 0px 0px;
-}
 
 .paragraph-container p {
   font-size: 18px;

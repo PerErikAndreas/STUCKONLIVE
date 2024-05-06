@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
   .sponsorbanner-container {
-    margin: 72px 0 10px 0;
+    margin: 0 0 72px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

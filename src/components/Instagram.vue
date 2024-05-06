@@ -30,13 +30,13 @@ export default {
 </script>
 
 <style scoped>
+
 .instagram-post-container {
   display: flex;
   flex-direction: column;
   padding: 20px 15px 20px 15px;
   border-radius: 0px;
-  width: 85%;
-  margin-bottom: 250px;
+  width: 88%;
   border: solid 1px transparent; /* Transparent border by default */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
@@ -54,7 +54,7 @@ export default {
 .instagram-container {
   display: flex;
   width: 100%;
-  margin: 0 15px 0 15px;
+  margin: 0 0 250px 0;
   font-family: var(--font-main);
   flex-direction: column;
   align-items: center;
@@ -90,11 +90,12 @@ export default {
 
 @media (min-width: 700px) {
 .instagram-container {
-  width: 100%;
+  width: 92%;
   display: flex;
   flex-direction: row;
   justify-content:center;
   align-items: center;
+  margin-bottom: 350px;
 }
 .greybackground {
   flex-direction: row;
@@ -105,15 +106,11 @@ export default {
 }
 
 .instagram-post-container {
-margin-right: 40px;
-margin-left: 40px;
-width: 92%;
+width: 100%;
 max-width: 923px;
 border-radius: 8px;
-margin-bottom: 350px;
 padding: 20px 24px 20px 24px;
 flex-direction: row;
-
 }
 }
 @media (min-width: 700px) {
@@ -129,14 +126,16 @@ flex-direction: row;
 
 @media (min-width: 1000px) {
 .instagram-post-container {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 0 40px 0 40px;
   width: 92%;
   max-width: 883px;
   border-radius: 8px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   flex-direction: row;
   }
+.instagram-container {
+  margin-bottom: 380px;
+}
 }
 
 </style>
