@@ -1,14 +1,61 @@
 <template>
   <div class="app">
-    <transition>
+    <router-view v-slot="{ Component }">
       <keep-alive>
-        <router-view />
+        <component :is="Component" />
       </keep-alive>
-    </transition>
+    </router-view>
+  </div>
+  <div class="loader" v-if="!isLoaded">
+    <div class="lottie-container" ref="lottieContainer"></div>
   </div>
 </template>
+<script>
+import lottie from 'lottie-web';
+import animationData from './assets/animation2.json';
 
+export default {
+  data() {
+    return {
+      isLoaded: false
+    };
+  },
+  mounted() {
+    this.loadAnimation();
+    // Simulate content loading, replace with actual loading logic
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 3000); // Adjust the delay as needed
+  },
+  methods: {
+    loadAnimation() {
+      lottie.loadAnimation({
+        container: this.$refs.lottieContainer,
+        animationData: animationData,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+      });
+    }
+  }
+};
+</script>
 <style>
+.lottie-container {
+  width: 250px;
+  height: 250px;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
 html {
   font-size: 16px;
 }
@@ -36,7 +83,6 @@ body {
     bottom center;
   min-height: 50vh;
 }
-
 
 /* Media query for screens with a max-width of 400px */
 @media (min-width: 700px) {

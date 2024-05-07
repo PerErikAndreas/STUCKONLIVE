@@ -8,9 +8,9 @@
         </ul>
       </nav>
       <div class="footer-policies">
-        <a href="/cookie-policy">Cookie Policy</a> •
-        <a href="/accessibility-statement">Accessibility Statement</a> •
-        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/Cookie-Policy">Cookie Policy</a> •
+        <a href="/Accessibility-Statement">Accessibility Statement</a> •
+        <a href="/Privacy-Policy">Privacy Policy</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/stuckonlive/" aria-label="Instagram">

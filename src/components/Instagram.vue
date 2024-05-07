@@ -7,7 +7,7 @@
         <h2>MUSIKTIPS!</h2>
         <p>
           På vår instagram postar vi dagliga musiktips, kommande spelningar och
-          evenemang @stuckonlive
+          evenemang.
         </p>
       </div>
     </div>
@@ -42,11 +42,11 @@ export default {
 }
 
 .greybackground {
-  /* background: #FAFAFA; */
-  background: 
+  background: #FAFAFA;
+  /* background: 
     linear-gradient(to right, var(--primary-color) 20px, transparent 20px),
     linear-gradient(to right, rgba(255, 255, 255, 0.5) 20px, transparent 20px);
-  background-size: 40px 40px; /* Adjust the width and height of the stripes */
+  background-size: 40px 40px; */
   display: flex;
   flex-direction: column;
   width: 100%;
