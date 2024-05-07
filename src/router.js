@@ -16,7 +16,7 @@ const Layout = () => import('../src/templates/Default.vue'); // Ensure this path
 // start with the basics.
 const router = createRouter({
   // Use createWebHistory for HTML5 history mode
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL || '/'),
   routes: [
     {
       path: '/',

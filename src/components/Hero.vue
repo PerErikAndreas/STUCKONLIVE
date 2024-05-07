@@ -117,9 +117,9 @@ export default {
 
 .title-container h1 {
   font-family: var(--font-main);
-  font-size: 48px;
+  font-size: 50px;
   line-height: 42px;
-  font-weight: 900;
+  font-weight: 1000;
   margin-bottom: 24px;
   letter-spacing: -5%;
   text-transform: uppercase;
@@ -157,11 +157,11 @@ export default {
 
   .paragraph-container p {
   max-width: 100%;
-  color: var(--primary-color);;
+  color: var(--primary-color);
   }
 
   .hero-container {
-    margin: 52px 0px 72px 0px;
+    margin: 52px 0px 110px 0px;
     text-align: start;
     width: 89%;
     justify-content: start;
@@ -175,8 +175,8 @@ export default {
   }
 
   .title-container h1 {
-    font-size: 38px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 30px;
   }
 
   .ml-embedded {
@@ -196,7 +196,7 @@ export default {
 @media (min-width: 920px) {
   .title-container h1 {
     font-size: 68px;
-    line-height: 62px;
+    line-height: 55px;
   }
 
 .paragraph-container p {
@@ -208,13 +208,16 @@ export default {
     max-width: 923px;
 
   }
+  .hero-container {
+    margin: 52px 0px 72px 0px;
+  }
 
 }
 
 @media (min-width: 1180px) {
   .title-container h1 {
     font-size: 88px;
-    line-height: 82px;
+    line-height: 75px;
   }
 }
 
@@ -226,7 +229,7 @@ export default {
   .title-container h1 {
     margin-top: 0px;
     font-size: 88px;
-    line-height: 82px;
+    line-height: 75px;
   }
 
   .hero-container {
