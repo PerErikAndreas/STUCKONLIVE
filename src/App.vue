@@ -1,14 +1,60 @@
 <template>
-  <div class="app">
+  <div class="app" v-if="isLoaded">
     <transition>
       <keep-alive>
         <router-view />
       </keep-alive>
     </transition>
   </div>
+  <div class="loader" v-else>
+    <div class="lottie-container" ref="lottieContainer"></div>
+  </div>
 </template>
 
+<script>
+import lottie from 'lottie-web';
+import animationData from './assets/animation2.json';
+
+export default {
+  data() {
+    return {
+      isLoaded: false
+    };
+  },
+  mounted() {
+    this.loadAnimation();
+
+    // Simulate content loading, you can replace this with actual loading logic
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 3000); // Adjust the delay as needed
+  }
+,  methods: {
+    loadAnimation() {
+      lottie.loadAnimation({
+        container: this.$refs.lottieContainer,
+        animationData: animationData,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+      });
+    }
+  }
+};
+</script>
+
 <style>
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
 html {
   font-size: 16px;
 }
