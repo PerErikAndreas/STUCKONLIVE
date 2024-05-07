@@ -42,7 +42,11 @@ export default {
 }
 
 .greybackground {
-  background: #FAFAFA;
+  /* background: #FAFAFA; */
+  background: 
+    linear-gradient(to right, var(--primary-color) 20px, transparent 20px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.5) 20px, transparent 20px);
+  background-size: 40px 40px; /* Adjust the width and height of the stripes */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -71,6 +75,11 @@ export default {
 
 .text-content {
   margin: 80px 0 80px 0;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  padding: 50px;
 }
 
 .text-content h2 {

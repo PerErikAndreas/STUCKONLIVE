@@ -51,7 +51,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
 }
