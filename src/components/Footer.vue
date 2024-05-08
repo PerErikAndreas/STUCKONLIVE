@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .footer-container {
-  background-color: var(--primary-color);
+  background-color: transperent;
   color: var(--background-color);
   padding: 2rem;
   text-align: center;
