@@ -8,10 +8,7 @@
         </a>
         <ul class="my-main-nav" id="js-menu">
           <li>
-            <a href="/Om-oss" class="my-nav-links">Om oss</a>
-          </li>
-          <li>
-            <a href="/Kontakt" class="my-nav-links">Kontakt</a>
+            <a href="/Kontakt" class="my-nav-links">Kontakt/Info</a>
           </li>
         </ul>
         </nav>

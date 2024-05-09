@@ -4,9 +4,7 @@
      </div>
   </template>
   
-  <script>
-  import Contact from "@/components/Contact";
-  
+  <script>  
   export default {
     name: "ContactPage",
   };

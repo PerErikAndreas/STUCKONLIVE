@@ -23,7 +23,6 @@ const router = createRouter({
       component: Layout,
       children: [
         route('/', 'HomePage'),
-        route('/Om-oss', 'AboutPage'), // Corrected the comment to match the route
         route('/Kontakt', 'ContactPage'),
         route('/Cookie-Policy', 'CookiePolicy'),
         route('/Accesibility-Statement', 'AssesibilityStatement'), 

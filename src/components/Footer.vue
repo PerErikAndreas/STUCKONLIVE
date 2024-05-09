@@ -3,13 +3,11 @@
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
-          <li><a href="/Kontakt">Kontakt</a></li>
-          <li><a href="/Om-oss">Om oss</a></li>
+          <li><a href="/Kontakt">Kontakt/Info</a></li>
         </ul>
       </nav>
       <div class="footer-policies">
         <a href="/Cookie-Policy">Cookie Policy</a> •
-        <a href="/Accessibility-Statement">Accessibility Statement</a> •
         <a href="/Privacy-Policy">Privacy Policy</a>
       </div>
       <div class="footer-social">

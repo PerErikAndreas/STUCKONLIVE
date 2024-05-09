@@ -11,10 +11,11 @@
   <div class="paragraph-container">
     <p>
       Mer än 100 genomförda konserter med internationella och lokala akter –
-      upplev musiken på nära håll!
-    </p>
+      upplev musiken på nära håll! </p>
   </div>
 </div>
+<!-- <p>Få reda på det senaste och bli inbjuden till exklusiva spelningar. Följ oss via vårt nyhetsbrev!
+    </p> -->
 <div class="input-and-ctabutton-container">
     <div class="ml-embedded" data-form="X9IuFM"></div>
     <div class="lottie-container" ref="lottieContainer"></div>
@@ -50,6 +51,14 @@ export default {
 </script>
 
 <style scoped>
+.calendar-container-title {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  color: var(--primary-color);
+  font-family: var(--font-main);
+  margin-bottom: 5px;
+}
   .lottie-container {
     display: flex;
     flex-direction: column;
@@ -93,6 +102,7 @@ export default {
 }
 .paragraph-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
 }
