@@ -105,4 +105,11 @@ h2 {
   object-fit: cover;
 }
 }
+
+@media (min-width: 1400px) {
+  .info-container {
+  margin: 0 auto 350px auto;
+}
+
+}
 </style>

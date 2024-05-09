@@ -3,7 +3,7 @@
     <div class="content">
       <h2>Prata <br>med&nbsp;oss!</h2>
     <p class="question-paragraph">
-      Är du en artist som är ute på vägarna? Har du frågor om föreningen? Vill du bara berätta hur bra en spelning var?
+      Är du en artist ute på vägarna? <br>Har du frågor om föreningen? <br>Vill du bara berätta hur bra<br> en spelning var?
     </p>
     <button @click="sendEmail">Kontakta Stuck On</button>
     </div>
@@ -51,12 +51,12 @@ export default {
   .lottie-container {
     position: absolute;
   top: 0px; /* Position from the top edge of the parent */
-  right: 100px; /* Position from the right edge of the parent */
+  right: 0px; /* Position from the right edge of the parent */
     display: none;
     flex-direction: column;
     border-radius: 50%;
-  height: 400px;
-  width: 400px;
+  height: 100px;
+  width: 100px;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -123,7 +123,13 @@ button:hover {
 
 }
 
-@media (min-width: 820px) {
+
+@media (min-width: 700px) {
+  .contact-container {
+
+  margin: 40px;
+
+}
 
   .lottie-container {
     position: absolute;
@@ -233,6 +239,12 @@ button {
 button:hover {
   background-color: rgb(170, 4, 4); /* Darker blue on hover */
   color: #ffffff;
+
+}
+.lottie-container {
+    position: absolute;
+  top: 0px; /* Position from the top edge of the parent */
+  right: 100px; /* Position from the right edge of the parent */
 
 }
   }
