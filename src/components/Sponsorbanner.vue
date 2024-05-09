@@ -13,7 +13,7 @@
   </div>
 
   <div class="icon-container">
-    <a href="http://www.stuckon.se" role="link" aria-label="Circle Stuckon">
+    <a href="/Kontakt" role="link" aria-label="Circle Stuckon">
       <img class="sponsor-logo" src="../assets/circle-stuckon-logo.png" alt="Circle Stuckon Logo">
     </a>
   </div>
