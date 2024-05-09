@@ -123,7 +123,7 @@ export default {
 
 .instagram-post-container {
 width: 100%;
-max-width: 923px;
+max-width: 883px;
 border-radius: 8px;
 padding: 20px 24px 20px 24px;
 flex-direction: row;
