@@ -105,6 +105,7 @@ export default {
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .paragraph-container p {
