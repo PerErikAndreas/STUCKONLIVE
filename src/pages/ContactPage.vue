@@ -102,6 +102,8 @@ h2 {
   margin-bottom: 24px;
   letter-spacing: -5%;
   text-transform: uppercase;
+  margin-top: 0px;
+
 }
 
 button {
@@ -160,6 +162,7 @@ h2 {
   font-family: var(--font-main);
   font-size: 50px;
   line-height: 42px;
+  margin-top: 20px;
 }
 
 button {
