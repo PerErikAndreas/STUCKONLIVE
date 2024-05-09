@@ -11,7 +11,7 @@
         organization="billetto.se"
         lang="sv"
         theme="light"
-        color="#e7492e"
+        color="#87878E"
       ></billetto-organiser-widget>
     </div>
   </div>

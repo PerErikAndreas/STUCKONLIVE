@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(
-      circle 950px at center top,
+      circle 900px at center top,
       #e7492e 50%,
       transparent 50%
     ),

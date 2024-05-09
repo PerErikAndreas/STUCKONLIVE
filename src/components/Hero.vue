@@ -117,7 +117,7 @@ export default {
 }
 
 .hero-container {
-  margin: 52px 0px 150px 0px;
+  margin: 52px 0px 100px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
