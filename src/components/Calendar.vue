@@ -6,7 +6,7 @@
     <div class="billeto-widget-container">
       <billetto-organiser-widget
         v-if="billettoScriptLoaded"
-        type="calendar"
+        type="list"
         organiser="652330"
         organization="billetto.se"
         lang="sv"
