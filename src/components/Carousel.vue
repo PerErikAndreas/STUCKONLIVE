@@ -82,6 +82,11 @@ import VannaskassinoImage from "@/assets/posters/Vannaskassino.jpg";
 import WillStevartImage from "@/assets/posters/WillStevart.jpg";
 import VilmaFloodImage from "@/assets/posters/vilmaflood.jpg";
 
+import BrorGunnarImage from "@/assets/posters/BrorGunnar.jpg";
+import RoselineImage from "@/assets/posters/roseline.jpg";
+
+
+
 import TerraImage from "@/assets/posters/terra.jpg";
 
 import LudwigHartImage from "@/assets/posters/LudwigHart.jpg";
@@ -174,7 +179,11 @@ export default defineComponent({
         [
           { image: TonbruketImage, alt: "Tonbruket" },
           { image: DavidRitchardsImage, alt: "David Ritchards" }
-        ],          
+        ],     
+        [
+          { image: BrorGunnarImage, alt: "Bror Gunnar" },
+          { image: RoselineImage, alt: "Roseline" }
+        ],      
         [
           { image: VannaIngetImage, alt: "Vånna Inget" },
           { image: WhitneyRoseImage, alt: "Whitney Rose" }
