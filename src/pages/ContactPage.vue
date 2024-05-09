@@ -168,9 +168,9 @@ h2 {
 button {
   padding: 15px 30px;
   font-size: 18px;
-  background-color: var(--primary-color);
-  color: #FFFFFF;
-  border: none;
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+  border: solid 3px var(--primary-color);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
