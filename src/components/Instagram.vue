@@ -68,7 +68,6 @@ export default {
 }
 
 .text-section {
-  color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +78,7 @@ export default {
   margin: 62px 0 62px 0;
   width: 200px;
   height: 200px;
-  background: white;
+  background: var(--primary-color);
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -88,13 +87,13 @@ export default {
 }
 
 .text-content h2 {
-  color: var(--primary-color);
+  color: #FFFFFF;
   margin-top: 20px;
   /* Add more styles for your heading */
 }
 
 .text-content p {
-  color: #3F3F46;
+  color: #FFFFFF;
   font-family: var(--font-secondary);
   max-width: 300px;
 
