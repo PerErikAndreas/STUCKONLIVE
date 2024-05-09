@@ -79,11 +79,10 @@ export default {
   margin: 62px 0 62px 0;
   width: 200px;
   height: 200px;
-  background: var(--primary-color);
+  background: #87878E;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: solid 10px var(--primary-color);
   padding: 50px;
 }
 
