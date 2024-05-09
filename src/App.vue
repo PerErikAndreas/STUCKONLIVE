@@ -25,7 +25,7 @@ export default {
     // Simulate content loading, replace with actual loading logic
     setTimeout(() => {
       this.isLoaded = true;
-    }, 3000); // Adjust the delay as needed
+    }, 1500); // Adjust the delay as needed
   },
   methods: {
     loadAnimation() {

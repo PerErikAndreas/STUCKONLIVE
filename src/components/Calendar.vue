@@ -12,7 +12,6 @@
         lang="sv"
         theme="light"
         color="#e7492e"
-        whitelabel
       ></billetto-organiser-widget>
     </div>
   </div>

@@ -88,7 +88,7 @@ export default {
 
 .text-content h2 {
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 30px;
   /* Add more styles for your heading */
 }
 
@@ -101,7 +101,7 @@ export default {
   /* Add more styles for your paragraph */
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
 .instagram-container {
   width: 92%;
   display: flex;
@@ -127,7 +127,7 @@ border-radius: 8px;
 padding: 20px 24px 20px 24px;
 flex-direction: row;
 }
-}
+} */
 
 @media (min-width: 1000px) {
 .instagram-post-container {

@@ -324,15 +324,12 @@ export default defineComponent({
 margin: 0;
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .carousel__item {
 border-radius: 8px;
 width: 90%;
 max-width: 923px;
 
-}
-.carousel-container {
-  width: 90vw;
 }
 }
 
@@ -347,6 +344,6 @@ max-width: 923px;
   margin-left: 0px;
   width: 100%;
 }
-}
+} */
 </style>
 
