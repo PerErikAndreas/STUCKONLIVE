@@ -134,7 +134,7 @@ button:hover {
   .lottie-container {
     position: absolute;
   top: 0px; /* Position from the top edge of the parent */
-  right: 50px; /* Position from the right edge of the parent */
+  right: 0px; /* Position from the right edge of the parent */
     display: flex;
     flex-direction: column;
     border-radius: 50%;
