@@ -208,6 +208,12 @@ button:hover {
   }
 
   @media (min-width: 1400px) {
+  
+    .contact-container {
+
+margin: 0px;
+
+}
   h2 {
   color: #ffffff;
   font-family: var(--font-main);

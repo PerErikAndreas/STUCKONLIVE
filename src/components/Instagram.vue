@@ -135,7 +135,7 @@ flex-direction: row;
   width: 92%;
   max-width: 883px;
   border-radius: 8px;
-  padding: 20px;
+  padding: 20px 32px 20px 32px;
   flex-direction: row;
   }
 .instagram-container {

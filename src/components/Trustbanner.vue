@@ -49,6 +49,9 @@ export default {
     font-family: var(--font-main);
   }
   
+  .icon-container:hover {
+    transform: scale(1.05);
+  }
   .icons-title {
     font-size: 14px;
   }

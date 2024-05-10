@@ -82,6 +82,10 @@ export default {
   margin-left: 20px;
 }
 
+.my-logo:hover {
+    transform: scale(1.05);
+  }
+
 .my-main-nav li {
   margin-bottom: 5;
 }

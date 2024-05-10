@@ -49,6 +49,9 @@ export default {
   .sponsor-logo {
     width: 75px;
   }
+  .sponsor-logo:hover {
+    transform: scale(1.05);
+  }
   
   .icons-title {
     font-size: 14px;
