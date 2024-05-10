@@ -83,7 +83,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
   height: 100%;
 }
 
@@ -91,6 +91,10 @@ export default {
   color: #FFFFFF;
   max-width: 300px;
   margin-bottom: 50px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-main);
 }
 
 h2 {
@@ -112,7 +116,7 @@ button {
   background-color: #ffffff;
   color: var(--primary-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -177,7 +181,7 @@ button {
   background-color: #FFFFFF;
   color: var(--primary-color);
   border: solid 3px var(--primary-color);
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -231,7 +235,7 @@ button {
   background-color: #ffffff;
   color: var(--primary-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

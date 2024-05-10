@@ -111,6 +111,10 @@ export default {
 .paragraph-container p {
   max-width: 300px;
   color: var(--background-color);
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
 }
 .field-graphic {
   display: none;

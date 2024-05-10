@@ -13,8 +13,8 @@
   </div>
 
   <div class="icon-container">
-    <a href="/Kontakt" role="link" aria-label="Circle Stuckon">
-      <img class="sponsor-logo" src="../assets/circle-stuckon-logo.png" alt="Circle Stuckon Logo">
+    <a href="https://billetto.se/users/stuck-on" role="link" aria-label="Billetto">
+      <img class="sponsor-logo" src="../assets/billetto.png" alt="Billetto Logo">
     </a>
   </div>
 </div>

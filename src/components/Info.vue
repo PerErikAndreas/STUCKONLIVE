@@ -15,7 +15,7 @@
       </p>
 
       <p>
-        Vår förening grundades med visionen att skapa en gemenskap för
+        Vår idéella förening grundades med visionen att skapa en gemenskap för
         likasinnade som delar kärleken till musik och samtidigt göra staden mer levande
         genom att arrangera evenemang på flera scener.
       </p>
@@ -26,6 +26,27 @@
         lokal musikgemenskap.
       </p>
     </div>
+  </div>
+  </div>  
+  </div>
+  <div class="articles-container">
+    <h2>ARTIKLAR</h2>   
+    <div class="cards"> 
+    <div class="card">
+
+  <ul>
+        <li><a href="https://www.svt.se/.../musikarrangoren-i-ostersund...">Musikarrangören i Östersund</a></li>
+        <li><a href="https://www.ltz.se/.../morgan-hall-ger-ny-kraft-at.../">Morgan Hall ger ny kraft</a></li>
+        <li><a href="https://www.ltz.se/.../rapparen-erik-lundin-inleder-nya.../">Rapparen Erik Lundin startar nytt</a></li>
+        <li><a href="https://www.ltz.se/.../stuck-on-drar-igang-varens.../">Stuck On drar igång vårsäsongen</a></li>
+        <li><a href="https://www.ltz.se/.../rock-pop-poesi-och-honky-tonk-har.../">Rock, Pop, Poesi och Honky-Tonk</a></li>
+        <li><a href="https://www.ltz.se/.../fin-kvall-med-starka.../">En fin kväll med starka...</a></li>
+        <li><a href="https://www.op.se/.../hyllade-artisten-valde.../">Hyllade artisten väljer...</a></li>
+        <li><a href="https://www.ltz.se/.../redan-tolv-inbokade-konserter-i.../">Tolv inbokade konserter</a></li>
+        <li><a href="https://www.ltz.se/.../john-holm-en-man-med-brokig.../">John Holm: A Man with a Varied...</a></li>
+        <li><a href="https://www.ltz.se/.../anna-von-hausswolff-till.../">Anna von Hausswolff to...</a></li>
+    </ul>
+
   </div>
   </div>  
   </div>
@@ -44,6 +65,25 @@ export default {
 </script>
 
 <style scoped>
+   ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        a {
+            font-weight: 400;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 .info-picture {
   width: 100%;
   height: auto;
@@ -55,6 +95,14 @@ export default {
 }
 .info-container {
   display: flex;
+  flex-direction: column;
+  max-width: 923px;
+  margin: 0 auto 0 auto;
+}
+
+.articles-container {
+  display: flex;
+  width: 100%;
   flex-direction: column;
   max-width: 923px;
   margin: 0 auto 180px auto;
@@ -102,7 +150,7 @@ h2 {
 }
 
 @media (min-width: 1400px) {
-  .info-container {
+  .articles-container {
   margin: 0 auto 350px auto;
 }
 
