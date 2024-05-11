@@ -29,7 +29,7 @@
   </div>
   </div>  
   </div>
-  <div class="articles-container">
+  <!-- <div class="articles-container">
     <h2>ARTIKLAR</h2>   
     <div class="cards"> 
     <div class="card">
@@ -49,7 +49,7 @@
 
   </div>
   </div>  
-  </div>
+  </div> -->
 </template>
 
 <script>
