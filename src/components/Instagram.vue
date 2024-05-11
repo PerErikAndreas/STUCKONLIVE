@@ -42,11 +42,11 @@ export default {
 }
 
 .greybackground {
-  background: #FAFAFA;
-  /* background: 
-    linear-gradient(to right, var(--primary-color) 20px, transparent 20px),
-    linear-gradient(to right, rgba(255, 255, 255, 0.5) 20px, transparent 20px);
-  background-size: 40px 40px; */
+  background: 
+  linear-gradient(to bottom, #87878E 20px, transparent 20px),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 20px, transparent 20px);
+background-size: 40px 40px;
+
   display: flex;
   flex-direction: column;
   width: 100%;
