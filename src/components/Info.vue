@@ -97,7 +97,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 923px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 180 auto;
 }
 
 .articles-container {
