@@ -286,5 +286,32 @@ export default {
   max-width: 350px;
   color: var(--background-color);
 }
+.contact-container {
+
+margin: 40px;
+
+}
+
+.lottie-container {
+  position: absolute;
+  top: 80px; /* Position from the top edge of the parent */
+  left: 50%; /* Start from the middle of the parent */
+  transform: translateX(280px); /* Move right by 50px from the center */
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  overflow: hidden; /* Add overflow: hidden to crop any overflow */
+}
+
+
+
+/* Make the SVG inside cover the entire space */
+.lottie-container svg {
+display: inline;
+height: 400px;
+object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
+}
 }
 </style>
