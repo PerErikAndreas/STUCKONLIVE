@@ -39,7 +39,7 @@ export default {
     border-radius: 8px;
     width: 92%;
     padding: 40px 0;
-    margin-bottom: 62px;
+    margin-bottom: 222px;
   }
 
   .icon-container {
@@ -64,6 +64,19 @@ export default {
     }
     .icons-title {
       font-size: 20px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .trustbanner-container {
+      width: 90%;
+      max-width: 923px;
+      border-radius: 8px;
+      margin-bottom: 362px;
+
+    }
+    .icons-title {
+      font-size: 22px;
     }
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="hero-container">
-  <img class="triangle-graphic" src="../assets/triangle-graphic.png" alt="White Triangle Graphic Element" aria-label="Utforska din lokala musikscen">
-  <div class="title-container">
+    <div class="lottie-container" ref="lottieContainer"></div>
+    <div class="title-container">
     <h1>
       Utforska
       <div>din&nbsp;lokala</div>
@@ -17,14 +17,13 @@
 <!-- <p>Få reda på det senaste och bli inbjuden till exklusiva spelningar. Följ oss via vårt nyhetsbrev!
     </p> -->
 <div class="input-and-ctabutton-container">
-    <div class="ml-embedded" data-form="X9IuFM"></div>
-    <div class="lottie-container" ref="lottieContainer"></div>
+  <div class="ml-embedded" data-form="X9IuFM"></div>
   </div>
 </template>
 
 <script>
 import lottie from 'lottie-web';
-import animationData from '../assets/animation.json';
+import animationData from '../assets/animation3.json';
 
 export default {
   name: "Hero",
@@ -59,11 +58,15 @@ export default {
   font-family: var(--font-main);
   margin-bottom: 5px;
 }
-  .lottie-container {
-    display: flex;
+.lottie-container {
+    position: absolute;
+  top: 0px; /* Position from the top edge of the parent */
+  right: 0px; /* Position from the right edge of the parent */
+    display: none;
     flex-direction: column;
-  height: 110px;
-  width: 90%;
+    border-radius: 50%;
+  height: 100px;
+  width: 100px;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -71,8 +74,8 @@ export default {
 
 /* Make the SVG inside cover the entire space */
 .lottie-container svg {
-  display: inline;
-  width: 100%;
+  display: none;
+  height: 400px;
   object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
   .ml-embedded {
@@ -141,22 +144,35 @@ export default {
 }
 
 @media (min-width: 700px) {
+  .contact-container {
+
+  margin: 40px;
+
+}
+
   .lottie-container {
-  margin: 0 0 0 0;
-  border-radius: 20px;
-  height: 110px;
-  width: 100%;
+    position: absolute;
+  top: 80px; /* Position from the top edge of the parent */
+  right: 50px; /* Position from the right edge of the parent */
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+  height: 350px;
+  width: 350px;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
+
+
 
 /* Make the SVG inside cover the entire space */
 .lottie-container svg {
   display: inline;
-  width: 100%;
-  border-radius: 20px;
-  height: 120%;
+  height: 400px;
   object-fit: cover; /* Add object-fit: cover to cover the container without distorting aspect ratio */
 }
+}
+
+@media (min-width: 700px) {
   .triangle-graphic {
     display: inline;
   }
@@ -176,7 +192,7 @@ export default {
   }
 
   .hero-container {
-    margin: 52px 0px 110px 0px;
+    margin: 52px 0px 30px 0px;
     text-align: start;
     width: 89%;
     justify-content: start;
@@ -195,17 +211,19 @@ export default {
   }
 
   .ml-embedded {
-    width: 60vw;
+    max-width: 50vw;
     display: flex;
     flex-direction: row;
   }
 
   .input-and-ctabutton-container {
-    display: flex;
-    gap: 16px;
-    width: 92%;
-    flex-direction: row-reverse;
-  }
+  display: flex;
+  width: 95%;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 62px;
+}
 }
 
 @media (min-width: 920px) {
@@ -219,12 +237,12 @@ export default {
   }
 
   .input-and-ctabutton-container {
-    width: 94%;
+    width: 100%;
+    margin-left: -20px;
     max-width: 923px;
-
   }
   .hero-container {
-    margin: 52px 0px 72px 0px;
+    margin: 52px 0px 42px 0px;
   }
 
 }

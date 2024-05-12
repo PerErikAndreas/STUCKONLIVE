@@ -5,7 +5,7 @@
     <Sponsorbanner />
     <Carousel />
     <Trustbanner />
-    <Instagram />
+    <!-- <Instagram /> -->
     <Footer />
   </div>
 </template>
