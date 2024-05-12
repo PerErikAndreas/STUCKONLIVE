@@ -90,14 +90,12 @@ export default {
   object-fit: cover;
   border-radius: 50%;
 }
-.info-picture-container {
 
-}
 .info-container {
   display: flex;
   flex-direction: column;
   max-width: 923px;
-  margin: 0 auto 180 auto;
+  margin: 0 auto 180px auto;
 }
 
 .articles-container {
