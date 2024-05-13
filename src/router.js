@@ -25,6 +25,7 @@ const router = createRouter({
         route('/', 'HomePage'),
         route('/Kontakt', 'ContactPage'),
         route('/Cookie-Policy', 'CookiePolicy'),
+        route('/Privacy-Policy', 'PrivacyPolicy'),
       ]
     },
     { path: '/:pathMatch(.*)*', redirect: '/' } // Handle all other paths

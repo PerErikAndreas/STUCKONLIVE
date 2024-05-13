@@ -36,6 +36,7 @@
 .cookie-policy-container {
   display: flex;
   width: 100%;
+  justify-content: center;
   flex-direction: column;
   max-width: 923px;
   height: 100vh;
@@ -47,6 +48,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
   border-radius: 8px;
+  margin: 0 20px 0 20px;
 }
 
 .card {

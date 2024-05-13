@@ -17,6 +17,7 @@
 <!-- <p>Få reda på det senaste och bli inbjuden till exklusiva spelningar. Följ oss via vårt nyhetsbrev!
     </p> -->
 <div class="input-and-ctabutton-container">
+  <img src="../assets/wave-graphic-newsletter.png" alt="picture of graphic waves" class="wave-graphic-picture" aria-label="graphic section" />
   <div class="ml-embedded" data-form="X9IuFM"></div>
   </div>
 </template>
@@ -50,6 +51,9 @@ export default {
 </script>
 
 <style scoped>
+.wave-graphic-picture {
+  display: none;
+}
 .calendar-container-title {
   display: flex;
   width: 100%;
@@ -60,13 +64,13 @@ export default {
 }
 .lottie-container {
     position: absolute;
-  top: 0px; /* Position from the top edge of the parent */
-  right: 0px; /* Position from the right edge of the parent */
-    display: none;
+  top: 70px; /* Position from the top edge of the parent */
+  right: 85%; /* Position from the right edge of the parent */
+    display: inline;
     flex-direction: column;
     border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -144,6 +148,12 @@ export default {
 }
 
 @media (min-width: 700px) {
+  .wave-graphic-picture {
+  display: inline;
+  margin-top: 20px;
+  width: 450px;
+  height: 106px;
+}
   .contact-container {
 
   margin: 40px;
@@ -192,7 +202,7 @@ export default {
   }
 
   .hero-container {
-    margin: 52px 0px 30px 0px;
+    margin: 52px 0px 92px 0px;
     text-align: start;
     width: 89%;
     justify-content: start;
@@ -218,10 +228,10 @@ export default {
 
   .input-and-ctabutton-container {
   display: flex;
-  width: 95%;
+  width: 90%;
   justify-content: start;
   align-items: start;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 62px;
 }
 }
@@ -237,8 +247,7 @@ export default {
   }
 
   .input-and-ctabutton-container {
-    width: 100%;
-    margin-left: -20px;
+    width: 95%;
     max-width: 923px;
   }
   .hero-container {
