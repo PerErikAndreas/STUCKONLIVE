@@ -271,7 +271,7 @@ export default defineComponent({
         ]
       ]
     };
-  }
+  }, 
 });
 </script>
 
@@ -287,7 +287,9 @@ export default defineComponent({
   align-items: center;
   width: 100%;
   height: auto;
-  margin: 10px
+  margin: 10px;
+  min-height: 300px; /* Minimum height to prevent layout collapse */
+
 }
 
 .image-container {

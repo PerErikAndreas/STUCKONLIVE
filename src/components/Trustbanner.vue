@@ -47,13 +47,16 @@ export default {
     flex-direction: column;
     text-align: center;
     font-family: var(--font-main);
+    line-height: 18px;
+    font-size: 16px;
   }
   
   .icon-container:hover {
     transform: scale(1.05);
   }
   .icons-title {
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 16px;
   }
 
   @media (min-width: 700px) {
@@ -62,7 +65,7 @@ export default {
       max-width: 923px;
       border-radius: 8px;
     }
-    .icons-title {
+    .icons-container {
       font-size: 20px;
     }
   }
@@ -75,7 +78,7 @@ export default {
       margin-bottom: 362px;
 
     }
-    .icons-title {
+    .icons-container {
       font-size: 22px;
     }
   }
