@@ -34,7 +34,7 @@ export default {
 .stuckon-logored {
   width: auto;
   margin-top: 20px;
-  height: 22px; /* Adjust based on your navbar height */
+  height: 25px; /* Adjust based on your navbar height */
 }
 
 .stuckon-logored {
@@ -54,7 +54,7 @@ export default {
   display: none; /* Initially hidden */
   position: absolute; /* Positioned absolutely */
   margin-right: 20px;
-  top: 40px; /* Start just below the navbar */
+  top: 45px; /* Start just below the navbar */
   right: 0; /* Align to the left of the parent */
   background: var(--background-color);
   border-radius: 12px 0px 12px 12px;
@@ -77,7 +77,7 @@ export default {
 .my-logo {
   display: inline-block;
   font-family: var(--font-main);
-  font-size: 22px;
+  font-size: 21px;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -92,7 +92,7 @@ export default {
 
 .my-navbar-toggle {
   position: absolute;
-  top: 17px;
+  top: 22px;
   right: 20px;
   cursor: pointer;
   color: var(--background-color);

@@ -64,13 +64,13 @@ export default {
 }
 .lottie-container {
     position: absolute;
-  top: 70px; /* Position from the top edge of the parent */
-  right: 85%; /* Position from the right edge of the parent */
+  top: 67px; /* Position from the top edge of the parent */
+  right: 73%; /* Position from the right edge of the parent */
     display: inline;
     flex-direction: column;
     border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 67px;
+  width: 67px;
   overflow: hidden; /* Add overflow: hidden to crop any overflow */
 }
 
@@ -105,7 +105,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 62px;
+  margin-bottom: 32px;
 }
 .paragraph-container {
   display: flex;
@@ -128,7 +128,7 @@ export default {
 }
 
 .hero-container {
-  margin: 52px 0px 100px 0px;
+  margin: 52px 0px 62px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;

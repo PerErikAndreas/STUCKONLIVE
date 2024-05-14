@@ -148,7 +148,7 @@ export default {
 
 <style scoped>
 .carousel-container {
-  margin: 0 30px 62px 30px;
+  margin: 0 20px 52px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,6 +158,10 @@ export default {
   color: var(--primary-color);
   width: 100%;
   text-align: left;
+}
+
+.carousel-title h2 {
+  margin-bottom: 5px;
 }
 .carousel {
   width: 100%;
@@ -187,7 +191,7 @@ export default {
 
 @media (min-width: 700px) {
   .carousel-container {
-    margin: 0 40px 62px 40px;
+    margin: 0 45px 62px 45px;
   }
 }
 

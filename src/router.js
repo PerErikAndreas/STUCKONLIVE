@@ -5,15 +5,13 @@ const route = (path, component) => {
   return {
     path,
     name: path,
-    component: () => import(`../src/pages/${component}.vue`)
-  }
-}
+    component: () => import(`../src/pages/${component}.vue`) // Ensure this path is correct
+  };
+};
 
 const Layout = () => import('../src/templates/Default.vue'); // Ensure this path is correct
 
 // Create the router instance and pass the `routes` option
-// You can pass in additional options here, but let's
-// start with the basics.
 const router = createRouter({
   // Use createWebHistory for HTML5 history mode
   history: createWebHistory(process.env.BASE_URL || '/'),
@@ -29,7 +27,7 @@ const router = createRouter({
       ]
     },
     { path: '/:pathMatch(.*)*', redirect: '/' } // Handle all other paths
-  ],
-})
+  ]
+});
 
 export default router;

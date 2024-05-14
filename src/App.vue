@@ -20,12 +20,15 @@ export default {
       isLoaded: false
     };
   },
-  mounted() {
+  async mounted() {
+    // Load lottie-web and animation data lazily
+    this.lottie = (await import('lottie-web')).default;
+    this.animationData = (await import('./assets/animation2.json')).default;
     this.loadAnimation();
     // Simulate content loading, replace with actual loading logic
     setTimeout(() => {
       this.isLoaded = true;
-    }, 1500); // Adjust the delay as needed
+    }, 1300); // Adjust the delay as needed
   },
   methods: {
     loadAnimation() {
@@ -112,7 +115,7 @@ body {
         transparent 50%
         ),
     radial-gradient(
-      circle 1050px at center bottom,
+      circle 750px at center bottom,
       #e7492e 50%,
       transparent 50%
       );

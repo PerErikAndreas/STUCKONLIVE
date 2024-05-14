@@ -43,7 +43,7 @@ export default {
 <style scoped>
 
 .calendar-container {
-  margin: 0 0 72px 0;
+  margin: 0 0 52px 0;
   width: 92%;
   max-width: 923px;
 }
@@ -61,7 +61,7 @@ export default {
 
 @media (min-width: 700px) {
   .calendar-container {
-    margin: 0 40px 72px 40px;
+    margin: 0 40px 62px 40px;
 
   }
 }

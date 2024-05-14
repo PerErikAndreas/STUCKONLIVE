@@ -75,7 +75,7 @@ export default {
       width: 92%;
       max-width: 923px;
       border-radius: 8px;
-      margin-bottom: 362px;
+      margin-bottom: 232px;
 
     }
     .icons-container {

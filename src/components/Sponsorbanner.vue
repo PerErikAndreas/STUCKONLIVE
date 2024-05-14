@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
   .sponsorbanner-container {
-    margin: 0 0 72px 0;
+    margin: 0 0 32px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -59,6 +59,8 @@ export default {
 
   @media (min-width: 700px) {
     .sponsorbanner-container {
+      margin: 0 0 42px 0;
+
       border-radius: 8px;
       width: 90%;
     }
