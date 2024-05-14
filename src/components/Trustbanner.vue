@@ -61,7 +61,7 @@ export default {
 
   @media (min-width: 700px) {
     .trustbanner-container {
-      width: 90%;
+      width: 92%;
       max-width: 923px;
       border-radius: 8px;
     }
@@ -72,7 +72,7 @@ export default {
 
   @media (min-width: 1400px) {
     .trustbanner-container {
-      width: 90%;
+      width: 92%;
       max-width: 923px;
       border-radius: 8px;
       margin-bottom: 362px;
