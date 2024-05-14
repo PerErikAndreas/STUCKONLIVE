@@ -11,7 +11,7 @@
         </p>
       </div>
     </div>
-    <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed>
+    <!-- <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed> -->
   </div>
 </div>
 </div>

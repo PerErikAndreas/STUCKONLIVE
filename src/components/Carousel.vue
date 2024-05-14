@@ -7,7 +7,7 @@
       <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
         <div class="carousel-item" v-for="(group, index) in slides" :key="index">
           <div class="image-container" v-for="(image, idx) in group" :key="idx" :class="{ 'single-image': group.length === 1 }">
-            <img :src="image.image" :alt="image.alt" />
+            <img :src="image.image" :alt="image.alt" loading="lazy" />
           </div>
         </div>
       </div>
