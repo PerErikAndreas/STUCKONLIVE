@@ -11,19 +11,14 @@
         </p>
       </div>
     </div>
-    <!-- <instagram-embed permalink="https://www.instagram.com/p/C4cpNZpNS3_/"></instagram-embed> -->
   </div>
 </div>
 </div>
 </template>
 
 <script>
-import InstagramEmbed from './InstagramEmbed.vue';
 
 export default {
-  components: {
-    InstagramEmbed
-  },
   name: "Instagram",
   // Component data and methods would go here
 };

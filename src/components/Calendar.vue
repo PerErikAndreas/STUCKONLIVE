@@ -1,7 +1,7 @@
 <template>
   <div class="calendar-container">
     <div class="calendar-container-title">
-      <H2>KOMMANDE EVENTS</H2>
+      <h2>KOMMANDE EVENTS</h2>
     </div>
     <div class="billeto-widget-container">
       <billetto-organiser-widget
@@ -27,21 +27,26 @@ export default {
   },
   mounted() {
     // Load the Billetto widget script dynamically
-    const script = document.createElement("script");
-    script.src = "https://billetto.se/widget.js";
-    script.async = true;
-    script.onload = () => {
-      // Set the flag to true once the script is loaded
-      this.billettoScriptLoaded = true;
-    };
+    this.loadBillettoScript();
+  },
+  methods: {
+    loadBillettoScript() {
+      const script = document.createElement("script");
+      script.src = "https://billetto.se/widget.js";
+      script.async = true;
+      script.onload = () => {
+        // Set the flag to true once the script is loaded
+        this.billettoScriptLoaded = true;
+      };
 
-    // Append the script to the document
-    document.head.appendChild(script);
+      // Append the script to the document
+      document.head.appendChild(script);
+    },
   },
 };
 </script>
-<style scoped>
 
+<style scoped>
 .calendar-container {
   margin: 0 0 52px 0;
   width: 92%;
@@ -55,6 +60,7 @@ export default {
   font-family: var(--font-main);
   margin-bottom: 5px;
 }
+
 .calendar-container-title h2 {
   margin: 0;
 }
@@ -62,7 +68,6 @@ export default {
 @media (min-width: 700px) {
   .calendar-container {
     margin: 0 40px 62px 40px;
-
   }
 }
 </style>

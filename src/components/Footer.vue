@@ -12,13 +12,13 @@
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/stuckonlive/" aria-label="Instagram">
-          <img src="../assets/instagram-icon.png" alt="Instagram"/>
+          <img :src="instagramIcon" alt="Instagram" loading="lazy" />
         </a>
         <a href="https://open.spotify.com/playlist/2M6Ea4H70MDyu970RII008?si=Un3DR2bkQ1i3-h8_PyuClw&nd=1&dlsi=1c1ff4dcabcd408a" aria-label="Spotify">
-          <img src="../assets/spotify.png" alt="Spotify" />
+          <img :src="spotifyIcon" alt="Spotify" loading="lazy" />
         </a>
         <a href="https://www.facebook.com/stuckonlive" aria-label="Facebook">
-          <img src="../assets/facebook-icon.png" alt="Facebook" />
+          <img :src="facebookIcon" alt="Facebook" loading="lazy" />
         </a>
       </div>
     </div>
@@ -28,12 +28,19 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      instagramIcon: require('../assets/instagram-icon.png'),
+      spotifyIcon: require('../assets/spotify.png'),
+      facebookIcon: require('../assets/facebook-icon.png'),
+    };
+  },
 };
 </script>
 
 <style scoped>
 .footer-container {
-  background-color: transperent;
+  background-color: transparent;
   color: var(--background-color);
   padding: 2rem;
   text-align: center;

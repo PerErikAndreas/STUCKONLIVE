@@ -10,21 +10,26 @@
     <div class="lottie-container" ref="lottieContainer"></div>
   </div>
 </template>
-<script>
-import lottie from 'lottie-web';
-import animationData from './assets/animation2.json';
 
+<script>
 export default {
   data() {
     return {
-      isLoaded: false
+      isLoaded: false,
+      lottie: null,
+      animationData: null
     };
   },
   async mounted() {
     // Load lottie-web and animation data lazily
-    this.lottie = (await import('lottie-web')).default;
-    this.animationData = (await import('./assets/animation2.json')).default;
+    const [lottie, animationData] = await Promise.all([
+      import('lottie-web').then(module => module.default),
+      import('./assets/animation2.json').then(module => module.default)
+    ]);
+    this.lottie = lottie;
+    this.animationData = animationData;
     this.loadAnimation();
+
     // Simulate content loading, replace with actual loading logic
     setTimeout(() => {
       this.isLoaded = true;
@@ -32,9 +37,9 @@ export default {
   },
   methods: {
     loadAnimation() {
-      lottie.loadAnimation({
+      this.lottie.loadAnimation({
         container: this.$refs.lottieContainer,
-        animationData: animationData,
+        animationData: this.animationData,
         renderer: 'svg',
         loop: true,
         autoplay: true
@@ -43,6 +48,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .lottie-container {
   width: 250px;

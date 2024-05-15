@@ -1,28 +1,34 @@
 <template>
   <header>
-        <nav class="my-navbar">
-          <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
-        <a href="/" class="my-logo" alt="Stuckon Logo White" aria-label="Stuckon Logo">
-          <img class="stuckon-logowhite" src="../assets/stuckon-logo-white.png" alt="Stuckon Logo White" aria-label="Stuckon Logo">
-          <img class="stuckon-logored" src="../assets/stuckon-logo-red.png" alt="Stuckon Logo Red" aria-hidden="true">
-        </a>
-        <ul class="my-main-nav" id="js-menu">
-          <li>
-            <a href="/Kontakt" class="my-nav-links">Kontakt/Info</a>
-          </li>
-        </ul>
-        </nav>
+    <nav class="my-navbar">
+      <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
+      <a href="/" class="my-logo" alt="Stuckon Logo White" aria-label="Stuckon Logo">
+        <img class="stuckon-logowhite" :src="stuckonLogoWhite" alt="Stuckon Logo White" aria-label="Stuckon Logo" loading="lazy">
+        <img class="stuckon-logored" :src="stuckonLogoRed" alt="Stuckon Logo Red" aria-hidden="true" loading="lazy">
+      </a>
+      <ul class="my-main-nav" id="js-menu">
+        <li>
+          <a href="/Kontakt" class="my-nav-links">Kontakt/Info</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      stuckonLogoWhite: require('../assets/stuckon-logo-white.png'),
+      stuckonLogoRed: require('../assets/stuckon-logo-red.png'),
+    };
+  },
   mounted() {
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
 
-    navBarToggle.addEventListener("click", function () {
+    navBarToggle.addEventListener("click", () => {
       mainNav.classList.toggle("active");
     });
   },
@@ -83,11 +89,7 @@ export default {
 }
 
 .my-logo:hover {
-    transform: scale(1.05);
-  }
-
-.my-main-nav li {
-  margin-bottom: 5;
+  transform: scale(1.05);
 }
 
 .my-navbar-toggle {
@@ -166,22 +168,16 @@ export default {
   }
   .my-main-nav {
     top: 12px; /* Start just below the navbar */
-
-
-  background: transparent;
-
-}
-.my-nav-links {
+    background: transparent;
+  }
+  .my-nav-links {
     color: var(--primary-color);
   }
-  
 }
-
 @media (min-width: 1400px) and (max-width: 1540px) {
-
   .my-main-nav {
-  flex-direction: column;
-  top: 7px; /* Start just below the navbar */
-}
+    flex-direction: column;
+    top: 7px; /* Start just below the navbar */
+  }
 }
 </style>

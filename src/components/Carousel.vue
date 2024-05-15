@@ -17,122 +17,55 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import JoelAlmeImage from "@/assets/posters/JoelAlme.jpg";
-import SodraSverigeImage from "@/assets/posters/Sodrasverige.jpg";
-import KassiValazzaImage from "@/assets/posters/Kazzivalazza.jpg";
-import SarahKlangImage from "@/assets/posters/SarahKlang.jpg";
-import JoshuaRayWalkersImage from "@/assets/posters/JoshuaRayWalkers.jpg";
-import TheSpidersImage from "@/assets/posters/Spiders.jpg";
-import AnnaVonHauswolfImage from "@/assets/posters/AnnaVonHauswolf.jpg";
-import TallestManImage from "@/assets/posters/Tallestman.jpg";
-import TeoLawrenceImage from "@/assets/posters/TeoLawrence.jpg";
-import VasterbronImage from "@/assets/posters/Vasterbron.jpg";
-import HenningImage from "@/assets/posters/Henning.jpg";
-import MattiasAlkbergImage from "@/assets/posters/MattiasAlkberg.jpg";
-import SlowgoldImage from "@/assets/posters/Slowgold.jpg";
-import CharlesWImage from "@/assets/posters/CharlesW.jpg";
-import TonbruketImage from "@/assets/posters/Tonbruket.jpg";
-import DavidRitchardsImage from "@/assets/posters/DavidRitchards.jpg";
-import VannaIngetImage from "@/assets/posters/VannaInget.jpg";
-import WhitneyRoseImage from "@/assets/posters/WhitneyRose.jpg";
-import TrummorOrgelImage from "@/assets/posters/TrummorOrgel.jpg";
-import TreburtImage from "@/assets/posters/Treburt.jpg";
-import TheDahmersImage from "@/assets/posters/Dahmers.jpg";
-import DanielRomanosOutfitImage from "@/assets/posters/DanielRomanosOutfit.jpg";
-import AnnaugkondaBrattlandImage from "@/assets/posters/AnnaugkondaBrattland.jpg";
-import CalebCImage from "@/assets/posters/CalebC.jpg";
-import GrandeRosesImage from "@/assets/posters/GrandeRoses.jpg";
-import KristofferAImage from "@/assets/posters/KristofferA.jpg";
-import NationalReserveImage from "@/assets/posters/NationalReserve.jpg";
-import AncientShapesImage from "@/assets/posters/AncientShapes.jpg";
-import HalmImage from "@/assets/posters/Halm.jpg";
-import Halm2Image from "@/assets/posters/Halm2.jpg";
-import WilliamCrightonImage from "@/assets/posters/WilliamCrighton.jpg";
-import MotoBoyImage from "@/assets/posters/MotoBoy.jpg";
-import SvartKattImage from "@/assets/posters/SvartKatt.jpg";
-import JerryLegerImage from "@/assets/posters/JerryLeger.jpg";
-import AndrewCombsImage from "@/assets/posters/AndrewCombs.jpg";
-import WillieWattsonImage from "@/assets/posters/WillieWattson.jpg";
-import MargoClicerImage from "@/assets/posters/MargoClicer.jpg";
-import SkraekodlanImage from "@/assets/posters/Skraekodlan.jpg";
-import AvantGardetImage from "@/assets/posters/AvantGardet.jpg";
-import ChristianKjellvanderImage from "@/assets/posters/ChristianKjellvander.jpg";
-import LesBigByrdsImage from "@/assets/posters/LesBigByrds.jpg";
-import DeepDarkWoodsImage from "@/assets/posters/DeepDarkWoods.jpg";
-import ByWaterImage from "@/assets/posters/Bywater.jpg";
-import MagadogsImage from "@/assets/posters/Magadogs.jpg";
-import JesperLindellImage from "@/assets/posters/JesperLindell.jpg";
-import KarlKnutSigurdImage from "@/assets/posters/Karlknutsigurd.jpg";
-import LaurenmowrrowImage from "@/assets/posters/Laurenmowrrow.jpg";
-import ManskensbondenImage from "@/assets/posters/ManskensBonden.jpg";
-import EpsTrailerParkImage from "@/assets/posters/EPSTRAILERPARK.jpg";
-import VannaskassinoImage from "@/assets/posters/Vannaskassino.jpg";
-import WillStevartImage from "@/assets/posters/WillStevart.jpg";
-import VilmaFloodImage from "@/assets/posters/vilmaflood.jpg";
-import BrorGunnarImage from "@/assets/posters/BrorGunnar.jpg";
-import RoselineImage from "@/assets/posters/roseline.jpg";
-import TerraImage from "@/assets/posters/terra.jpg";
-import LudwigHartImage from "@/assets/posters/LudwigHart.jpg";
-import JuniorBrielleImage from "@/assets/posters/JuniorBrielle.jpg";
-import Deportees2023Image from "@/assets/posters/deportees2023.jpg";
-import DeporteesImage from "@/assets/posters/Deportees.jpg";
-import GlesbygdnImage from "@/assets/posters/glesbygdn.jpg";
-import IsraelNashImage from "@/assets/posters/israelnash.jpg";
-import JakeLaBoltzImage from "@/assets/posters/JAkeLaBoltz.jpg";
-import LaLaDushpalatsetImage from "@/assets/posters/laladushpalats.jpg";
-import TeddyImage from "@/assets/posters/TeddyErnehed.jpg";
-// ... other imports
 
 export default {
   setup() {
     const currentIndex = ref(0);
     const slides = ref([
-      [{ image: JoelAlmeImage, alt: "Joel Alme" }, { image: SodraSverigeImage, alt: "Södra Sverige" }],
-      [{ image: KassiValazzaImage, alt: "Kassi Valazza" }, { image: SarahKlangImage, alt: "Sarah Klang" }],
-      [{ image: WillStevartImage, alt: "Will Stevart" }, { image: VilmaFloodImage, alt: "Vilma Flood" }],
-      [{ image: EpsTrailerParkImage, alt: "Eps Trailerpark" }, { image: VannaskassinoImage, alt: "Vännäskassino" }],
-      [{ image: Deportees2023Image, alt: "Deportees" }, { image: GlesbygdnImage, alt: "Glesbygdn" }],
-      [{ image: LaurenmowrrowImage, alt: "Lauren Morrow" }, { image: ManskensbondenImage, alt: "Månskensbonden" }],
-      [{ image: LudwigHartImage, alt: "Ludwig Hart" }, { image: JuniorBrielleImage, alt: "Junior Brielle" }],
-      [{ image: JesperLindellImage, alt: "Jesper Lindell" }, { image: KarlKnutSigurdImage, alt: "Karl Knut Sigurd" }],
-      [{ image: JoelAlmeImage, alt: "Joel Alme" }, { image: SodraSverigeImage, alt: "Södra Sverige" }],
-      [{ image: KassiValazzaImage, alt: "Kassi Valazza" }, { image: SarahKlangImage, alt: "Sarah Klang" }],
-      [{ image: IsraelNashImage, alt: "Israel Nash" }, { image: JakeLaBoltzImage, alt: "Jake La Boltz" }],
-      [{ image: JoshuaRayWalkersImage, alt: "Joshua Ray Walkers" }, { image: TheSpidersImage, alt: "The Spiders" }],
-      [{ image: AnnaVonHauswolfImage, alt: "Anna Von Hauswolf" }, { image: TallestManImage, alt: "The Tallest Man On Earth" }],
-      [{ image: TeddyImage, alt: "Teddy" }, { image: SkraekodlanImage, alt: "Skraekodlan" }],
-      [{ image: TeoLawrenceImage, alt: "Teo Lawrence" }, { image: VasterbronImage, alt: "Västerbron" }],
-      [{ image: HenningImage, alt: "Henning" }, { image: MattiasAlkbergImage, alt: "Mattias Alkberg" }],
-      [{ image: SlowgoldImage, alt: "Slowgold" }, { image: CharlesWImage, alt: "Charlie Watson" }],
-      [{ image: TonbruketImage, alt: "Tonbruket" }, { image: DavidRitchardsImage, alt: "David Ritchards" }],
-      [{ image: BrorGunnarImage, alt: "Bror Gunnar" }, { image: RoselineImage, alt: "Roseline" }],
-      [{ image: VannaIngetImage, alt: "Vånna Inget" }, { image: WhitneyRoseImage, alt: "Whitney Rose" }],
-      [{ image: TrummorOrgelImage, alt: "Trummor & Orgel" }, { image: TreburtImage, alt: "Tré Burt" }],
-      [{ image: TheDahmersImage, alt: "The Dahmers" }, { image: DanielRomanosOutfitImage, alt: "Daniel Romanos Outfit" }],
-      [{ image: ByWaterImage, alt: "By Water" }],
-      [{ image: MagadogsImage, alt: "Magadogs" }],
-      [{ image: CalebCImage, alt: "Caleb C" }],
-      [{ image: GrandeRosesImage, alt: "Grande Roses" }],
-      [{ image: KristofferAImage, alt: "Kristoffer Åström" }],
-      [{ image: NationalReserveImage, alt: "National Reserve" }],
-      [{ image: AncientShapesImage, alt: "Ancient Shapes" }],
-      [{ image: HalmImage, alt: "Halm" }],
-      [{ image: DeporteesImage, alt: "Deportees" }],
-      [{ image: WilliamCrightonImage, alt: "William Crighton" }],
-      [{ image: MotoBoyImage, alt: "Moto Boy" }],
-      [{ image: SvartKattImage, alt: "Svart Katt" }],
-      [{ image: JerryLegerImage, alt: "Jerry Leger" }],
-      [{ image: AndrewCombsImage, alt: "Andreas Combs" }],
-      [{ image: WillieWattsonImage, alt: "Willie Wattson" }],
-      [{ image: MargoClicerImage, alt: "Dawn Landes" }],
-      [{ image: TerraImage, alt: "Terra" }],
-      [{ image: LaLaDushpalatsetImage, alt: "Dushpalatset" }],
-      [{ image: AvantGardetImage, alt: "Avant Gardet" }],
-      [{ image: ChristianKjellvanderImage, alt: "Christian Kjellvander" }],
-      [{ image: LesBigByrdsImage, alt: "Ström" }],
-      [{ image: DeepDarkWoodsImage, alt: "Deep Dark Woods" }],
-      [{ image: Halm2Image, alt: "Halm" }],
-      [{ image: AnnaugkondaBrattlandImage, alt: "Annaugkonda/Brattland" }]
+    [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
+      [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
+      [{ image: require('@/assets/posters/WillStevart.jpg'), alt: "Will Stevart" }, { image: require('@/assets/posters/vilmaflood.jpg'), alt: "Vilma Flood" }],
+      [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskassino.jpg'), alt: "Vännäskassino" }],
+      [{ image: require('@/assets/posters/deportees2023.jpg'), alt: "Deportees" }, { image: require('@/assets/posters/glesbygdn.jpg'), alt: "Glesbygdn" }],
+      [{ image: require('@/assets/posters/Laurenmowrrow.jpg'), alt: "Lauren Morrow" }, { image: require('@/assets/posters/ManskensBonden.jpg'), alt: "Månskensbonden" }],
+      [{ image: require('@/assets/posters/LudwigHart.jpg'), alt: "Ludwig Hart" }, { image: require('@/assets/posters/JuniorBrielle.jpg'), alt: "Junior Brielle" }],
+      [{ image: require('@/assets/posters/JesperLindell.jpg'), alt: "Jesper Lindell" }, { image: require('@/assets/posters/Karlknutsigurd.jpg'), alt: "Karl Knut Sigurd" }],
+      [{ image: require('@/assets/posters/israelnash.jpg'), alt: "Israel Nash" }, { image: require('@/assets/posters/JAkeLaBoltz.jpg'), alt: "Jake La Boltz" }],
+      [{ image: require('@/assets/posters/JoshuaRayWalkers.jpg'), alt: "Joshua Ray Walkers" }, { image: require('@/assets/posters/Spiders.jpg'), alt: "The Spiders" }],
+      [{ image: require('@/assets/posters/AnnaVonHauswolf.jpg'), alt: "Anna Von Hauswolf" }, { image: require('@/assets/posters/Tallestman.jpg'), alt: "The Tallest Man On Earth" }],
+      [{ image: require('@/assets/posters/TeddyErnehed.jpg'), alt: "Teddy" }, { image: require('@/assets/posters/Skraekodlan.jpg'), alt: "Skraekodlan" }],
+      [{ image: require('@/assets/posters/TeoLawrence.jpg'), alt: "Teo Lawrence" }, { image: require('@/assets/posters/Vasterbron.jpg'), alt: "Västerbron" }],
+      [{ image: require('@/assets/posters/Henning.jpg'), alt: "Henning" }, { image: require('@/assets/posters/MattiasAlkberg.jpg'), alt: "Mattias Alkberg" }],
+      [{ image: require('@/assets/posters/Slowgold.jpg'), alt: "Slowgold" }, { image: require('@/assets/posters/CharlesW.jpg'), alt: "Charlie Watson" }],
+      [{ image: require('@/assets/posters/Tonbruket.jpg'), alt: "Tonbruket" }, { image: require('@/assets/posters/DavidRitchards.jpg'), alt: "David Ritchards" }],
+      [{ image: require('@/assets/posters/BrorGunnar.jpg'), alt: "Bror Gunnar" }, { image: require('@/assets/posters/roseline.jpg'), alt: "Roseline" }],
+      [{ image: require('@/assets/posters/VannaInget.jpg'), alt: "Vånna Inget" }, { image: require('@/assets/posters/WhitneyRose.jpg'), alt: "Whitney Rose" }],
+      [{ image: require('@/assets/posters/TrummorOrgel.jpg'), alt: "Trummor & Orgel" }, { image: require('@/assets/posters/Treburt.jpg'), alt: "Tré Burt" }],
+      [{ image: require('@/assets/posters/Dahmers.jpg'), alt: "The Dahmers" }, { image: require('@/assets/posters/DanielRomanosOutfit.jpg'), alt: "Daniel Romanos Outfit" }],
+      [{ image: require('@/assets/posters/Bywater.jpg'), alt: "By Water" }],
+      [{ image: require('@/assets/posters/Magadogs.jpg'), alt: "Magadogs" }],
+      [{ image: require('@/assets/posters/CalebC.jpg'), alt: "Caleb C" }],
+      [{ image: require('@/assets/posters/GrandeRoses.jpg'), alt: "Grande Roses" }],
+      [{ image: require('@/assets/posters/KristofferA.jpg'), alt: "Kristoffer Åström" }],
+      [{ image: require('@/assets/posters/NationalReserve.jpg'), alt: "National Reserve" }],
+      [{ image: require('@/assets/posters/AncientShapes.jpg'), alt: "Ancient Shapes" }],
+      [{ image: require('@/assets/posters/Halm.jpg'), alt: "Halm" }],
+      [{ image: require('@/assets/posters/Deportees.jpg'), alt: "Deportees" }],
+      [{ image: require('@/assets/posters/WilliamCrighton.jpg'), alt: "William Crighton" }],
+      [{ image: require('@/assets/posters/MotoBoy.jpg'), alt: "Moto Boy" }],
+      [{ image: require('@/assets/posters/SvartKatt.jpg'), alt: "Svart Katt" }],
+      [{ image: require('@/assets/posters/JerryLeger.jpg'), alt: "Jerry Leger" }],
+      [{ image: require('@/assets/posters/AndrewCombs.jpg'), alt: "Andreas Combs" }],
+      [{ image: require('@/assets/posters/WillieWattson.jpg'), alt: "Willie Wattson" }],
+      [{ image: require('@/assets/posters/MargoClicer.jpg'), alt: "Dawn Landes" }],
+      [{ image: require('@/assets/posters/terra.jpg'), alt: "Terra" }],
+      [{ image: require('@/assets/posters/laladushpalats.jpg'), alt: "Dushpalatset" }],
+      [{ image: require('@/assets/posters/AvantGardet.jpg'), alt: "Avant Gardet" }],
+      [{ image: require('@/assets/posters/ChristianKjellvander.jpg'), alt: "Christian Kjellvander" }],
+      [{ image: require('@/assets/posters/LesBigByrds.jpg'), alt: "Ström" }],
+      [{ image: require('@/assets/posters/DeepDarkWoods.jpg'), alt: "Deep Dark Woods" }],
+      [{ image: require('@/assets/posters/Halm2.jpg'), alt: "Halm" }],
+      [{ image: require('@/assets/posters/AnnaugkondaBrattland.jpg'), alt: "Annaugkonda/Brattland" }]
     ]);
 
     onMounted(() => {
@@ -159,7 +92,6 @@ export default {
   width: 100%;
   text-align: left;
 }
-
 .carousel-title h2 {
   margin-bottom: 5px;
 }
@@ -195,14 +127,13 @@ export default {
   }
 }
 
-
 @media (min-width: 1000px) {
   .carousel-container {
-  max-width: 923px;
-  margin: 0 auto 62px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    max-width: 923px;
+    margin: 0 auto 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

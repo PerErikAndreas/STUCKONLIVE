@@ -1,13 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Lazy load the components for each route
-const route = (path, component) => {
-  return {
-    path,
-    name: path,
-    component: () => import(`../src/pages/${component}.vue`) // Ensure this path is correct
-  };
-};
+const route = (path, component) => ({
+  path,
+  name: component,
+  component: () => import(`../src/pages/${component}.vue`) // Ensure this path is correct
+});
 
 const Layout = () => import('../src/templates/Default.vue'); // Ensure this path is correct
 
