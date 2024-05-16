@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       isLoaded: false,
-      lottie: null,
+      lottieInstance: null,
       animationData: null
     };
   },
@@ -28,16 +28,30 @@ export default {
     ]);
     this.lottie = lottie;
     this.animationData = animationData;
+
+    // Modify the FPS rate here, for example to 30 FPS
+    this.adjustFrameRate(30);
+
     this.loadAnimation();
 
     // Simulate content loading, replace with actual loading logic
     setTimeout(() => {
       this.isLoaded = true;
+      if (this.lottieInstance) {
+        this.lottieInstance.destroy(); // Stop the animation after loading
+      }
     }, 1300); // Adjust the delay as needed
   },
   methods: {
+    adjustFrameRate(fps) {
+      if (this.animationData.fr) {
+        this.animationData.fr = fps;
+      } else {
+        this.animationData.fr = fps;
+      }
+    },
     loadAnimation() {
-      this.lottie.loadAnimation({
+      this.lottieInstance = this.lottie.loadAnimation({
         container: this.$refs.lottieContainer,
         animationData: this.animationData,
         renderer: 'svg',
@@ -45,9 +59,15 @@ export default {
         autoplay: true
       });
     }
+  },
+  beforeDestroy() {
+    if (this.lottieInstance) {
+      this.lottieInstance.destroy(); // Clean up the animation instance
+    }
   }
 };
 </script>
+
 
 <style>
 .lottie-container {

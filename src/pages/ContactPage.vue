@@ -16,6 +16,7 @@
 <script>
 import Footer from '../components/Footer.vue';
 import Info from '../components/Info.vue';
+const animationData = require('../assets/animation3.json');
 
 export default {
   name: "Contact",
@@ -31,15 +32,25 @@ export default {
       window.location.href = "mailto:morgan.hall@sensus.se";
     },
     async loadAnimation() {
-      const lottie = await import('lottie-web');
-      const animationData = await import('../assets/animation3.json');
-      lottie.default.loadAnimation({
+      const lottie = await import('lottie-web').then(module => module.default);
+      
+      // Modify the FPS rate here, for example to 30 FPS
+      this.adjustFrameRate(animationData, 30);
+
+      lottie.loadAnimation({
         container: this.$refs.lottieContainer,
-        animationData: animationData.default,
+        animationData: animationData,
         renderer: 'svg',
         loop: true,
         autoplay: true
       });
+    },
+    adjustFrameRate(animationData, fps) {
+      if (animationData.fr) {
+        animationData.fr = fps;
+      } else {
+        animationData.fr = fps;
+      }
     }
   }
 };

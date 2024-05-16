@@ -22,27 +22,48 @@
 </template>
 
 <script>
+const animationData = require('../assets/animation3.json');
+
 export default {
-  name: "Hero",
   data() {
     return {
-      waveGraphic: require('../assets/wave-graphic-newsletter.png'),
+      isLoaded: false,
+      lottieInstance: null,
+      animationData: animationData, // Directly assign the required animation data
+      waveGraphic: require('../assets/wave-graphic-newsletter.png') // Adjust the path to your wave graphic
     };
   },
-  mounted() {
+  async mounted() {
+    // Load lottie-web lazily
+    const lottie = await import('lottie-web').then(module => module.default);
+    this.lottie = lottie;
+
+    // Modify the FPS rate here, for example to 30 FPS
+    this.adjustFrameRate(30);
+
     this.loadAnimation();
   },
   methods: {
-    async loadAnimation() {
-      const lottie = await import('lottie-web');
-      const animationData = await import('../assets/animation3.json');
-      lottie.default.loadAnimation({
+    adjustFrameRate(fps) {
+      if (this.animationData.fr) {
+        this.animationData.fr = fps;
+      } else {
+        this.animationData.fr = fps;
+      }
+    },
+    loadAnimation() {
+      this.lottieInstance = this.lottie.loadAnimation({
         container: this.$refs.lottieContainer,
-        animationData: animationData.default,
+        animationData: this.animationData,
         renderer: 'svg',
         loop: true,
         autoplay: true
       });
+    }
+  },
+  beforeDestroy() {
+    if (this.lottieInstance) {
+      this.lottieInstance.destroy(); // Clean up the animation instance
     }
   },
   created() {
@@ -60,6 +81,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .wave-graphic-picture {
