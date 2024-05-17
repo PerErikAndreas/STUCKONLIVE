@@ -15,6 +15,7 @@
         <img class="sponsor-logo" :src="billettoLogo" alt="Billetto Logo" loading="lazy">
       </a>
     </div>
+    <img class="graphic-quarter" src="../assets/animationquarter.png" alt="Loading animation" />
   </div>
 </template>
 
@@ -35,6 +36,7 @@ export default {
 .sponsorbanner-container {
   margin: 0 0 32px 0;
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -51,6 +53,13 @@ export default {
 }
 .sponsor-logo {
   width: 75px;
+}
+.graphic-quarter {
+  position: absolute;
+height: 65%;  
+bottom: 0;
+  right:-5px;
+  border-radius: 85% 0 0 0;
 }
 .sponsor-logo:hover {
   transform: scale(1.05);

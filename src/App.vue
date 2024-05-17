@@ -8,7 +8,6 @@
   </div>
   <div class="loader" v-if="!isLoaded">
     <div class="lottie-container">
-      <img src="./assets/animation.gif" alt="Loading animation" />
     </div>
   </div>
 </template>

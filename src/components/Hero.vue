@@ -1,7 +1,7 @@
 <template>
   <div class="hero-container">
     <div class="lottie-container">
-      <img src="../assets/animation.png" alt="Loading animation" />
+      <img class="graphic-circle" src="../assets/animation.png" alt="Loading animation" />
     </div>
     <div class="title-container">
       <h1>
@@ -57,6 +57,9 @@ export default {
   height: 67px;
   width: 67px;
   overflow: hidden;
+}
+.graphic-circle {
+  width: 120px;
 }
 .wave-graphic-picture {
   display: none;
@@ -115,6 +118,10 @@ export default {
     width: 450px;
     height: 106px;
   }
+
+  .graphic-circle {
+  width: 100%;
+}
   .contact-container {
     margin: 40px;
   }

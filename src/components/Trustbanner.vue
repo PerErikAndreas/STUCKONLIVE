@@ -54,9 +54,7 @@ export default {
   line-height: 18px;
   font-size: 16px;
 }
-.icon-container:hover {
-  transform: scale(1.05);
-}
+
 .icons-title {
   margin-top: 10px;
   font-size: 16px;
