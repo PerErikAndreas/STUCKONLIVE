@@ -56,10 +56,10 @@ export default {
 }
 .graphic-quarter {
   position: absolute;
-height: 65%;  
+height: 50%;  
 bottom: 0;
   right:-5px;
-  border-radius: 85% 0 0 0;
+  border-radius: 100% 0 0 0;
 }
 .sponsor-logo:hover {
   transform: scale(1.05);
@@ -82,5 +82,12 @@ bottom: 0;
     width: 92%;
     max-width: 923px;
   }
+  .graphic-quarter {
+  position: absolute;
+height: 65%;  
+bottom: 0;
+  right:-5px;
+  border-radius: 100% 0 0 0;
+}
 }
 </style>
