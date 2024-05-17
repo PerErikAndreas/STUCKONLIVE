@@ -25,7 +25,7 @@ export default {
     [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/WillStevart.jpg'), alt: "Will Stevart" }, { image: require('@/assets/posters/vilmaflood.jpg'), alt: "Vilma Flood" }],
-      [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskassino.jpg'), alt: "Vännäskassino" }],
+      [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskasino.jpg'), alt: "Vännäskassino" }],
       [{ image: require('@/assets/posters/deportees2023.jpg'), alt: "Deportees" }, { image: require('@/assets/posters/glesbygdn.jpg'), alt: "Glesbygdn" }],
       [{ image: require('@/assets/posters/Laurenmowrrow.jpg'), alt: "Lauren Morrow" }, { image: require('@/assets/posters/ManskensBonden.jpg'), alt: "Månskensbonden" }],
       [{ image: require('@/assets/posters/LudwigHart.jpg'), alt: "Ludwig Hart" }, { image: require('@/assets/posters/JuniorBrielle.jpg'), alt: "Junior Brielle" }],

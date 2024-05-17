@@ -7,7 +7,9 @@
       </p>
       <button @click="sendEmail">Kontakta Stuck On</button>
     </div>
-    <div class="lottie-container" ref="lottieContainer"></div>
+    <div class="lottie-container">
+      <img src="../assets/animation.png" alt="Loading animation" />
+    </div>
     <Info />
     <Footer />
   </div>
@@ -16,7 +18,6 @@
 <script>
 import Footer from '../components/Footer.vue';
 import Info from '../components/Info.vue';
-const animationData = require('../assets/animation3.json');
 
 export default {
   name: "Contact",
@@ -24,33 +25,9 @@ export default {
     Footer,
     Info
   },
-  mounted() {
-    this.loadAnimation();
-  },
   methods: {
     sendEmail() {
       window.location.href = "mailto:morgan.hall@sensus.se";
-    },
-    async loadAnimation() {
-      const lottie = await import('lottie-web').then(module => module.default);
-      
-      // Modify the FPS rate here, for example to 30 FPS
-      this.adjustFrameRate(animationData, 30);
-
-      lottie.loadAnimation({
-        container: this.$refs.lottieContainer,
-        animationData: animationData,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true
-      });
-    },
-    adjustFrameRate(animationData, fps) {
-      if (animationData.fr) {
-        animationData.fr = fps;
-      } else {
-        animationData.fr = fps;
-      }
     }
   }
 };
@@ -67,11 +44,6 @@ export default {
   height: 100px;
   width: 100px;
   overflow: hidden;
-}
-.lottie-container svg {
-  display: none;
-  height: 400px;
-  object-fit: cover;
 }
 .content {
   margin: 40px 0 62px;
@@ -132,9 +104,6 @@ button:hover {
     display: flex;
     height: 400px;
     width: 400px;
-  }
-  .lottie-container svg {
-    display: inline;
   }
   .content {
     margin: 40px 0 62px 0;

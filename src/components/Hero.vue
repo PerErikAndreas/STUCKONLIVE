@@ -1,6 +1,8 @@
 <template>
   <div class="hero-container">
-    <div class="lottie-container" ref="lottieContainer"></div>
+    <div class="lottie-container">
+      <img src="../assets/animation.png" alt="Loading animation" />
+    </div>
     <div class="title-container">
       <h1>
         Utforska
@@ -22,49 +24,11 @@
 </template>
 
 <script>
-const animationData = require('../assets/animation3.json');
-
 export default {
   data() {
     return {
-      isLoaded: false,
-      lottieInstance: null,
-      animationData: animationData, // Directly assign the required animation data
       waveGraphic: require('../assets/wave-graphic-newsletter.png') // Adjust the path to your wave graphic
     };
-  },
-  async mounted() {
-    // Load lottie-web lazily
-    const lottie = await import('lottie-web').then(module => module.default);
-    this.lottie = lottie;
-
-    // Modify the FPS rate here, for example to 30 FPS
-    this.adjustFrameRate(30);
-
-    this.loadAnimation();
-  },
-  methods: {
-    adjustFrameRate(fps) {
-      if (this.animationData.fr) {
-        this.animationData.fr = fps;
-      } else {
-        this.animationData.fr = fps;
-      }
-    },
-    loadAnimation() {
-      this.lottieInstance = this.lottie.loadAnimation({
-        container: this.$refs.lottieContainer,
-        animationData: this.animationData,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true
-      });
-    }
-  },
-  beforeDestroy() {
-    if (this.lottieInstance) {
-      this.lottieInstance.destroy(); // Clean up the animation instance
-    }
   },
   created() {
     (function(w, d, e, u, f, l, n) {
@@ -82,11 +46,7 @@ export default {
 };
 </script>
 
-
 <style scoped>
-.wave-graphic-picture {
-  display: none;
-}
 .lottie-container {
   position: absolute;
   top: 67px;
@@ -98,10 +58,8 @@ export default {
   width: 67px;
   overflow: hidden;
 }
-.lottie-container svg {
+.wave-graphic-picture {
   display: none;
-  height: 400px;
-  object-fit: cover;
 }
 .ml-embedded {
   width: 100%;
@@ -170,11 +128,6 @@ export default {
     height: 350px;
     width: 350px;
     overflow: hidden;
-  }
-  .lottie-container svg {
-    display: inline;
-    height: 400px;
-    object-fit: cover;
   }
   .triangle-graphic {
     display: inline;
@@ -287,11 +240,6 @@ export default {
     height: 350px;
     width: 350px;
     overflow: hidden;
-  }
-  .lottie-container svg {
-    display: inline;
-    height: 400px;
-    object-fit: cover;
   }
 }
 </style>
