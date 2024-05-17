@@ -33,17 +33,7 @@ export default {
   width: 250px;
   height: 250px;
 }
-.loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-}
+
 html {
   font-size: 16px;
 }
