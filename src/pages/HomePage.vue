@@ -5,7 +5,7 @@
     <Sponsorbanner />
     <Carousel />
     <Trustbanner />
-    <!-- <Instagram /> -->
+    <!-- <Blog /> -->
     <Footer />
   </div>
 </template>
@@ -14,7 +14,7 @@
 import Hero from "@/components/Hero";
 import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
-import Instagram from "@/components/Instagram";
+import Blog from "@/components/Blog";
 import Trustbanner from "@/components/Trustbanner";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
@@ -25,7 +25,7 @@ export default {
     Hero,
     Calendar,
     Sponsorbanner,
-    Instagram,
+    Blog,
     Trustbanner,
     Carousel,
     Footer,

@@ -2,13 +2,13 @@
   <header>
     <nav class="my-navbar">
       <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
-      <a href="/" class="my-logo" alt="Stuckon Logo White" aria-label="Stuckon Logo">
+      <router-link to="/" class="my-logo" aria-label="Stuckon Logo">
         <img class="stuckon-logowhite" :src="stuckonLogoWhite" alt="Stuckon Logo White" aria-label="Stuckon Logo" loading="lazy">
         <img class="stuckon-logored" :src="stuckonLogoRed" alt="Stuckon Logo Red" aria-hidden="true" loading="lazy">
-      </a>
+      </router-link>
       <ul class="my-main-nav" id="js-menu">
         <li>
-          <a href="/Kontakt" class="my-nav-links">Kontakt/Info</a>
+          <router-link :to="navLink" class="my-nav-links">{{ navText }}</router-link>
         </li>
       </ul>
     </nav>
@@ -22,9 +22,18 @@ export default {
     return {
       stuckonLogoWhite: require('../assets/stuckon-logo-white.png'),
       stuckonLogoRed: require('../assets/stuckon-logo-red.png'),
+      navText: 'Kontakt/Info',
+      navLink: '/Kontakt',
     };
   },
+  watch: {
+    '$route'(to, from) {
+      this.updateNavTextAndLink(to.path);
+    }
+  },
   mounted() {
+    this.updateNavTextAndLink(this.$route.path);
+
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
 
@@ -32,6 +41,17 @@ export default {
       mainNav.classList.toggle("active");
     });
   },
+  methods: {
+    updateNavTextAndLink(path) {
+      if (path === '/Kontakt') {
+        this.navText = 'Hem';
+        this.navLink = '/';
+      } else {
+        this.navText = 'Kontakt/Info';
+        this.navLink = '/Kontakt';
+      }
+    }
+  }
 };
 </script>
 

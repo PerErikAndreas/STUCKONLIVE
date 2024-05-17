@@ -18,6 +18,7 @@
         4 <br>SCENER
       </div>
     </div>
+    <img class="graphic-quarter2" src="../assets/animationquarter.png" alt="Loading animation" />
   </div>
 </template>
 
@@ -37,6 +38,7 @@ export default {
 <style scoped>
 .trustbanner-container {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -46,6 +48,15 @@ export default {
   padding: 40px 0;
   margin-bottom: 222px;
 }
+
+.graphic-quarter2 {
+  position: absolute;
+height: 50%;  
+bottom: 0;
+  left:-5px;
+  border-radius: 0 100% 0 0;
+}
+
 .icon-container {
   flex: 1;
   flex-direction: column;
@@ -68,6 +79,11 @@ export default {
   .icons-container {
     font-size: 20px;
   }
+
+  .graphic-quarter2 {
+height: 65%;  
+
+}
 }
 @media (min-width: 1400px) {
   .trustbanner-container {

@@ -1,12 +1,15 @@
 <template>
-  <div class="instagram-container">
-    <div class="instagram-post-container">
+  <div class="blog-container">
+    <div class="carousel-title">
+      <h2>BLOGG</h2>
+    </div>
+    <div class="blog-post-container">
       <div class="greybackground">
     <div class="text-section">
       <div class="text-content">
         <h2>MUSIKTIPS!</h2>
         <p>
-          På vår instagram postar vi dagliga musiktips, kommande spelningar och
+          På vår blog postar vi dagliga musiktips, kommande spelningar och
           evenemang.
         </p>
       </div>
@@ -19,14 +22,14 @@
 <script>
 
 export default {
-  name: "Instagram",
+  name: "Blog",
   // Component data and methods would go here
 };
 </script>
 
 <style scoped>
 
-.instagram-post-container {
+.blog-post-container {
   display: flex;
   flex-direction: column;
   padding: 20px 15px 20px 15px;
@@ -36,12 +39,18 @@ export default {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind's default shadow */
 }
 
-.greybackground {
-  background: 
-  linear-gradient(to bottom, #87878E 20px, transparent 20px),
-  linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 20px, transparent 20px);
-background-size: 40px 40px;
+.carousel-title {
+  font-family: var(--font-main);
+  color: var(--primary-color);
+  width: 100%;
+  text-align: left;
+}
+.carousel-title h2 {
+  margin-bottom: 5px;
+}
 
+.greybackground {
+  background: #FAFAFA;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -50,7 +59,7 @@ background-size: 40px 40px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.instagram-container {
+.blog-container {
   display: flex;
   width: 100%;
   margin: 0 0 210px 0;
@@ -59,54 +68,21 @@ background-size: 40px 40px;
   align-items: center;
 }
 
-.instagram-embed {
+.blog-embed {
   margin-bottom: 62px;
 }
 
-.text-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.text-content {
-  margin: 62px 0 62px 0;
-  width: 200px;
-  height: 200px;
-  background: #87878E;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  padding: 50px;
-}
-
-.text-content h2 {
-  color: #FFFFFF;
-  margin-top: 30px;
-  /* Add more styles for your heading */
-}
-
-.text-content p {
-  color: #FFFFFF;
-  font-family: var(--font-secondary);
-  max-width: 300px;
-
-
-  /* Add more styles for your paragraph */
-}
-
 @media (min-width: 700px) {
-.instagram-container {
+.blog-container {
   width: 92%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:center;
   align-items: center;
   margin-bottom: 250px;
 }
 
-.instagram-embed {
+.blog-embed {
   margin-bottom: 0;
 }
 
@@ -115,7 +91,7 @@ background-size: 40px 40px;
   justify-content: space-around;
 }
 
-.instagram-post-container {
+.blog-post-container {
 width: 100%;
 max-width: 883px;
 border-radius: 8px;
@@ -125,7 +101,7 @@ flex-direction: row;
 }
 
 @media (min-width: 1000px) {
-.instagram-post-container {
+.blog-post-container {
   margin: 0 40px 0 40px;
   width: 92%;
   max-width: 883px;
@@ -133,14 +109,14 @@ flex-direction: row;
   padding: 20px 32px 20px 32px;
   flex-direction: row;
   }
-.instagram-container {
+.blog-container {
   margin-bottom: 250px;
 }
 }
 
 @media (min-width: 1400px) {
 
-.instagram-container {
+.blog-container {
   margin-bottom: 360px;
 }
 }
