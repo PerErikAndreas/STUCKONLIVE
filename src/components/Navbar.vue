@@ -37,8 +37,15 @@ export default {
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
 
-    navBarToggle.addEventListener("click", () => {
+    navBarToggle.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevent the click from propagating to the document
       mainNav.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!mainNav.contains(event.target) && !navBarToggle.contains(event.target)) {
+        mainNav.classList.remove("active");
+      }
     });
   },
   methods: {
