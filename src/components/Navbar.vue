@@ -47,6 +47,10 @@ export default {
         mainNav.classList.remove("active");
       }
     });
+
+    window.addEventListener("scroll", () => {
+      mainNav.classList.remove("active");
+    }, { passive: true });
   },
   methods: {
     updateNavTextAndLink(path) {
@@ -61,6 +65,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .stuckon-logowhite,
