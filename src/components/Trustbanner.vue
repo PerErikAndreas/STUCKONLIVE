@@ -51,7 +51,7 @@ export default {
 
 .graphic-quarter2 {
   position: absolute;
-height: 50%;  
+height: 35%;  
 bottom: 0;
   left:-5px;
   border-radius: 0 100% 0 0;

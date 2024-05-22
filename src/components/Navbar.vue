@@ -46,7 +46,8 @@ export default {
   methods: {
     updateNavLink() {
       const path = window.location.pathname; // Get the current path
-      if (path.includes('/Kontakt')) {
+      // Check if the current path is Kontakt, Cookie Policy, or Privacy Policy
+      if (path.includes('/Kontakt') || path.includes('/Cookie-Policy') || path.includes('/Privacy-Policy')) {
         this.navText = 'Hem';       // Change text to 'Hem'
         this.navLink = '/';         // Change link to home
       } else {
@@ -97,6 +98,7 @@ export default {
   color: var(--primary-color);
   font-family: var(--font-main);
   font-size: 22px;
+  font-weight: 600;
 }
 
 .my-main-nav li {
