@@ -47,16 +47,15 @@ export default {
         mainNav.classList.remove("active");
       }
     });
-
-    window.addEventListener("scroll", () => {
-      mainNav.classList.remove("active");
-    }, { passive: true });
   },
   methods: {
     updateNavTextAndLink(path) {
-      if (path === '/Kontakt') {
+      if (path === '/Cookie-Policy' || path === '/Privacy-Policy') {
         this.navText = 'Hem';
         this.navLink = '/';
+      } else if (path === '/Kontakt') {
+        this.navText = 'Hem';
+        this.navLink = 'https://www.stuckon.se/';
       } else {
         this.navText = 'Kontakt/Info';
         this.navLink = '/Kontakt';

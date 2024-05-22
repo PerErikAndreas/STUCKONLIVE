@@ -3,12 +3,12 @@
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
-          <li><a href="/Kontakt">Kontakt/Info</a></li>
+          <li><router-link :to="navLink">{{ navText }}</router-link></li>
         </ul>
       </nav>
       <div class="footer-policies">
-        <a href="/Cookie-Policy">Cookie Policy</a> •
-        <a href="/Privacy-Policy">Privacy Policy</a>
+        <router-link to="/Cookie-Policy">Cookie Policy</router-link> •
+        <router-link to="/Privacy-Policy">Privacy Policy</router-link>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/stuckonlive/" aria-label="Instagram">
@@ -25,16 +25,26 @@
   </footer>
 </template>
 
+
 <script>
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+
 export default {
   name: "Footer",
-  data() {
+  setup() {
+    const route = useRoute();
+    const navText = computed(() => route.path === '/Kontakt' ? 'Hem' : 'Kontakt/Info');
+    const navLink = computed(() => route.path === '/Kontakt' ? '/' : '/Kontakt');
+
     return {
       instagramIcon: require('../assets/instagram-icon.png'),
       spotifyIcon: require('../assets/spotify.png'),
       facebookIcon: require('../assets/facebook-icon.png'),
+      navText,
+      navLink
     };
-  },
+  }
 };
 </script>
 

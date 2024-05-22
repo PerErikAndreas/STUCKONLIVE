@@ -27,22 +27,31 @@
 export default {
   data() {
     return {
-      waveGraphic: require('../assets/wave-graphic-newsletter.png') // Adjust the path to your wave graphic
+      waveGraphic: require('../assets/wave-graphic-newsletter.png'), // Adjust the path to your wave graphic
     };
   },
-  created() {
-    (function(w, d, e, u, f, l, n) {
-      w[f] = w[f] || function() {
-        (w[f].q = w[f].q || []).push(arguments);
-      };
-      l = d.createElement(e);
-      l.async = 1;
-      l.src = u;
-      n = d.getElementsByTagName(e)[0];
-      n.parentNode.insertBefore(l, n);
-    })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
-    ml('account', '912655');
-  }
+  mounted() {
+    this.loadMailerLiteScript();
+  },
+  methods: {
+    loadMailerLiteScript() {
+      // Load MailerLite script logic here
+      if (!window.ml) {
+        // Load MailerLite script if not already loaded
+        (function(w, d, e, u, f, l, n) {
+          w[f] = w[f] || function() {
+            (w[f].q = w[f].q || []).push(arguments);
+          };
+          l = d.createElement(e);
+          l.async = 1;
+          l.src = u;
+          n = d.getElementsByTagName(e)[0];
+          n.parentNode.insertBefore(l, n);
+        })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+        ml('account', '912655');
+      }
+    },
+  },
 };
 </script>
 
