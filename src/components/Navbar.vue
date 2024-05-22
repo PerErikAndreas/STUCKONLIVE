@@ -8,7 +8,7 @@
       </a>
       <ul class="my-main-nav" id="js-menu">
         <li>
-          <router-link :to="navLink" class="my-nav-links">{{ navText }}</router-link>
+          <a :href="navLink" class="my-nav-links">{{ navText }}</a>
         </li>
       </ul>
     </nav>
@@ -22,17 +22,12 @@ export default {
     return {
       stuckonLogoWhite: require('../assets/stuckon-logo-white.png'),
       stuckonLogoRed: require('../assets/stuckon-logo-red.png'),
-      navText: 'Kontakt/Info',
-      navLink: '/Kontakt',
+      navText: 'Kontakt/Info',  // Default text
+      navLink: '/Kontakt',      // Default link
     };
   },
-  watch: {
-    '$route'(to, from) {
-      this.updateNavTextAndLink(to.path);
-    }
-  },
   mounted() {
-    this.updateNavTextAndLink(this.$route.path);
+    this.updateNavLink();
 
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
@@ -49,13 +44,11 @@ export default {
     });
   },
   methods: {
-    updateNavTextAndLink(path) {
-      if (path === '/Cookie-Policy' || path === '/Privacy-Policy') {
-        this.navText = 'Hem';
-        this.navLink = '/';
-      } else if (path === '/Kontakt') {
-        this.navText = 'Hem';
-        this.navLink = '/';
+    updateNavLink() {
+      const path = window.location.pathname; // Get the current path
+      if (path.includes('/Kontakt')) {
+        this.navText = 'Hem';       // Change text to 'Hem'
+        this.navLink = '/';         // Change link to home
       } else {
         this.navText = 'Kontakt/Info';
         this.navLink = '/Kontakt';
@@ -64,6 +57,7 @@ export default {
   }
 };
 </script>
+
 
 
 <style scoped>

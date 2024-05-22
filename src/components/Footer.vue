@@ -3,12 +3,12 @@
     <div class="footer-content">
       <nav class="footer-nav">
         <ul>
-          <li><router-link :to="navLink">{{ navText }}</router-link></li>
+          <li><a :href="navLink">{{ navText }}</a></li>
         </ul>
       </nav>
       <div class="footer-policies">
-        <router-link to="/Cookie-Policy">Cookie Policy</router-link> •
-        <router-link to="/Privacy-Policy">Privacy Policy</router-link>
+        <a href="/Cookie-Policy">Cookie Policy</a> •
+        <a href="/Privacy-Policy">Privacy Policy</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/stuckonlive/" aria-label="Instagram">
@@ -26,27 +26,41 @@
 </template>
 
 
-<script>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
 
+<script>
 export default {
   name: "Footer",
-  setup() {
-    const route = useRoute();
-    const navText = computed(() => route.path === '/Kontakt' ? 'Hem' : 'Kontakt/Info');
-    const navLink = computed(() => route.path === '/Kontakt' ? '/' : '/Kontakt');
-
+  data() {
     return {
       instagramIcon: require('../assets/instagram-icon.png'),
       spotifyIcon: require('../assets/spotify.png'),
       facebookIcon: require('../assets/facebook-icon.png'),
-      navText,
-      navLink
+      navText: 'Kontakt/Info', // Default value
+      navLink: '/Kontakt'      // Default value
     };
+  },
+  mounted() {
+    this.updateNavLink();
+    window.addEventListener('popstate', this.updateNavLink);
+  },
+  beforeUnmount() {
+    window.removeEventListener('popstate', this.updateNavLink);
+  },
+  methods: {
+    updateNavLink() {
+      const path = window.location.pathname;
+      if (path.includes('/Kontakt')) {
+        this.navText = 'Hem';
+        this.navLink = '/';
+      } else {
+        this.navText = 'Kontakt/Info';
+        this.navLink = '/Kontakt';
+      }
+    }
   }
 };
 </script>
+
 
 <style scoped>
 .footer-container {

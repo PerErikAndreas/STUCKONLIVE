@@ -69,7 +69,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   max-width: 923px;
-  margin: 0 auto 180px auto;
+  margin: 0 auto 280px auto;
 }
 .articles-container {
   display: flex;
