@@ -2,10 +2,10 @@
   <header>
     <nav class="my-navbar">
       <span class="my-navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation"> ≡ </span>
-      <router-link to="/" class="my-logo" aria-label="Stuckon Logo">
+      <a href="https://www.stuckon.se" class="my-logo" aria-label="Stuckon Logo">
         <img class="stuckon-logowhite" :src="stuckonLogoWhite" alt="Stuckon Logo White" aria-label="Stuckon Logo" loading="lazy">
         <img class="stuckon-logored" :src="stuckonLogoRed" alt="Stuckon Logo Red" aria-hidden="true" loading="lazy">
-      </router-link>
+      </a>
       <ul class="my-main-nav" id="js-menu">
         <li>
           <router-link :to="navLink" class="my-nav-links">{{ navText }}</router-link>
@@ -55,7 +55,7 @@ export default {
         this.navLink = '/';
       } else if (path === '/Kontakt') {
         this.navText = 'Hem';
-        this.navLink = 'https://www.stuckon.se/';
+        this.navLink = '/';
       } else {
         this.navText = 'Kontakt/Info';
         this.navLink = '/Kontakt';

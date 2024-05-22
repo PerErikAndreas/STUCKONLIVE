@@ -30,7 +30,7 @@
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 0;
             padding: 10px;
         }
 .cookie-policy-container {
@@ -39,8 +39,8 @@
   justify-content: center;
   flex-direction: column;
   max-width: 923px;
-  height: 100vh;
-  margin: 0 auto 180px auto;
+  height: 100%;
+  margin: 100px auto 50vh auto;
 }
 
 .cards {

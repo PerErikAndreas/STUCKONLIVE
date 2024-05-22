@@ -34,14 +34,14 @@
             margin: 10px 0;
             padding: 10px;
         }
-.privacy-policy-container {
+  .privacy-policy-container {
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   max-width: 923px;
-  height: 100vh;
-  margin: 0 auto 180px auto;
+  height: 100%;
+  margin: 0 auto 50vh auto;
 }
 
 .cards {
@@ -49,7 +49,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
   border-radius: 8px;
-  margin: 0 20px 0 20px;
+  margin: 100px 20px 30% 20px;
 }
 
 .card {
@@ -65,4 +65,3 @@
   text-align: left;
 }
   </style>
-  
