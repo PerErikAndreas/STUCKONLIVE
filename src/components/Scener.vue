@@ -221,9 +221,7 @@ color: var(--secondary-color);
   margin: 5px 0 0px 12px;
 
 }
-.hittahit-button {
-  width: 156px;
-}
+
 .card {
 align-items: start;
   }
@@ -234,6 +232,9 @@ align-items: start;
     display: flex;
     flex-direction: row;
   }
+  .hittahit-button {
+  width: 156px;
+}
 
   .scener-container {
     width: 92%;
