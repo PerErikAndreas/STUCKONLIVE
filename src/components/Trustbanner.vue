@@ -46,7 +46,7 @@ export default {
   border-radius: 8px;
   width: 92%;
   padding: 40px 0;
-  margin-bottom: 222px;
+  margin-bottom: 52px;
 }
 
 .graphic-quarter2 {
@@ -90,7 +90,7 @@ height: 65%;
     width: 92%;
     max-width: 923px;
     border-radius: 8px;
-    margin-bottom: 232px;
+    margin-bottom: 52px;
   }
   .icons-container {
     font-size: 22px;

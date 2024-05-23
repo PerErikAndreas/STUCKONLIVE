@@ -1,6 +1,6 @@
 <template>
   <div class="info-container">
-    <h2>OM FÖRENINGEN</h2>
+    <h2>INFO</h2>
     <div class="cards">
       <div class="card">
         <div class="info-picture-container">

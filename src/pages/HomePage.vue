@@ -5,6 +5,7 @@
     <Sponsorbanner />
     <Carousel />
     <Trustbanner />
+    <Scener />
     <!-- <Blog /> -->
     <Footer />
   </div>
@@ -15,6 +16,7 @@ import Hero from "@/components/Hero";
 import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
 import Blog from "@/components/Blog";
+import Scener from "@/components/Scener";
 import Trustbanner from "@/components/Trustbanner";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
@@ -26,6 +28,7 @@ export default {
     Calendar,
     Sponsorbanner,
     Blog,
+    Scener,
     Trustbanner,
     Carousel,
     Footer,
