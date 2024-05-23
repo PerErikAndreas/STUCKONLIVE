@@ -6,10 +6,6 @@
       </keep-alive>
     </router-view>
   </div>
-  <div class="loader" v-if="!isLoaded">
-    <div class="lottie-container">
-    </div>
-  </div>
 </template>
 
 <script>
@@ -19,21 +15,11 @@ export default {
       isLoaded: false
     };
   },
-  async mounted() {
-    // Simulate content loading, replace with actual loading logic
-    setTimeout(() => {
-      this.isLoaded = true;
-    }, 1300); // Adjust the delay as needed
+
   }
-};
 </script>
 
 <style>
-.lottie-container {
-  width: 250px;
-  height: 250px;
-}
-
 html {
   font-size: 16px;
 }
