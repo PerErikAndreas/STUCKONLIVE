@@ -185,17 +185,18 @@ a:hover {
 }
 .card {
   display: flex;
-  gap: 20px;
+  gap: 8px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-align: left;
 }
 h2 {
   font-family: var(--font-main);
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 0;
   text-align: left;
 }
 

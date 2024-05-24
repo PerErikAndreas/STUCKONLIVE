@@ -12,7 +12,7 @@
     </div>
     <div class="paragraph-container">
       <p>
-        Fler än 100 genomförda konserter med internationella till lokala akter –
+        Fler än 100 genomförda konserter med lokala till internationella akter –
         upplev musiken på nära håll!
       </p>
     </div>

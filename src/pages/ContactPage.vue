@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     sendEmail() {
-      window.location.href = "mailto:morgan.hall@sensus.se";
+      window.location.href = "mailto:mogge.hall@gmail.com";
     }
   }
 };
