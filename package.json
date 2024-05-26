@@ -12,6 +12,7 @@
     "lottie-web": "^5.12.2",
     "vue": "^3.4.13",
     "vue-carousel": "^0.18.0",
+    "vue-countup-v3": "^1.4.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

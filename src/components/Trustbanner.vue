@@ -3,19 +3,24 @@
     <div class="icon-container">
       <img class="stuckon-logo" :src="musicNoteIcon" alt="Music Note Icon" aria-label="100+ Spelningar" loading="lazy">
       <div class="icon-container-title">
-        100+ <br>EVENTS
+        <count-up :end-val="100"><template v-slot:suffix>+</template>
+        </count-up>
+        EVENTS
       </div>
     </div>
     <div class="icon-container">
       <img class="stuckon-logo" :src="visitorsIcon" alt="Visitors Icon" aria-label="10,000+ Besökare" loading="lazy">
       <div class="icon-container-title">
-        10,000+ <br>BESÖKARE
+        <count-up :end-val="10000"><template v-slot:suffix>+</template>
+        </count-up>
+        BESÖKARE
       </div>
     </div>
     <div class="icon-container">
       <img class="stuckon-logo" :src="locationIcon" alt="Location Icon" aria-label="4 Scener" loading="lazy">
       <div class="icon-container-title">
-        4 <br>SCENER
+        <count-up :end-val="4"></count-up>
+        SCENER
       </div>
     </div>
     <img class="graphic-quarter2" src="../assets/animationquarter.png" alt="Loading animation" />
@@ -23,8 +28,13 @@
 </template>
 
 <script>
+import CountUp from 'vue-countup-v3'
+
 export default {
   name: "Trustbanner",
+  components: {
+    CountUp,
+  },
   data() {
     return {
       musicNoteIcon: require('../assets/musicnote.png'),
@@ -66,8 +76,8 @@ bottom: 0;
   font-size: 16px;
 }
 
-.icons-title {
-  margin-top: 10px;
+.icon-container-title {
+  margin-top: 5px;
   font-size: 16px;
 }
 @media (min-width: 700px) {
@@ -79,6 +89,10 @@ bottom: 0;
   .icons-container {
     font-size: 20px;
   }
+
+  .icon-container-title {
+  margin-top: 10px;
+}
 
   .graphic-quarter2 {
 height: 65%;  
