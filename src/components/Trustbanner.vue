@@ -12,9 +12,9 @@
         <count-up
           :end-val="100"
           :enable-scroll-spy="true"
-          :delay="4"
+          :delay="5"
           :duration="2.5"
-          :loop="3"
+          :loop="20"
           ><template v-slot:suffix>+</template>
         </count-up>
         EVENTS
@@ -32,9 +32,9 @@
         <count-up
           :end-val="10000"
           :enable-scroll-spy="true"
-          :delay="4"
+          :delay="5"
           :duration="2.5"
-          :loop="3"
+          :loop="20"
           ><template v-slot:suffix>+</template>
         </count-up>
         BESÖKARE
@@ -52,9 +52,9 @@
         <count-up
           :end-val="4"
           :enable-scroll-spy="true"
-          :delay="4"
+          :delay="5"
           :duration="2.5"
-          :loop="3"
+          :loop="20"
         ></count-up>
         SCENER
       </div>
