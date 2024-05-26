@@ -14,7 +14,7 @@
           :enable-scroll-spy="true"
           :delay="4"
           :duration="2.5"
-          :loop="2"
+          :loop="3"
           ><template v-slot:suffix>+</template>
         </count-up>
         EVENTS
@@ -34,7 +34,7 @@
           :enable-scroll-spy="true"
           :delay="4"
           :duration="2.5"
-          :loop="2"
+          :loop="3"
           ><template v-slot:suffix>+</template>
         </count-up>
         BESÖKARE
@@ -54,7 +54,7 @@
           :enable-scroll-spy="true"
           :delay="4"
           :duration="2.5"
-          :loop="2"
+          :loop="3"
         ></count-up>
         SCENER
       </div>
