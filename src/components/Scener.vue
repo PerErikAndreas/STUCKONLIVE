@@ -105,7 +105,7 @@ export default {
   border-radius: 6px;
   border: none;
   color: #FFFFFF;
-  background: #87878E;
+  background: #797980;
   padding: 8px 0px 8px 0px;
   font-family: var(--font-secondary);
   font-size: 14px;
@@ -168,7 +168,7 @@ a:hover {
 .cards {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -229,13 +229,13 @@ align-items: start;
 }
 
 @media (min-width: 700px) {
-  .card {
+  /* .card {
     display: flex;
     flex-direction: row;
   }
   .hittahit-button {
   width: 156px;
-}
+} */
 
   .scener-container {
     width: 92%;
