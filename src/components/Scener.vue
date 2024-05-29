@@ -105,7 +105,7 @@ export default {
   border-radius: 6px;
   border: none;
   color: #FFFFFF;
-  background: #797980;
+  background: #87878E;
   padding: 8px 0px 8px 0px;
   font-family: var(--font-secondary);
   font-size: 14px;
@@ -143,6 +143,7 @@ a:hover {
   width: 100%;
   display: flex;
   font-size: 14px;
+  margin-bottom: 5px;
   flex-direction: column;
 }
 .info-picture {
