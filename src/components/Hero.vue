@@ -161,7 +161,7 @@ export default {
     color: var(--primary-color);
   }
   .hero-container {
-    margin: 52px 0px 92px 0px;
+    margin: 52px 0px 105px 0px;
     text-align: start;
     width: 89%;
     justify-content: start;

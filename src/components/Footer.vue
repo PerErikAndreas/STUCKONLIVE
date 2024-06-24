@@ -89,10 +89,17 @@ export default {
   font-family: var(--font-main);
   font-size: 22px;
 }
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
 .footer-policies a {
   color: var(--background-color);
   text-decoration: none;
   font-size: 16px;
+}
+.footer-policies a:hover {
+  text-decoration: underline;
 }
 .footer-policies {
   margin-bottom: 1rem;
@@ -103,6 +110,10 @@ export default {
 .footer-social img {
   width: 30px;
   height: 30px;
+  transition: transform 0.3s ease;
+}
+.footer-social img:hover {
+  transform: scale(1.1);
 }
 .footer-copy {
   font-size: 0.75rem;

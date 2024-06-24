@@ -3,7 +3,9 @@
     <div class="calendar-container-title">
       <h2>KOMMANDE EVENTS</h2>
     </div>
-    <div class="billeto-widget-container">
+    <div class="cards-containers">
+    <!-- Card 1: Always visible -->
+    <div class="cards1">
       <billetto-organiser-widget
         v-if="billettoScriptLoaded"
         type="list"
@@ -15,6 +17,18 @@
         whitelabel
       ></billetto-organiser-widget>
     </div>
+    <!-- Card 2: Visible over 850px width -->
+    <div class="cards2">
+      <div class="cards-container2">
+        <img
+                  :src="elParador"
+                  class="big-picture"
+                  alt="El PArador at Captain Cook"
+                  loading="lazy"
+                />
+    </div>
+  </div>
+  </div>
   </div>
 </template>
 
@@ -23,6 +37,7 @@ export default {
   data() {
     return {
       billettoScriptLoaded: false,
+      elParador: require("../assets/elparador.jpg"),
     };
   },
   mounted() {
@@ -47,27 +62,83 @@ export default {
 </script>
 
 <style scoped>
+.big-picture {
+  width: 100%;
+  object-fit: cover;
+}
+.cards-container {
+  background: #fafafa;
+  padding: 20px 20px 0 20px;
+  border-radius: 8px;
+}
+.cards-container2 {
+  background: #fafafa;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+.cards2 {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  
+}
 .calendar-container {
   margin: 0 0 52px 0;
-  width: 92%;
+  width: 90%;
   max-width: 923px;
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to new line */
 }
 
 .calendar-container-title {
-  display: flex;
-  justify-content: start;
+  width: 100%; /* Ensure title takes full width */
   color: var(--primary-color);
   font-family: var(--font-main);
   margin-bottom: 5px;
+  display: flex;
+  max-width: 923px;
+
+    justify-content: left;
 }
 
 .calendar-container-title h2 {
   margin: 0;
 }
 
-@media (min-width: 700px) {
-  .calendar-container {
-    margin: 0 40px 62px 40px;
+.cards1 {
+  width: 100%; /* Initially both cards take full width */
+}
+
+.cards2 {
+  display: none; /* Hidden by default */
+}
+
+@media (min-width: 850px) {
+
+  .cards2 {
+    display: block; /* Display card2 when over 850px */
   }
+}
+
+/* @media (min-width: 700px) {
+  .calendar-container {
+    margin: 0 45px 62px 45px;
+  }
+} */
+@media (min-width: 800px) {
+  .cards, .cards2 {
+    display: flex;
+    width: 100%;
+
+  }
+  .cards-containers {
+  display: flex;
+  gap: 12px;
+  max-width: 923px;
+}
 }
 </style>

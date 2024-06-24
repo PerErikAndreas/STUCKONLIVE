@@ -118,7 +118,8 @@ export default {
 
 .icon-container-title {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 @media (min-width: 700px) {
   .trustbanner-container {
