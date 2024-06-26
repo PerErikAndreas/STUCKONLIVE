@@ -64,19 +64,18 @@ export default {
 <style scoped>
 .big-picture {
   width: 100%;
+  height: 100%; /* Add this line to ensure the image fills the container */
   object-fit: cover;
 }
-.cards-container {
-  background: #fafafa;
-  padding: 20px 20px 0 20px;
-  border-radius: 8px;
-}
+
 .cards-container2 {
   background: #fafafa;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   border-radius: 8px;
-  height: 100%;
+  height: 100%; /* Ensure it takes full height */
+  display: flex; /* Add this line */
 }
+
 .cards2 {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -84,25 +83,25 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  
+  height: 100%; /* Ensure it takes full height */
 }
+
 .calendar-container {
   margin: 0 0 52px 0;
   width: 90%;
   max-width: 923px;
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to new line */
+  flex-wrap: wrap;
 }
 
 .calendar-container-title {
-  width: 100%; /* Ensure title takes full width */
+  width: 100%;
   color: var(--primary-color);
   font-family: var(--font-main);
   margin-bottom: 5px;
   display: flex;
   max-width: 923px;
-
-    justify-content: left;
+  justify-content: left;
 }
 
 .calendar-container-title h2 {
@@ -110,35 +109,31 @@ export default {
 }
 
 .cards1 {
-  width: 100%; /* Initially both cards take full width */
+  width: 100%;
 }
 
 .cards2 {
-  display: none; /* Hidden by default */
+  display: none;
+  height: 96.8%;
 }
 
 @media (min-width: 850px) {
-
   .cards2 {
-    display: block; /* Display card2 when over 850px */
+    display: block;
+    height: 96.8%;
   }
 }
 
-/* @media (min-width: 700px) {
-  .calendar-container {
-    margin: 0 45px 62px 45px;
-  }
-} */
 @media (min-width: 800px) {
   .cards, .cards2 {
     display: flex;
     width: 100%;
-
   }
   .cards-containers {
-  display: flex;
-  gap: 12px;
-  max-width: 923px;
+    display: flex;
+    gap: 12px;
+    max-width: 923px;
+  }
 }
-}
+
 </style>
