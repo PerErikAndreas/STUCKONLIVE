@@ -5,6 +5,7 @@
     <Sponsorbanner />
     <Carousel />
     <Trustbanner />
+    <Blog />
     <Scener />
     <Footer />
   </div>
@@ -18,6 +19,8 @@ import Scener from "@/components/Scener";
 import Trustbanner from "@/components/Trustbanner";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
+import Blog from "@/components/Blog";
+
 
 export default {
   name: "Home",
@@ -28,6 +31,7 @@ export default {
     Scener,
     Trustbanner,
     Carousel,
+    Blog,
     Footer,
   },
 };
