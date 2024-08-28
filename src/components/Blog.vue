@@ -22,13 +22,13 @@
                   <p><strong>{{ currentStory.title }}</strong></p>
                   <p class="subtitle"><em>"{{ currentStory.subtitle }}"</em></p>
                   <br>
-                  <p>{{ currentStory.paragraph1 }}...<br></p>
+                  <p v-html="formatText(currentStory.paragraph1)"></p>
                   <br>
-                  <p v-if="showMore">
-                  {{ currentStory.paragraph2 }}<br><p></p><br>
-                  {{ currentStory.paragraph3 }}<br><p></p><br>
-                  {{ currentStory.paragraph4 }}
-                  </p>
+                  <div v-if="showMore">
+                    <p v-html="formatText(currentStory.paragraph2)"></p>
+                    <p v-html="formatText(currentStory.paragraph3)"></p>
+                    <p v-html="formatText(currentStory.paragraph4)"></p>
+                  </div>
                   <div class="buttons-container">
                   <button class="read-more-button" @click="toggleShowMore">
                     {{ showMore ? 'LÄS MINDRE' : 'LÄS MER' }}
@@ -76,7 +76,11 @@ export default {
     showNextStory() {
       this.currentStoryIndex = (this.currentStoryIndex + 1) % this.stories.length;
       this.showMore = false;  // Reset the 'showMore' when switching stories
-    }
+    },
+    formatText(text) {
+    if (!text) return ''; // Return an empty string if text is undefined or null
+    return text.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  }
   }
 };
 </script>
@@ -92,6 +96,7 @@ export default {
 .story-container p {
   text-align: justify;
 }
+
 .buttons-container {
   display: flex;
   margin-right: 10px;
