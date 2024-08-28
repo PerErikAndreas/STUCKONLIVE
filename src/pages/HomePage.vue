@@ -5,7 +5,7 @@
     <Sponsorbanner />
     <Carousel />
     <Trustbanner />
-    <!-- <Blog /> -->
+    <Blog />
     <Scener />
     <Footer />
   </div>
