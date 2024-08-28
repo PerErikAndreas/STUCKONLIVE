@@ -25,8 +25,8 @@
                   <p>{{ currentStory.paragraph1 }}...<br></p>
                   <br>
                   <p v-if="showMore">
-                  {{ currentStory.paragraph2 }}<br><p></p>
-                  {{ currentStory.paragraph3 }}<br><p></p>
+                  {{ currentStory.paragraph2 }}<br><p></p><br>
+                  {{ currentStory.paragraph3 }}<br><p></p><br>
                   {{ currentStory.paragraph4 }}
                   </p>
                   <div class="buttons-container">
@@ -87,6 +87,10 @@ export default {
 }
 .story-container {
   width: 100%;
+}
+
+.story-container p {
+  text-align: justify;
 }
 .buttons-container {
   display: flex;
