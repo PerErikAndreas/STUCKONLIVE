@@ -1,6 +1,6 @@
 <template>
   <div class="scener-container">
-    <h2>STUCKON-DENNIS MUSIKMINNEN</h2>
+    <h2>STUCKON-DENNIS BLOGG</h2>
     <div class="cards-containers">
       <div class="cards">
         <div class="cards-container">
