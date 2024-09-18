@@ -5,24 +5,6 @@
     <div class="cards">
       <div class="cards-container">
         <div class="two-cards">
-          <!-- Card for Captain Cook -->
-          <div class="card">
-            <div class="picture-text-container">
-              <div class="info-picture-container">
-                <img
-                  :src="infoPicture"
-                  class="info-picture"
-                  alt="Playing at Captain Cook"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <p><strong>Captain Cook</strong> <br>Hamngatan 9, 831 31 Östersund</p>
-              </div>
-            </div>
-            <a :href="'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Hamngatan 9, 831 31 Östersund')" class="hittahit-button">Hitta hit</a>
-          </div>
-
           <!-- Card for Storsjöteatern Salongen -->
           <div class="card">
             <div class="picture-text-container">
