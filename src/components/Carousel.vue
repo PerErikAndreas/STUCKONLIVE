@@ -42,6 +42,8 @@ export default {
       [{ image: require('@/assets/posters/VannaInget.jpg'), alt: "Vånna Inget" }, { image: require('@/assets/posters/WhitneyRose.jpg'), alt: "Whitney Rose" }],
       [{ image: require('@/assets/posters/TrummorOrgel.jpg'), alt: "Trummor & Orgel" }, { image: require('@/assets/posters/Treburt.jpg'), alt: "Tré Burt" }],
       [{ image: require('@/assets/posters/Dahmers.jpg'), alt: "The Dahmers" }, { image: require('@/assets/posters/DanielRomanosOutfit.jpg'), alt: "Daniel Romanos Outfit" }],
+      [{ image: require('@/assets/posters/PaulStelling.jpg'), alt: "Paul Stelling" }],
+      [{ image: require('@/assets/posters/Gatuplan.jpg'), alt: "Gatuplan" }],
       [{ image: require('@/assets/posters/Bywater.jpg'), alt: "By Water" }],
       [{ image: require('@/assets/posters/Magadogs.jpg'), alt: "Magadogs" }],
       [{ image: require('@/assets/posters/CalebC.jpg'), alt: "Caleb C" }],
