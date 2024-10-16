@@ -10,7 +10,7 @@
       />
       <div class="icon-container-title">
         <count-up
-          :end-val="100"
+          :end-val="120"
           :enable-scroll-spy="true"
           :delay="5"
           :duration="2.5"
