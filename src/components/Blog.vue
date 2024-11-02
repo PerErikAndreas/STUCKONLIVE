@@ -26,7 +26,9 @@
                   <br>
                   <div v-if="showMore">
                     <p v-html="formatText(currentStory.paragraph2)"></p>
+                    <br>
                     <p v-html="formatText(currentStory.paragraph3)"></p>
+                    <br>
                     <p v-html="formatText(currentStory.paragraph4)"></p>
                   </div>
                   <div class="buttons-container">
