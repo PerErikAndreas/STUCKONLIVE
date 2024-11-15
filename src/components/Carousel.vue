@@ -22,7 +22,8 @@ export default {
   setup() {
     const currentIndex = ref(0);
     const slides = ref([
-    [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
+      [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
+      [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/WillStevart.jpg'), alt: "Will Stevart" }, { image: require('@/assets/posters/vilmaflood.jpg'), alt: "Vilma Flood" }],
       [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskasino.jpg'), alt: "Vännäskassino" }],
@@ -43,6 +44,8 @@ export default {
       [{ image: require('@/assets/posters/TrummorOrgel.jpg'), alt: "Trummor & Orgel" }, { image: require('@/assets/posters/Treburt.jpg'), alt: "Tré Burt" }],
       [{ image: require('@/assets/posters/Dahmers.jpg'), alt: "The Dahmers" }, { image: require('@/assets/posters/DanielRomanosOutfit.jpg'), alt: "Daniel Romanos Outfit" }],
       [{ image: require('@/assets/posters/PaulStelling.jpg'), alt: "Paul Stelling" }],
+      [{ image: require('@/assets/posters/Lalasuperstar2024.jpg'), alt: "Lala Superstar + Lovers Skit" }],
+      [{ image: require('@/assets/posters/Ludwighart2024.jpg'), alt: "Ludwig Hart" }],
       [{ image: require('@/assets/posters/Gatuplan.jpg'), alt: "Gatuplan" }],
       [{ image: require('@/assets/posters/Bywater.jpg'), alt: "By Water" }],
       [{ image: require('@/assets/posters/Magadogs.jpg'), alt: "Magadogs" }],
