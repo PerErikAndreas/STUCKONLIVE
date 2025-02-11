@@ -11,6 +11,11 @@
       </a>
     </div>
     <div class="icon-container">
+      <a href="https://www.jamtkraft.se" role="link" aria-label="Sensus">
+        <img class="sponsor-logo" :src="jamtkraftLogo" alt="Jämtkraft Logo" loading="lazy">
+      </a>
+    </div>
+    <div class="icon-container">
       <a href="https://billetto.se/users/stuck-on" role="link" aria-label="Billetto">
         <img class="sponsor-logo" :src="billettoLogo" alt="Billetto Logo" loading="lazy">
       </a>
@@ -26,6 +31,7 @@ export default {
     return {
       regionenLogo: require('../assets/regionen-logo.png'),
       sensusLogo: require('../assets/sensus-logo.png'),
+      jamtkraftLogo: require('../assets/jamtkraft-logo-white.png'),
       billettoLogo: require('../assets/billetto.png'),
     };
   },
