@@ -26,7 +26,7 @@ export default {
     const slides = ref([
       [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
-      [{ image: require('@/assets/posters/Perpersson2024.jpg'), alt: "Per Persson" }, { image: require('@/assets/posters/Hamvandarkvall.jpg'), alt: "Hämvändarkväll" }],
+      [{ image: require('@/assets/posters/Perpersson2024.jpg'), alt: "Per Persson" }, { image: require('@/assets/posters/Hemvandarkvall.jpg'), alt: "Hämvändarkväll" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/WillStevart.jpg'), alt: "Will Stevart" }, { image: require('@/assets/posters/vilmaflood.jpg'), alt: "Vilma Flood" }],
       [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskasino.jpg'), alt: "Vännäskassino" }],
