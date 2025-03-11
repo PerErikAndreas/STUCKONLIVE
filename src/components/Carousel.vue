@@ -3,7 +3,7 @@
     <div class="carousel-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
-    <div class="carousel">
+    <div class="carousel" @mouseenter="stopCarousel" @mouseleave="startCarousel">
       <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
         <div class="carousel-item" v-for="(group, index) in slides" :key="index">
           <div class="image-container" v-for="(image, idx) in group" :key="idx" :class="{ 'single-image': group.length === 1 }">
@@ -16,14 +16,17 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 export default {
   setup() {
     const currentIndex = ref(0);
+    const intervalId = ref(null);
+
     const slides = ref([
       [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
+      [{ image: require('@/assets/posters/Perpersson2024.jpg'), alt: "Per Persson" }, { image: require('@/assets/posters/Hamvandarkvall.jpg'), alt: "Hämvändarkväll" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/WillStevart.jpg'), alt: "Will Stevart" }, { image: require('@/assets/posters/vilmaflood.jpg'), alt: "Vilma Flood" }],
       [{ image: require('@/assets/posters/EPSTRAILERPARK.jpg'), alt: "Eps Trailerpark" }, { image: require('@/assets/posters/Vannaskasino.jpg'), alt: "Vännäskassino" }],
@@ -44,10 +47,13 @@ export default {
       [{ image: require('@/assets/posters/TrummorOrgel.jpg'), alt: "Trummor & Orgel" }, { image: require('@/assets/posters/Treburt.jpg'), alt: "Tré Burt" }],
       [{ image: require('@/assets/posters/Dahmers.jpg'), alt: "The Dahmers" }, { image: require('@/assets/posters/DanielRomanosOutfit.jpg'), alt: "Daniel Romanos Outfit" }],
       [{ image: require('@/assets/posters/PaulStelling.jpg'), alt: "Paul Stelling" }],
+      [{ image: require('@/assets/posters/JennyDont.jpg'), alt: "Jenny Dont & The Spurs" }],
       [{ image: require('@/assets/posters/Lalasuperstar2024.jpg'), alt: "Lala Superstar + Lovers Skit" }],
       [{ image: require('@/assets/posters/Ludwighart2024.jpg'), alt: "Ludwig Hart" }],
       [{ image: require('@/assets/posters/Gatuplan.jpg'), alt: "Gatuplan" }],
+      [{ image: require('@/assets/posters/Horsebath.jpg'), alt: "Horsebath" }],
       [{ image: require('@/assets/posters/Bywater.jpg'), alt: "By Water" }],
+      [{ image: require('@/assets/posters/TarantulaWaltz.jpg'), alt: "The Tarantula Waltz + The Photophonics" }],
       [{ image: require('@/assets/posters/Magadogs.jpg'), alt: "Magadogs" }],
       [{ image: require('@/assets/posters/CalebC.jpg'), alt: "Caleb C" }],
       [{ image: require('@/assets/posters/GrandeRoses.jpg'), alt: "Grande Roses" }],
@@ -56,6 +62,7 @@ export default {
       [{ image: require('@/assets/posters/AncientShapes.jpg'), alt: "Ancient Shapes" }],
       [{ image: require('@/assets/posters/Halm.jpg'), alt: "Halm" }],
       [{ image: require('@/assets/posters/Deportees.jpg'), alt: "Deportees" }],
+      [{ image: require('@/assets/posters/MiraRayHSelf.jpg'), alt: "Mira Ray + H.Self" }],
       [{ image: require('@/assets/posters/WilliamCrighton.jpg'), alt: "William Crighton" }],
       [{ image: require('@/assets/posters/MotoBoy.jpg'), alt: "Moto Boy" }],
       [{ image: require('@/assets/posters/SvartKatt.jpg'), alt: "Svart Katt" }],
@@ -64,6 +71,7 @@ export default {
       [{ image: require('@/assets/posters/WillieWattson.jpg'), alt: "Willie Wattson" }],
       [{ image: require('@/assets/posters/MargoClicer.jpg'), alt: "Dawn Landes" }],
       [{ image: require('@/assets/posters/terra.jpg'), alt: "Terra" }],
+      [{ image: require('@/assets/posters/Division7.jpg'), alt: "Division 7" }],
       [{ image: require('@/assets/posters/laladushpalats.jpg'), alt: "Dushpalatset" }],
       [{ image: require('@/assets/posters/AvantGardet.jpg'), alt: "Avant Gardet" }],
       [{ image: require('@/assets/posters/ChristianKjellvander.jpg'), alt: "Christian Kjellvander" }],
@@ -73,13 +81,35 @@ export default {
       [{ image: require('@/assets/posters/AnnaugkondaBrattland.jpg'), alt: "Annaugkonda/Brattland" }]
     ]);
 
+    const startCarousel = () => {
+      if (!intervalId.value) {
+        intervalId.value = setInterval(() => {
+          currentIndex.value = (currentIndex.value + 1) % slides.value.length;
+        }, 2000);
+      }
+    };
+
+    const stopCarousel = () => {
+      if (intervalId.value) {
+        clearInterval(intervalId.value);
+        intervalId.value = null;
+      }
+    };
+
     onMounted(() => {
-      setInterval(() => {
-        currentIndex.value = (currentIndex.value + 1) % slides.value.length;
-      }, 2000);
+      startCarousel();
     });
 
-    return { slides, currentIndex };
+    onUnmounted(() => {
+      stopCarousel();
+    });
+
+    return {
+      slides,
+      currentIndex,
+      startCarousel,
+      stopCarousel,
+    };
   },
 };
 </script>
