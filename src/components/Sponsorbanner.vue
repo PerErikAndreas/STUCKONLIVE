@@ -1,5 +1,6 @@
 <template>
   <div class="sponsorbanner-container">
+    <div class="sponsor-group">
     <div class="icon-container">
       <a href="https://www.regionjh.se/" role="link" aria-label="Regionen">
         <img class="sponsor-logo" :src="regionenLogo" alt="Regionen Logo" loading="lazy">
@@ -10,6 +11,8 @@
         <img class="sponsor-logo" :src="sensusLogo" alt="Sensus Logo" loading="lazy">
       </a>
     </div>
+  </div>
+  <div class="sponsor-group">
     <div class="icon-container">
       <a href="https://www.lansforsakringar.se/jamtland/privat/" role="link" aria-label="LFJämtland">
         <img class="sponsor-logo" :src="lansforsakringarLogo" alt="Länsförsäkringar Logo" loading="lazy">
@@ -24,6 +27,7 @@
       <a href="https://billetto.se/users/stuck-on" role="link" aria-label="Billetto">
         <img class="sponsor-logo" :src="billettoLogo" alt="Billetto Logo" loading="lazy">
       </a>
+    </div>
     </div>
     <img class="graphic-quarter" src="../assets/animationquarter.png" alt="Loading animation" />
   </div>
@@ -49,7 +53,7 @@ export default {
   margin: 0 0 32px 0;
   display: flex;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background: var(--primary-color);
@@ -93,6 +97,8 @@ bottom: 0;
   .sponsorbanner-container {
     width: 92%;
     max-width: 923px;
+    flex-direction: row;
+
   }
   .graphic-quarter {
   position: absolute;
