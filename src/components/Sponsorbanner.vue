@@ -49,11 +49,14 @@ export default {
 </script>
 
 <style scoped>
+.sponsor-group {
+  display: flex;
+}
 .sponsorbanner-container {
   margin: 0 0 32px 0;
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background: var(--primary-color);
@@ -84,6 +87,10 @@ bottom: 0;
   font-size: 14px;
 }
 @media (min-width: 700px) {
+  .sponsor-group {
+  display: flex;
+  flex-direction: column;
+}
   .sponsorbanner-container {
     margin: 0 0 42px 0;
     border-radius: 8px;
@@ -97,8 +104,6 @@ bottom: 0;
   .sponsorbanner-container {
     width: 92%;
     max-width: 923px;
-    flex-direction: row;
-
   }
   .graphic-quarter {
   position: absolute;
