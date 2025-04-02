@@ -57,7 +57,7 @@ export default {
   margin: 0 0 32px 0;
   display: flex;
   position: relative;
-  flex-direction: column; /* Changed to column for stacking */
+  flex-direction: row; /* Changed to column for stacking */
   justify-content: center;
   align-items: center;
   background: var(--primary-color);
