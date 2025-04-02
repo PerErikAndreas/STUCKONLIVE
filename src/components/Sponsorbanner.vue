@@ -11,7 +11,12 @@
       </a>
     </div>
     <div class="icon-container">
-      <a href="https://www.jamtkraft.se" role="link" aria-label="Sensus">
+      <a href="https://www.lansforsakringar.se/jamtland/privat/" role="link" aria-label="LFJämtland">
+        <img class="sponsor-logo" :src="lansforsakringarLogo" alt="Länsförsäkringar Logo" loading="lazy">
+      </a>
+    </div>
+    <div class="icon-container">
+      <a href="https://www.jamtkraft.se" role="link" aria-label="Jämtkraft">
         <img class="sponsor-logo" :src="jamtkraftLogo" alt="Jämtkraft Logo" loading="lazy">
       </a>
     </div>
@@ -31,6 +36,7 @@ export default {
     return {
       regionenLogo: require('../assets/regionen-logo.png'),
       sensusLogo: require('../assets/sensus-logo.png'),
+      lansforsakringarLogo: require('../assets/lansforsakringar-logo.png'),
       jamtkraftLogo: require('../assets/jamtkraft-logo-white.png'),
       billettoLogo: require('../assets/billetto.png'),
     };
