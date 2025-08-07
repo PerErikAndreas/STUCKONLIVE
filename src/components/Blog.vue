@@ -141,7 +141,7 @@ li {
 
 a {
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   text-decoration: none;
 }
 
