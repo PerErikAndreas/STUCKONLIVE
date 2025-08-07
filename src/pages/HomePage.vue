@@ -4,9 +4,9 @@
     <!-- <News /> -->
     <Calendar />
     <Sponsorbanner />
-    <Carousel />
-    <Trustbanner />
     <Blog />
+    <Trustbanner />
+    <Carousel />    
     <Scener />
     <Footer />
   </div>
