@@ -1,7 +1,7 @@
 <template>
   <div class="homepage-container">
     <Hero />
-    <!-- <News /> -->
+    <Banner /> 
     <Calendar />
     <Sponsorbanner />
     <Blog />
@@ -14,7 +14,7 @@
 
 <script>
 import Hero from "@/components/Hero";
-import News from "@/components/News";
+import Banner from "@/components/Banner";
 import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
 import Scener from "@/components/Scener";
@@ -28,7 +28,7 @@ export default {
   name: "Home",
   components: {
     Hero,
-    News,
+    Banner,
     Calendar,
     Sponsorbanner,
     Scener,
