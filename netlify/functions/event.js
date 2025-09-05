@@ -1,22 +1,31 @@
 export async function handler(event, context) {
   try {
+    // Bygg headers med API-nycklar från Netlify-miljövariabler
+    const headers = {
+      "Api-Keypair": `${process.env.BILLETO_ACCESS_KEY_ID}:${process.env.BILLETO_SECRET_KEY}`,
+      "Accept": "application/vnd.api+json",
+    };
+
+    console.log("Headers som skickas:", headers);
+
+    // Hämta events
     const response = await fetch("https://billetto.se/api/v3/organizer/events", {
-      headers: {
-        "Api-Keypair": `${process.env.BILLETO_ACCESS_KEY_ID}:${process.env.BILLETO_SECRET_KEY}`,
-        "Accept": "application/vnd.api+json",
-      },
+      headers,
     });
 
+    console.log("Statuskod från Billetto:", response.status);
+
+    const text = await response.text();
+    console.log("Rått svar från Billetto:", text);
+
     if (!response.ok) {
-      const text = await response.text();
-      console.error("Billetto API-fel:", text);
       return {
         statusCode: response.status,
         body: JSON.stringify({ error: "Kunde inte hämta events", raw: text }),
       };
     }
 
-    const data = await response.json();
+    const data = JSON.parse(text);
 
     return {
       statusCode: 200,
