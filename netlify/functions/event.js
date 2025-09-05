@@ -1,61 +1,32 @@
 export async function handler(event, context) {
-  const { id } = event.queryStringParameters || {};
-
-  if (!id) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({ error: "Event-ID saknas" }),
-    };
-  }
-
   try {
-    // Hämta åtkomsttoken från miljövariabler
-    const accessToken = process.env.BILLETO_ACCESS_TOKEN;
-
-    if (!accessToken) {
-      throw new Error("Åtkomsttoken saknas");
-    }
-
-    console.log("Hämtar event från Billetto API, id:", id);
-
-    // Anropa Billetto API för att hämta eventdata
-    const response = await fetch(`https://api.billetto.com/v1/events/${id}`, {
+    const response = await fetch("https://billetto.se/api/v3/organizer/events", {
       headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
+        "Api-Keypair": `${process.env.BILLETO_ACCESS_KEY_ID}:${process.env.BILLETO_SECRET_KEY}`,
+        "Accept": "application/vnd.api+json",
       },
     });
 
-    console.log("Billetto statuskod:", response.status);
-
     if (!response.ok) {
-      const errorText = await response.text();
-      console.error("Billetto API-fel:", errorText);
+      const text = await response.text();
+      console.error("Billetto API-fel:", text);
       return {
         statusCode: response.status,
-        body: JSON.stringify({ error: "Kunde inte hämta event", raw: errorText }),
+        body: JSON.stringify({ error: "Kunde inte hämta events", raw: text }),
       };
     }
 
     const data = await response.json();
 
-    // Plocka ut de fält vi vill skicka till Vue
-    const eventData = {
-      title: data.title || "Okänt event",
-      description: data.description || "",
-      image: data.image?.url || null,
-      date: data.startDate || null,
-    };
-
     return {
       statusCode: 200,
-      body: JSON.stringify(eventData),
+      body: JSON.stringify(data),
     };
   } catch (err) {
-    console.error("Fel vid hämtning av event:", err);
+    console.error("Fel vid hämtning av events:", err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Kunde inte hämta event", details: err.message }),
+      body: JSON.stringify({ error: "Internt fel", details: err.message }),
     };
   }
 }

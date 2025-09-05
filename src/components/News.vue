@@ -15,9 +15,21 @@ const event = ref(null);
 
 onMounted(async () => {
   try {
-    const res = await fetch("/.netlify/functions/event?id=1272766");
+    const res = await fetch("/.netlify/functions/event");
     const data = await res.json();
-    event.value = data;
+
+    if (data.data && data.data.length > 0) {
+      const first = data.data[0];
+      // Anpassa efter Billetto fältnamn
+      event.value = {
+        title: first.attributes.title,
+        description: first.attributes.description,
+        image: first.attributes.image_url || null,
+        date: first.attributes.start_time,
+      };
+    } else {
+      console.warn("Inga events hittades");
+    }
   } catch (err) {
     console.error("Kunde inte hämta event:", err);
   }
