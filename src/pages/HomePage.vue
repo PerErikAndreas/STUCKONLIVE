@@ -1,7 +1,7 @@
 <template>
   <div class="homepage-container">
     <Hero />
-    <!-- <News /> -->
+    <News />
     <Calendar />
     <Sponsorbanner />
     <Blog />
