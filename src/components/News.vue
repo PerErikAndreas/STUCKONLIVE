@@ -1,56 +1,39 @@
-export async function handler(event, context) {
-  const { id } = event.queryStringParameters || {};
+<template>
+  <div class="news">
+    <h2 v-if="event">{{ event.title }}</h2>
+    <p v-if="event">{{ event.description }}</p>
+    <img v-if="event?.image" :src="event.image" :alt="event.title" />
+    <p v-if="event?.date">📅 Datum: {{ event.date }}</p>
+    <p v-else>Laddar event...</p>
+  </div>
+</template>
 
-  if (!id) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({ error: "Event-ID saknas" }),
-    };
-  }
+<script setup>
+import { ref, onMounted } from "vue";
 
+const event = ref(null);
+
+onMounted(async () => {
   try {
-    // Hämta åtkomsttoken från miljövariabler
-    const accessToken = process.env.BILLETO_ACCESS_TOKEN;
-
-    if (!accessToken) {
-      throw new Error("Åtkomsttoken saknas");
-    }
-
-    // Anropa Billetto API för att hämta eventdata
-    const response = await fetch(`https://api.billetto.com/v1/events/${id}`, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error("Billetto API-fel:", errorText);
-      return {
-        statusCode: response.status,
-        body: JSON.stringify({ error: "Kunde inte hämta event" }),
-      };
-    }
-
-    const data = await response.json();
-
-    const eventData = {
-      title: data.title || "Okänt event",
-      description: data.description || "",
-      image: data.image?.url || null,
-      date: data.startDate || null,
-    };
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify(eventData),
-    };
+    const res = await fetch("/.netlify/functions/event?id=1272766");
+    const data = await res.json();
+    event.value = data;
   } catch (err) {
-    console.error("Fel vid hämtning av event:", err);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Kunde inte hämta event" }),
-    };
+    console.error("Kunde inte hämta event:", err);
   }
+});
+</script>
+
+<style scoped>
+.news {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  font-family: sans-serif;
 }
+.news img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+</style>

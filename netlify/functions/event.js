@@ -1,38 +1,61 @@
 export async function handler(event, context) {
-  // Hämta id från query string, t.ex. /.netlify/functions/event?id=12345
-  const { id } = event.queryStringParameters || {}
+  const { id } = event.queryStringParameters || {};
+
+  if (!id) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: "Event-ID saknas" }),
+    };
+  }
 
   try {
-    const response = await fetch(`https://api.billeto.se/v1/events/${id}`, {
-      headers: {
-        "Authorization": `Bearer ${process.env.BILLETO_SECRET_KEY}`,
-        "x-access-key-id": process.env.BILLETO_ACCESS_KEY_ID,
-        "Content-Type": "application/json"
-      }
-    })
+    // Hämta åtkomsttoken från miljövariabler
+    const accessToken = process.env.BILLETO_ACCESS_TOKEN;
 
-    if (!response.ok) {
-      throw new Error(`Billetto API fel: ${response.status}`)
+    if (!accessToken) {
+      throw new Error("Åtkomsttoken saknas");
     }
 
-    const data = await response.json()
+    console.log("Hämtar event från Billetto API, id:", id);
 
+    // Anropa Billetto API för att hämta eventdata
+    const response = await fetch(`https://api.billetto.com/v1/events/${id}`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+    });
+
+    console.log("Billetto statuskod:", response.status);
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Billetto API-fel:", errorText);
+      return {
+        statusCode: response.status,
+        body: JSON.stringify({ error: "Kunde inte hämta event", raw: errorText }),
+      };
+    }
+
+    const data = await response.json();
+
+    // Plocka ut de fält vi vill skicka till Vue
     const eventData = {
       title: data.title || "Okänt event",
       description: data.description || "",
       image: data.image?.url || null,
       date: data.startDate || null,
-    }
+    };
 
     return {
       statusCode: 200,
-      body: JSON.stringify(eventData)
-    }
+      body: JSON.stringify(eventData),
+    };
   } catch (err) {
-    console.error("Error:", err)
+    console.error("Fel vid hämtning av event:", err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Kunde inte hämta event" })
-    }
+      body: JSON.stringify({ error: "Kunde inte hämta event", details: err.message }),
+    };
   }
 }
