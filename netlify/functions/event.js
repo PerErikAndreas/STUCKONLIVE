@@ -1,41 +1,43 @@
-export async function handler(event, context) {
+export async function handler() {
   try {
-    // Bygg headers med API-nycklar från Netlify-miljövariabler
-    const headers = {
-      "Api-Keypair": `${process.env.BILLETO_ACCESS_KEY_ID}:${process.env.BILLETO_SECRET_KEY}`,
-      "Accept": "application/vnd.api+json",
-    };
+    const keyId = process.env.BILLETO_ACCESS_KEY_ID;
+    const secretKey = process.env.BILLETO_SECRET_KEY;
 
-    console.log("Headers som skickas:", headers);
-
-    // Hämta events
-    const response = await fetch("https://billetto.se/api/v3/organizer/events", {
-      headers,
-    });
-
-    console.log("Statuskod från Billetto:", response.status);
-
-    const text = await response.text();
-    console.log("Rått svar från Billetto:", text);
-
-    if (!response.ok) {
+    if (!keyId || !secretKey) {
       return {
-        statusCode: response.status,
-        body: JSON.stringify({ error: "Kunde inte hämta events", raw: text }),
+        statusCode: 500,
+        body: JSON.stringify({ error: "API keys saknas" }),
       };
     }
 
-    const data = JSON.parse(text);
+    // Bygg API Keypair som Billetto kräver
+    const apiKeypair = `${keyId}:${secretKey}`;
+
+    // Testa att hämta alla events för din organiser
+    const response = await fetch("https://billetto.se/api/v3/organizer/events", {
+      headers: {
+        "Api-Keypair": apiKeypair,
+        "Accept": "application/vnd.api+json",
+      },
+    });
+
+    const raw = await response.text(); // <-- ta ALLT som text
 
     return {
-      statusCode: 200,
-      body: JSON.stringify(data),
+      statusCode: response.status,
+      body: JSON.stringify({
+        ok: response.ok,
+        status: response.status,
+        raw, // <-- skicka tillbaka originaltexten vi fick
+      }),
     };
   } catch (err) {
-    console.error("Fel vid hämtning av events:", err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Internt fel", details: err.message }),
+      body: JSON.stringify({
+        error: "Fel i function",
+        details: err.message,
+      }),
     };
   }
 }
