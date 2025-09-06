@@ -11,9 +11,11 @@ export async function handler() {
     }
 
     const apiKeypair = `${keyId}:${secretKey}`;
-    const organizerId = "652330"; // <-- ditt organizer ID
+    const organizerId = "652330"; // ditt organizer ID
 
-    const response = await fetch(`https://billetto.se/api/v3/organizers/${organizerId}/events`, {
+    const url = `https://billetto.se/api/v3/organizers/${organizerId}/events`;
+
+    const response = await fetch(url, {
       headers: {
         "Api-Keypair": apiKeypair,
         "Accept": "application/vnd.api+json",
@@ -22,29 +24,14 @@ export async function handler() {
 
     const raw = await response.text();
 
-    if (!response.ok) {
-      return {
-        statusCode: response.status,
-        body: JSON.stringify({
-          error: "Kunde inte hämta events",
-          raw,
-        }),
-      };
-    }
-
-    const data = JSON.parse(raw);
-
     return {
-      statusCode: 200,
-      body: JSON.stringify(data, null, 2),
+      statusCode: response.status,
+      body: raw, // 👉 returnera exakt det API:et skickar
     };
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({
-        error: "Fel i function",
-        details: err.message,
-      }),
+      body: JSON.stringify({ error: "Fel i function", details: err.message }),
     };
   }
 }
