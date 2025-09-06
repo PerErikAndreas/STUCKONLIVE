@@ -1,51 +1,38 @@
 <template>
-  <div class="news">
-    <h2 v-if="event">{{ event.title }}</h2>
-    <p v-if="event">{{ event.description }}</p>
-    <img v-if="event?.image" :src="event.image" :alt="event.title" />
-    <p v-if="event?.date">📅 Datum: {{ event.date }}</p>
-    <p v-else>Laddar event...</p>
+  <div>
+    <h2>Events</h2>
+    <div v-if="loading">Laddar events...</div>
+    <div v-else-if="error">{{ error }}</div>
+    <ul v-else>
+      <li v-for="event in events" :key="event.id">
+        {{ event.attributes.title }} – {{ event.attributes.start_time }}
+      </li>
+    </ul>
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from "vue";
+<script>
+export default {
+  name: "News",
+  data() {
+    return {
+      events: [],
+      loading: true,
+      error: null,
+    };
+  },
+  async mounted() {
+    try {
+      const res = await fetch("/.netlify/functions/event");
+      const text = await res.text();
 
-const event = ref(null);
-
-onMounted(async () => {
-  try {
-    const res = await fetch("/.netlify/functions/event");
-    const data = await res.json();
-
-    if (data.data && data.data.length > 0) {
-      const first = data.data[0];
-      // Anpassa efter Billetto fältnamn
-      event.value = {
-        title: first.attributes.title,
-        description: first.attributes.description,
-        image: first.attributes.image_url || null,
-        date: first.attributes.start_time,
-      };
-    } else {
-      console.warn("Inga events hittades");
+      // Testa om det går att parse:a JSON
+      this.events = JSON.parse(text).data || [];
+    } catch (err) {
+      this.error = "Kunde inte hämta event: " + err.message;
+    } finally {
+      this.loading = false;
     }
-  } catch (err) {
-    console.error("Kunde inte hämta event:", err);
-  }
-});
+  },
+};
 </script>
-
-<style scoped>
-.news {
-  max-width: 600px;
-  margin: auto;
-  padding: 1rem;
-  font-family: sans-serif;
-}
-.news img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 1rem 0;
-}
-</style>
