@@ -12,7 +12,7 @@ export async function handler() {
 
     const keypair = `${keyId}:${secretKey}`;
 
-    const response = await fetch("https://billetto.se/api/v3/organizer/652330/events", {
+    const response = await fetch("https://billetto.se/api/v3/organizers/652330/events", {
       headers: {
         "Api-Keypair": keypair,
         Accept: "application/vnd.api+json",
