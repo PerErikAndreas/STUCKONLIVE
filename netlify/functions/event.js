@@ -10,26 +10,33 @@ export async function handler() {
       };
     }
 
-    // Bygg API Keypair som Billetto kräver
     const apiKeypair = `${keyId}:${secretKey}`;
+    const organizerId = "652330"; // <-- ditt organizer ID
 
-    // Testa att hämta alla events för din organiser
-    const response = await fetch("https://billetto.se/api/v3/organizer/events", {
+    const response = await fetch(`https://billetto.se/api/v3/organizers/${organizerId}/events`, {
       headers: {
         "Api-Keypair": apiKeypair,
         "Accept": "application/vnd.api+json",
       },
     });
 
-    const raw = await response.text(); // <-- ta ALLT som text
+    const raw = await response.text();
+
+    if (!response.ok) {
+      return {
+        statusCode: response.status,
+        body: JSON.stringify({
+          error: "Kunde inte hämta events",
+          raw,
+        }),
+      };
+    }
+
+    const data = JSON.parse(raw);
 
     return {
-      statusCode: response.status,
-      body: JSON.stringify({
-        ok: response.ok,
-        status: response.status,
-        raw, // <-- skicka tillbaka originaltexten vi fick
-      }),
+      statusCode: 200,
+      body: JSON.stringify(data, null, 2),
     };
   } catch (err) {
     return {
