@@ -6,32 +6,29 @@ export async function handler() {
     if (!keyId || !secretKey) {
       return {
         statusCode: 500,
-        body: JSON.stringify({ error: "API keys saknas" }),
+        body: JSON.stringify({ error: "API-nycklar saknas" }),
       };
     }
 
-    const apiKeypair = `${keyId}:${secretKey}`;
-    const organizerId = "652330"; // ditt organizer ID
+    const keypair = `${keyId}:${secretKey}`;
 
-    const url = `https://billetto.se/api/v3/organizers/${organizerId}/events`;
-
-    const response = await fetch(url, {
+    const response = await fetch("https://billetto.se/api/v3/organizer/events", {
       headers: {
-        "Api-Keypair": apiKeypair,
-        "Accept": "application/vnd.api+json",
+        "Api-Keypair": keypair,
+        Accept: "application/vnd.api+json",
       },
     });
 
-    const raw = await response.text();
+    const text = await response.text();
 
     return {
       statusCode: response.status,
-      body: raw, // 👉 returnera exakt det API:et skickar
+      body: text, // skicka tillbaka rått API-svar
     };
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Fel i function", details: err.message }),
+      body: JSON.stringify({ error: err.message }),
     };
   }
 }
