@@ -7,8 +7,8 @@
         <img class="stuckon-logored" :src="stuckonLogoRed" alt="Stuckon Logo Red" aria-hidden="true" loading="lazy">
       </a>
       <ul class="my-main-nav" id="js-menu">
-        <li>
-          <a :href="navLink" class="my-nav-links">{{ navText }}</a>
+        <li v-for="link in navLinks" :key="link.href">
+          <a :href="link.href" class="my-nav-links">{{ link.text }}</a>
         </li>
       </ul>
     </nav>
@@ -22,13 +22,14 @@ export default {
     return {
       stuckonLogoWhite: require('../assets/stuckon-logo-white.png'),
       stuckonLogoRed: require('../assets/stuckon-logo-red.png'),
-      navText: 'Kontakt/Info',  // Default text
-      navLink: '/Kontakt',      // Default link
+      navLinks: [
+        { text: 'Hem', href: '/' },
+        { text: 'Kontakt/Info', href: '/Kontakt' },
+        { text: 'Shop', href: '/Shop' }
+      ]
     };
   },
   mounted() {
-    this.updateNavLink();
-
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
 
@@ -42,24 +43,9 @@ export default {
         mainNav.classList.remove("active");
       }
     });
-  },
-  methods: {
-    updateNavLink() {
-      const path = window.location.pathname; // Get the current path
-      // Check if the current path is Kontakt, Cookie Policy, or Privacy Policy
-      if (path.includes('/Kontakt') || path.includes('/Cookie-Policy') || path.includes('/Privacy-Policy')) {
-        this.navText = 'Hem';       // Change text to 'Hem'
-        this.navLink = '/';         // Change link to home
-      } else {
-        this.navText = 'Kontakt/Info';
-        this.navLink = '/Kontakt';
-      }
-    }
   }
 };
 </script>
-
-
 
 <style scoped>
 .stuckon-logowhite,
@@ -72,8 +58,9 @@ export default {
 .stuckon-logored {
   display: none;
 }
+
 .my-navbar {
-  position: relative; /* New positioning context for the absolute elements */
+  position: relative;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -83,14 +70,14 @@ export default {
 
 .my-main-nav {
   list-style-type: none;
-  display: none; /* Initially hidden */
-  position: absolute; /* Positioned absolutely */
+  display: none;
+  position: absolute;
   margin-right: 20px;
-  top: 45px; /* Start just below the navbar */
-  right: 0; /* Align to the left of the parent */
+  top: 45px;
+  right: 0;
   background: var(--background-color);
   border-radius: 12px 0px 12px 12px;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 .my-nav-links {
@@ -129,27 +116,26 @@ export default {
 }
 
 .active {
-  display: block;
-  padding-left: 10px;
-  padding-right: 10px;
   display: flex;
   gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 700px) {
   .my-navbar {
     display: flex;
     justify-content: space-between;
-    padding: 22px 10px  0 20px;
+    padding: 22px 10px 0 20px;
   }
 
   .my-main-nav {
-    position: absolute; /* Positioned absolutely */
-    top: 16px; /* Start just below the navbar */
-    right: 0; /* Align to the left of the parent */
+    position: absolute;
+    top: 16px;
+    right: 0;
     background: transparent;
     border-radius: 12px 12px 12px 12px;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
     display: flex;
     margin-right: 30px;
     flex-direction: row;
@@ -159,52 +145,61 @@ export default {
   .my-main-nav li {
     margin: 0;
   }
+
   .my-nav-links {
     margin-right: 20px;
     text-decoration: none;
     color: var(--background-color);
   }
+
   .my-logo {
     margin-top: 0;
     padding-bottom: 11px;
   }
+
   .my-navbar-toggle {
     display: none;
   }
+
   .my-nav-links:hover {
     text-decoration: underline;
   }
+
   .stuckon-logowhite {
     display: none;
     width: auto;
     margin-top: 15px;
-    height: 32px; /* Adjust based on your navbar height */
+    height: 32px;
   }
+
   .stuckon-logored {
     display: inline;
     width: auto;
     margin-top: 15px;
-    height: 32px; /* Adjust based on your navbar height */
+    height: 32px;
   }
 }
-@media (min-width: 1400px) { /* Target screens larger than 1024px */
-  .my-navbar {
-    margin: 0 auto; /* Auto margins to horizontally center the #app element */
-    padding: 22px 10px 0 20px;
 
+@media (min-width: 1400px) {
+  .my-navbar {
+    margin: 0 auto;
+    padding: 22px 10px 0 20px;
   }
+
   .my-main-nav {
-    top: 12px; /* Start just below the navbar */
+    top: 12px;
     background: transparent;
   }
+
   .my-nav-links {
     color: var(--primary-color);
   }
 }
+
 @media (min-width: 1400px) and (max-width: 1540px) {
   .my-main-nav {
     flex-direction: column;
-    top: 7px; /* Start just below the navbar */
+    top: 7px;
   }
 }
 </style>

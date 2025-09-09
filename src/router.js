@@ -20,6 +20,7 @@ const router = createRouter({
       children: [
         route('/', 'HomePage'),
         route('/Kontakt', 'ContactPage'),
+        route('/Shop', 'ShopPage'),
         route('/Cookie-Policy', 'CookiePolicy'),
         route('/Privacy-Policy', 'PrivacyPolicy'),
       ]
