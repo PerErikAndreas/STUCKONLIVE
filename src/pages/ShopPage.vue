@@ -1,11 +1,6 @@
 <template>
   <div class="shop-container">
     <div class="content">
-      <h2>Webshop</h2>
-      <p class="intro-paragraph">
-        Här kan du köpa våra produkter direkt med Swish.  
-        (Mockad checkout – ingen riktig betalning).
-      </p>
 
       <!-- Product Grid -->
       <div class="product-grid">
