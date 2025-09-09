@@ -1,12 +1,6 @@
 <template>
   <div class="shop-container">
     <div class="content">
-      <h2>Webshop</h2>
-      <p class="intro-paragraph">
-        Här kan du köpa våra produkter direkt med Swish.  
-        (Mockad checkout – ingen riktig betalning).
-      </p>
-
       <!-- Product Grid -->
       <div class="product-grid">
         <div 
@@ -39,10 +33,11 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "T-shirt Stuck On", price: 250, image: "../assets/tshirt.png" },
-        { id: 2, name: "Vinyl Limited Edition", price: 350, image: "../assets/vinyl.png" },
+        { id: 1, name: "T-shirt Stuck On", price: 300, image: "../assets/tshirt.png" },
+        { id: 2, name: "Tygväska Stuck On", price: 350, image: "../assets/vinyl.png" },
         { id: 3, name: "Mugg Stuck On", price: 150, image: "../assets/mug.png" },
-        { id: 4, name: "Poster A2", price: 120, image: "../assets/poster.png" }
+        { id: 4, name: "Poster Moln", price: 500, image: "../assets/poster.png" },
+        { id: 4, name: "Tygpatch", price: 60, image: "../assets/poster.png" }
       ]
     };
   },
