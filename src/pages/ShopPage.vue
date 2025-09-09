@@ -1,6 +1,12 @@
 <template>
   <div class="shop-container">
     <div class="content">
+      <h2>Webshop</h2>
+      <p class="intro-paragraph">
+        Här kan du köpa våra produkter direkt med Swish.  
+        (Mockad checkout – ingen riktig betalning).
+      </p>
+
       <!-- Product Grid -->
       <div class="product-grid">
         <div 
@@ -27,9 +33,7 @@ import Footer from '../components/Footer.vue';
 
 export default {
   name: "Shop",
-  components: {
-    Footer
-  },
+  components: { Footer },
   data() {
     return {
       products: [
@@ -37,7 +41,7 @@ export default {
         { id: 2, name: "Tygväska Stuck On", price: 350, image: "../assets/vinyl.png" },
         { id: 3, name: "Mugg Stuck On", price: 150, image: "../assets/mug.png" },
         { id: 4, name: "Poster Moln", price: 500, image: "../assets/poster.png" },
-        { id: 4, name: "Tygpatch", price: 60, image: "../assets/poster.png" }
+        { id: 5, name: "Tygpatch", price: 60, image: "../assets/poster.png" }
       ]
     };
   },
@@ -51,33 +55,23 @@ export default {
 
 <style scoped>
 .shop-container {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
   margin: 0 20px 20px;
-  height: 100%;
+  width: 100%;
 }
 
 .content {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
   margin: 40px 0 62px;
   display: flex;
-  max-width: 923px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.intro-paragraph {
-  color: #FFFFFF;
-  max-width: 500px;
-  margin-bottom: 40px;
-  line-height: 22px;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: var(--font-main);
 }
 
 h2 {
@@ -90,11 +84,33 @@ h2 {
   text-transform: uppercase;
 }
 
+.intro-paragraph {
+  color: #FFFFFF;
+  max-width: 500px;
+  margin-bottom: 40px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-main);
+}
+
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 30px;
   width: 100%;
+  grid-template-columns: 1fr; /* default 1 column */
+}
+
+@media (min-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
 }
 
 .product-card {
