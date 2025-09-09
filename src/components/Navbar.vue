@@ -25,7 +25,7 @@ export default {
       navLinks: [
         { text: 'Hem', href: '/' },
         { text: 'Kontakt/Info', href: '/Kontakt' },
-        { text: 'Shop', href: '/Shop' }
+        // { text: 'Shop', href: '/Shop' }
       ]
     };
   },
