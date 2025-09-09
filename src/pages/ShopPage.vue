@@ -60,7 +60,6 @@ export default {
   align-items: center;
   gap: 20px;
   margin: 0 20px 20px;
-  width: 100%;
 }
 
 .content {
