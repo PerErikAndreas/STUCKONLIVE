@@ -1,6 +1,11 @@
 <template>
   <div class="shop-container">
     <div class="content">
+      <h2>Webshop</h2>
+      <p class="intro-paragraph">
+        Här kan du köpa våra produkter direkt med Swish.  
+        (Mockad checkout – ingen riktig betalning).
+      </p>
 
       <!-- Product Grid -->
       <div class="product-grid">
@@ -93,18 +98,19 @@ h2 {
   display: grid;
   gap: 30px;
   width: 100%;
-  grid-template-columns: 1fr; /* default 1 column */
+  grid-template-columns: 1fr; /* mobile default 1 column */
+  box-sizing: border-box;
 }
 
 @media (min-width: 600px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
   }
 }
 
 @media (min-width: 1200px) {
   .product-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
   }
 }
 
@@ -114,13 +120,17 @@ h2 {
   padding: 20px;
   text-align: center;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .product-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;          /* maintain natural aspect ratio */
+  max-height: 220px;     /* optional, keeps cards balanced */
+  object-fit: contain;    /* image fits inside the card */
   border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 .product-card h3 {
