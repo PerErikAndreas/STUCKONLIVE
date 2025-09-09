@@ -1,13 +1,7 @@
 <template>
   <div class="shop-container">
     <div class="content">
-      <h2>Webshop</h2>
-      <p class="intro-paragraph">
-        Här kan du köpa våra produkter direkt med Swish.  
-        (Mockad checkout – ingen riktig betalning).
-      </p>
 
-      <!-- Product Grid -->
       <div class="product-grid">
         <div 
           v-for="product in products" 
@@ -47,7 +41,7 @@ export default {
   },
   methods: {
     mockCheckout(product) {
-      alert(`Tack för ditt köp av ${product.name}! Swisha ${product.price} kr till 123 456 7890 📱`);
+      alert(`Bra val!! Swisha ${product.price} kr till ---- följt av ${product.name} och ditt namn så finns den att hämta vid nästa konsert.`);
     }
   }
 };
