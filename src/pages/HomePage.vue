@@ -2,6 +2,7 @@
   <div class="homepage-container">
     <Hero />
     <!-- <News /> -->
+    <UntilNews />
     <Calendar />
     <Sponsorbanner />
     <Blog />
@@ -15,6 +16,7 @@
 <script>
 import Hero from "@/components/Hero";
 import News from "@/components/News";
+import UntilNews from "@/components/UntilNews";
 import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
 import Scener from "@/components/Scener";
@@ -29,6 +31,7 @@ export default {
   components: {
     Hero,
     News,
+    UntilNews,
     Calendar,
     Sponsorbanner,
     Scener,

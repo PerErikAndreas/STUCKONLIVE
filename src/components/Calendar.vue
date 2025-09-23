@@ -90,7 +90,6 @@ export default {
   margin: 0 0 52px 0;
   width: 90%;
   max-width: 923px;
-  display: flex;
   flex-wrap: wrap;
 }
 
