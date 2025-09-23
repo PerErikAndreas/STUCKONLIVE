@@ -21,10 +21,10 @@
                 <div class="story-container">
                   <p><strong>{{ currentStory.title }}</strong></p>
                   <p class="subtitle"><em>"{{ currentStory.subtitle }}"</em></p>
-                  <br>
-                  <p v-html="formatText(currentStory.paragraph1)"></p>
-                  <br>
                   <div v-if="showMore">
+                    <br>
+                    <p v-html="formatText(currentStory.paragraph1)"></p>
+                    <br>
                     <p v-html="formatText(currentStory.paragraph2)"></p>
                     <br>
                     <p v-html="formatText(currentStory.paragraph3)"></p>
