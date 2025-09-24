@@ -1,8 +1,14 @@
 <template>
   <div class="app">
+    <!-- Loader overlay -->
+    <div v-if="!isLoaded" class="loader-overlay">
+      <img src="/loader.jpg" alt="Loading..." class="loader-logo" />
+    </div>
+
+    <!-- Main content -->
     <router-view v-slot="{ Component }">
       <keep-alive>
-        <component :is="Component" />
+        <component :is="Component" v-if="isLoaded" />
       </keep-alive>
     </router-view>
   </div>
@@ -15,8 +21,13 @@ export default {
       isLoaded: false
     };
   },
-
+  mounted() {
+    // Show loader for ~1.5 seconds
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 1500);
   }
+};
 </script>
 
 <style>
@@ -90,6 +101,31 @@ body {
 #app {
   text-align: center;
   color: #2c3e50;
+}
 
+/* Loader overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; /* can also match your brand bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Rotating logo */
+.loader-logo {
+  width: 150px; /* adjust as needed */
+  height: auto;
+  animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>

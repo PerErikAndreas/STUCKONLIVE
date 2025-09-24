@@ -1,15 +1,24 @@
 <template>
   <div class="hero-container">
+    <!-- Graphic Circle -->
     <div class="lottie-container">
-      <img class="graphic-circle" src="../assets/animation.png" alt="Loading animation" />
+      <img
+        class="graphic-circle slide-in-right"
+        src="../assets/animation.png"
+        alt="Loading animation"
+      />
     </div>
+
+    <!-- Hero Title -->
     <div class="title-container">
-      <h1>
+      <h1 ref="heroTitle">
         Utforska
         <div>din&nbsp;lokala</div>
         musikscen
       </h1>
     </div>
+
+    <!-- Paragraph -->
     <div class="paragraph-container">
       <p>
         Fler än 100 genomförda konserter med lokala till internationella akter –
@@ -17,45 +26,68 @@
       </p>
     </div>
   </div>
-  <div class="input-and-ctabutton-container">
-    <img :src="waveGraphic" alt="graphic waves" class="wave-graphic-picture" aria-label="graphic section" loading="lazy" />
-    <div class="ml-embedded" data-form="X9IuFM"></div>
-  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      waveGraphic: require('../assets/wave-graphic-newsletter.png'), // Adjust the path to your wave graphic
-    };
-  },
+  name: "HeroSection",
   mounted() {
-    this.loadMailerLiteScript();
-  },
-  methods: {
-    loadMailerLiteScript() {
-      // Load MailerLite script logic here
-      if (!window.ml) {
-        // Load MailerLite script if not already loaded
-        (function(w, d, e, u, f, l, n) {
-          w[f] = w[f] || function() {
-            (w[f].q = w[f].q || []).push(arguments);
-          };
-          l = d.createElement(e);
-          l.async = 1;
-          l.src = u;
-          n = d.getElementsByTagName(e)[0];
-          n.parentNode.insertBefore(l, n);
-        })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
-        ml('account', '912655');
-      }
-    },
+    // IntersectionObserver for title sliding in from left
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // animate only once
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(this.$refs.heroTitle);
   },
 };
 </script>
 
 <style scoped>
+/* Slide-in animations */
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Title animation on entering viewport */
+.title-container h1 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.title-container h1.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Circle animation on load */
+.slide-in-right {
+  animation: slideFromRight 1s ease-out forwards;
+}
+
+/* Existing hero styles */
 .lottie-container {
   position: absolute;
   top: 67px;
@@ -67,26 +99,11 @@ export default {
   width: 67px;
   overflow: hidden;
 }
+
 .graphic-circle {
   width: 120px;
 }
-.wave-graphic-picture {
-  display: none;
-}
-.ml-embedded {
-  width: 100%;
-}
-.ml-form-align-center {
-  width: 100%;
-}
-.input-and-ctabutton-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 32px;
-}
+
 .paragraph-container {
   display: flex;
   flex-direction: column;
@@ -94,6 +111,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .paragraph-container p {
   max-width: 300px;
   color: var(--background-color);
@@ -102,6 +120,7 @@ export default {
   font-size: 18px;
   line-height: 18px;
 }
+
 .hero-container {
   margin: 52px 0px 62px 0px;
   width: 100%;
@@ -111,6 +130,7 @@ export default {
   justify-content: center;
   color: var(--background-color);
 }
+
 .title-container h1 {
   font-family: var(--font-main);
   font-size: 50px;
@@ -120,19 +140,11 @@ export default {
   letter-spacing: -5%;
   text-transform: uppercase;
 }
-@media (min-width: 700px) {
-  .wave-graphic-picture {
-    display: inline;
-    margin-top: 20px;
-    width: 450px;
-    height: 106px;
-  }
 
+/* Media Queries */
+@media (min-width: 700px) {
   .graphic-circle {
-  width: 100%;
-}
-  .contact-container {
-    margin: 40px;
+    width: 100%;
   }
   .lottie-container {
     position: absolute;
@@ -144,17 +156,6 @@ export default {
     height: 350px;
     width: 350px;
     overflow: hidden;
-  }
-  .triangle-graphic {
-    display: inline;
-  }
-  .field-graphic {
-    display: inline;
-    background: var(--primary-color);
-    margin: 20px 0 0 0;
-    border-radius: 20px;
-    width: 100%;
-    height: 110px;
   }
   .paragraph-container p {
     max-width: 100%;
@@ -176,20 +177,8 @@ export default {
     font-size: 40px;
     line-height: 30px;
   }
-  .ml-embedded {
-    max-width: 50vw;
-    display: flex;
-    flex-direction: row;
-  }
-  .input-and-ctabutton-container {
-    display: flex;
-    width: 90%;
-    justify-content: start;
-    align-items: start;
-    flex-direction: row;
-    margin-bottom: 62px;
-  }
 }
+
 @media (min-width: 920px) {
   .title-container h1 {
     font-size: 68px;
@@ -198,33 +187,28 @@ export default {
   .paragraph-container p {
     font-size: 18px;
   }
-  .input-and-ctabutton-container {
-    width: 95%;
-    max-width: 923px;
-  }
   .hero-container {
     margin: 52px 0px 42px 0px;
   }
 }
+
 @media (min-width: 1180px) {
   .title-container h1 {
     font-size: 88px;
     line-height: 75px;
   }
 }
+
 @media (min-width: 1400px) {
-  .triangle-graphic {
-    display: none;
-  }
   .title-container h1 {
     margin-top: 0px;
     font-size: 88px;
     line-height: 75px;
   }
   .hero-container {
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -241,9 +225,6 @@ export default {
   .paragraph-container p {
     max-width: 350px;
     color: var(--background-color);
-  }
-  .contact-container {
-    margin: 40px;
   }
   .lottie-container {
     position: absolute;

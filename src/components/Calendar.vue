@@ -1,7 +1,7 @@
 <template>
   <div class="calendar-container">
     <div class="calendar-container-title">
-      <h2>KOMMANDE EVENTS</h2>
+      <h2>BILJETTER</h2>
     </div>
     <div class="cards-containers">
     <!-- Card 1: Always visible -->

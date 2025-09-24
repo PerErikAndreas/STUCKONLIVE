@@ -96,7 +96,6 @@ bottom: 0;
   }
   .graphic-quarter {
   position: absolute;
-height: 65%;  
 bottom: 0;
   right:-5px;
   border-radius: 100% 0 0 0;

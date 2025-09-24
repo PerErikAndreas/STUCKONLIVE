@@ -3,6 +3,7 @@
     <Hero />
     <!-- <News /> -->
     <UntilNews />
+    <MailList />
     <Calendar />
     <Sponsorbanner />
     <Blog />
@@ -16,6 +17,7 @@
 <script>
 import Hero from "@/components/Hero";
 import News from "@/components/News";
+import MailList from "@/components/MailList";
 import UntilNews from "@/components/UntilNews";
 import Calendar from "@/components/Calendar";
 import Sponsorbanner from "@/components/Sponsorbanner";
@@ -30,6 +32,7 @@ export default {
   name: "Home",
   components: {
     Hero,
+    MailList,
     News,
     UntilNews,
     Calendar,

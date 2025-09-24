@@ -172,6 +172,29 @@ a:hover {
   margin: 0 auto 62px auto;
 }
 
+/* Animate the heading sliding in from the left */
+.scener-container h2 {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Optional: smoother on modern browsers */
+@media (prefers-reduced-motion: no-preference) {
+  .scener-container h2 {
+    will-change: transform, opacity;
+  }
+}
+
+
 .articles-container {
   display: flex;
   width: 100%;
