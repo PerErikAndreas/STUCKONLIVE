@@ -119,7 +119,7 @@ a:hover { text-decoration: underline; }
   flex-direction: column;
   width: 90%;
   max-width: 923px;
-  margin: 0 auto 62px auto;
+  margin: 0 auto 22px auto;
 }
 
 /* Wrap the heading to control overflow for slide-in */
