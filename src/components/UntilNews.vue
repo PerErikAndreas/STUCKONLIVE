@@ -8,7 +8,7 @@
           <div class="card" v-if="currentNews">
             <!-- Event Image -->
             <div class="card-image">
-              <img src="@/assets/posters/Vapnet.jpg" alt="Event" />
+              <img src="@/assets/posters/JerryLeger2025.jpg" alt="Event" />
             </div>
 
             <!-- Event Text -->
@@ -95,7 +95,7 @@ export default {
 
 /* Story text container */
 .story-container { width: 100%; }
-.story-container p { text-align: justify; }
+.story-container p { text-align: left; }
 
 /* Links */
 a {

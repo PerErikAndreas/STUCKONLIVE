@@ -96,7 +96,7 @@ export default {
 }
 
 .story-container p {
-  text-align: justify;
+  text-align: left;
 }
 
 .buttons-container {
