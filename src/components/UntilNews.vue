@@ -90,14 +90,11 @@ export default {
 </script>
 
 <style scoped>
-/* Subtitle styling */
+/* --- TEXT & STRUCTURE --- */
 .subtitle { font-size: 18px; }
-
-/* Story text container */
 .story-container { width: 100%; }
 .story-container p { text-align: left; }
 
-/* Links */
 a {
   font-weight: 400;
   color: var(--primary-color) !important;
@@ -105,15 +102,7 @@ a {
 }
 a:hover { text-decoration: underline; }
 
-/* Card content */
-.picture-text-container {
-  width: 100%;
-  display: flex;
-  font-size: 14px;
-  flex-direction: column;
-}
-
-/* Container */
+/* --- LAYOUT CONTAINERS --- */
 .scener-container {
   display: flex;
   flex-direction: column;
@@ -122,15 +111,18 @@ a:hover { text-decoration: underline; }
   margin: 0 auto 22px auto;
 }
 
-/* Wrap the heading to control overflow for slide-in */
-.scener-container h2 {
+h2 {
+  font-family: var(--font-main);
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  margin-top: 0;
+  text-align: left;
   opacity: 0;
   transform: translateX(-50px);
   animation: slideInLeft 0.8s forwards;
-  animation-delay: 0.2s; /* optional delay */
+  animation-delay: 0.2s;
 }
 
-/* Keyframes for sliding in from the left */
 @keyframes slideInLeft {
   to {
     opacity: 1;
@@ -138,15 +130,6 @@ a:hover { text-decoration: underline; }
   }
 }
 
-/* Optional: smoother on scroll using viewport units */
-@media (prefers-reduced-motion: no-preference) {
-  .scener-container h2 {
-    will-change: transform, opacity;
-  }
-}
-
-
-/* Cards */
 .cards {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -161,27 +144,50 @@ a:hover { text-decoration: underline; }
   border-radius: 8px;
 }
 
-/* Single card */
-.card { display: flex; flex-direction: column; gap: 12px; text-align: left; }
+/* --- CARD --- */
+.card {
+  display: flex;
+  flex-direction: row; /* Bild till vänster även på mobil */
+  gap: 12px;
+  text-align: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-/* Event image */
+/* --- IMAGE --- */
+.card-image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card-image img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain; /* 🔹 Visa hela bilden utan att croppa */
   border-radius: 8px;
 }
 
-/* Heading */
-h2 {
-  font-family: var(--font-main);
-  color: var(--primary-color);
-  margin-bottom: 12px;
-  margin-top: 0;
-  text-align: left;
+/* --- TEXT --- */
+.picture-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.picture-text-container p {
+  margin: 6px 0;
+  font-family: var(--font-secondary);
+  line-height: 25px;
+  color: #71717A;
+}
+.picture-text-container p strong {
+  font-size: 18px;
+  color: var(--secondary-color);
 }
 
-/* Buttons */
+/* --- BUTTONS --- */
 .buttons-container {
   display: flex;
   gap: 10px;
@@ -199,32 +205,40 @@ h2 {
 }
 .read-more-button:hover { text-decoration: underline; }
 
-/* Paragraph styling */
-.picture-text-container p {
-  margin: 6px 0;
-  font-family: var(--font-secondary);
-  line-height: 25px;
-  color: #71717A;
-}
-.picture-text-container p strong {
-  font-size: 18px;
-  color: var(--secondary-color);
-}
+/* --- RESPONSIVE --- */
+@media (max-width: 899px) {
+  .card {
+    flex-direction: row; /* Bild till vänster även på mobil */
+    gap: 10px;
+    align-items: center;
+  }
 
-/* Media Queries */
-@media (min-width: 700px) {
-  .scener-container { width: 92%; }
+  .card-image {
+    flex: 0 0 40%;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* 🔹 Viktigt: ingen cropping */
+  }
+
+  .picture-text-container {
+    flex: 1;
+  }
 }
 
 @media (min-width: 900px) {
   .cards { padding: 20px 32px; }
-  .card { flex-direction: row; }
-  .card-image img {
-    width: 200px;
-    height: auto;
-    flex-shrink: 0;
+  .card-image {
+    flex: 0 0 200px;
   }
-  .picture-text-container { margin-left: 16px; }
+  .card-image img {
+    object-fit: cover; /* På desktop fyller den utrymmet snyggt */
+  }
+  .picture-text-container {
+    margin-left: 16px;
+  }
 }
 
 @media (min-width: 1400px) {
