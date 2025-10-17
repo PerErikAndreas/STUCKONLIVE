@@ -11,9 +11,17 @@
           <img :src="product.image" :alt="product.name" />
           <h3>{{ product.name }}</h3>
           <p class="price">{{ product.price }} kr</p>
-          <button @click="mockCheckout(product)">
-            Swish-betala
-          </button>
+
+          <!-- Visa knapp eller instruktion beroende på status -->
+          <div v-if="!product.showSwishInfo">
+            <button @click="showSwishInfo(product)">
+              Swish-betala
+            </button>
+          </div>
+          <div v-else class="swish-info">
+            <p>Swisha <strong>{{ product.price }} kr</strong> till <strong>123 456 7890</strong></p>
+            <p>Skriv: <em>{{ product.name }}</em> + ditt namn i meddelandet</p>
+          </div>
         </div>
       </div>
     </div>
@@ -31,17 +39,16 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "T-shirt Stuck On", price: 300, image: "../assets/tshirt.png" },
-        { id: 2, name: "Tygväska Stuck On", price: 350, image: "../assets/vinyl.png" },
-        { id: 3, name: "Mugg Stuck On", price: 150, image: "../assets/mug.png" },
-        { id: 4, name: "Poster Moln", price: 500, image: "../assets/poster.png" },
-        { id: 5, name: "Tygpatch", price: 60, image: "../assets/poster.png" }
+        { id: 1, name: "T-shirt Stuck On", price: 300, image: "../assets/MerchMug.jpg", showSwishInfo: false },
+        { id: 2, name: "Tygväska Stuck On", price: 350, image: "../assets/vinyl.png", showSwishInfo: false },
+        { id: 3, name: "Mugg Stuck On", price: 150, image: "../assets/mug.png", showSwishInfo: false },
+        { id: 4, name: "Tygpatch", price: 60, image: "../assets/poster.png", showSwishInfo: false }
       ]
     };
   },
   methods: {
-    mockCheckout(product) {
-      alert(`Bra val!! Swisha ${product.price} kr till ---- följt av ${product.name} och ditt namn så finns den att hämta vid nästa konsert.`);
+    showSwishInfo(product) {
+      product.showSwishInfo = true;
     }
   }
 };
@@ -67,43 +74,23 @@ export default {
   text-align: center;
 }
 
-h2 {
-  color: #FFFFFF;
-  font-family: var(--font-main);
-  font-size: 50px;
-  line-height: 42px;
-  font-weight: 1000;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-}
-
-.intro-paragraph {
-  color: #FFFFFF;
-  max-width: 500px;
-  margin-bottom: 40px;
-  line-height: 22px;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: var(--font-main);
-}
-
 .product-grid {
   display: grid;
   gap: 30px;
   width: 100%;
-  grid-template-columns: 1fr; /* mobile default 1 column */
+  grid-template-columns: 1fr;
   box-sizing: border-box;
 }
 
 @media (min-width: 600px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
   .product-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -118,12 +105,11 @@ h2 {
 
 .product-card img {
   width: 100%;
-  height: auto;          /* maintain natural aspect ratio */
-  max-height: 220px;     /* optional, keeps cards balanced */
-  object-fit: contain;    /* image fits inside the card */
+  max-height: 220px;
+  object-fit: contain;
   border-radius: 8px;
-  display: block;
   margin: 0 auto 15px;
+  display: block;
 }
 
 .product-card h3 {
@@ -151,5 +137,24 @@ button {
 
 button:hover {
   background-color: rgb(170, 4, 4);
+}
+
+/* Info-texten som visas efter klick */
+.swish-info {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  color: #333;
+  animation: fadeIn 0.4s ease;
+}
+
+.swish-info p {
+  margin: 5px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
