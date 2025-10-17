@@ -128,7 +128,7 @@ export default {
 }
 .carousel-title {
   font-family: var(--font-main);
-  color: var(--primary-color);
+  color: #e7492e;
   width: 100%;
   text-align: left;
 }

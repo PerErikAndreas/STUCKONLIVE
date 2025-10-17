@@ -108,12 +108,12 @@ a:hover { text-decoration: underline; }
   flex-direction: column;
   width: 90%;
   max-width: 923px;
-  margin: 0 auto 22px auto;
+  margin: 0 auto 52px auto;
 }
 
 h2 {
   font-family: var(--font-main);
-  color: var(--primary-color);
+  color: #e7492e;
   margin-bottom: 12px;
   margin-top: 0;
   text-align: left;

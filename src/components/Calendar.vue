@@ -95,7 +95,7 @@ export default {
 
 .calendar-container-title {
   width: 100%;
-  color: var(--primary-color);
+  color: #e7492e;
   font-family: var(--font-main);
   margin-bottom: 5px;
   display: flex;

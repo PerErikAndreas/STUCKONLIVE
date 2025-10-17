@@ -207,7 +207,7 @@ a:hover {
 
 h2 {
   font-family: var(--font-main);
-  color: var(--primary-color);
+  color: #e7492e;
   margin-bottom: 5px;
   margin-top: 0;
   text-align: left;

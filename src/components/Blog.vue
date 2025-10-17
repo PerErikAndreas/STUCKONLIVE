@@ -112,7 +112,7 @@ export default {
 .read-more-button {
   border-radius: 6px;
   border: none;
-  color: var(--primary-color);
+  color: #000000;
   padding: 8px 0px 8px 0px;
   font-family: var(--font-main);
   font-size: 14px;
@@ -239,7 +239,7 @@ a:hover {
 
 h2 {
   font-family: var(--font-main);
-  color: var(--primary-color);
+  color: #e7492e;
   margin-bottom: 5px;
   margin-top: 0;
   text-align: left;

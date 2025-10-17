@@ -1,31 +1,12 @@
 <template>
-  <div class="sponsorbanner-container">
-    <div class="icon-container">
-      <a href="https://www.regionjh.se/" role="link" aria-label="Regionen">
-        <img class="sponsor-logo" :src="regionenLogo" alt="Regionen Logo" loading="lazy">
-      </a>
+  <div class="sponsorbanner-wrapper">
+    <div class="sponsorbanner-track">
+      <div class="icon-container" v-for="(logo, index) in duplicatedLogos" :key="index">
+        <a :href="logo.link" :aria-label="logo.name" role="link">
+          <img class="sponsor-logo" :src="logo.src" :alt="logo.name" loading="lazy" />
+        </a>
+      </div>
     </div>
-    <div class="icon-container">
-      <a href="https://www.sensus.se/om-sensus/var-organisation/sensus-norrland/" role="link" aria-label="Sensus">
-        <img class="sponsor-logo" :src="sensusLogo" alt="Sensus Logo" loading="lazy">
-      </a>
-    </div>
-    <div class="icon-container">
-      <a href="https://www.lansforsakringar.se/jamtland/privat/" role="link" aria-label="LFJämtland">
-        <img class="sponsor-logo" :src="lansforsakringarLogo" alt="Länsförsäkringar Logo" loading="lazy">
-      </a>
-    </div>
-    <div class="icon-container">
-      <a href="https://www.jamtkraft.se" role="link" aria-label="Jämtkraft">
-        <img class="sponsor-logo" :src="jamtkraftLogo" alt="Jämtkraft Logo" loading="lazy">
-      </a>
-    </div>
-    <div class="icon-container">
-      <a href="https://billetto.se/users/stuck-on" role="link" aria-label="Billetto">
-        <img class="sponsor-logo" :src="billettoLogo" alt="Billetto Logo" loading="lazy">
-      </a>
-    </div>
-    <img class="graphic-quarter" src="../assets/animationquarter.png" alt="Loading animation" />
   </div>
 </template>
 
@@ -34,71 +15,121 @@ export default {
   name: "Sponsorbanner",
   data() {
     return {
-      regionenLogo: require('../assets/regionen-logo.png'),
-      sensusLogo: require('../assets/sensus-logo.png'),
-      lansforsakringarLogo: require('../assets/lansforsakringar-logo.png'),
-      jamtkraftLogo: require('../assets/jamtkraft-logo-white.png'),
-      billettoLogo: require('../assets/billetto.png'),
+      logos: [
+        {
+          name: "Regionen",
+          link: "https://www.regionjh.se/",
+          src: require("../assets/regionen-logo.png"),
+        },
+        {
+          name: "Sensus",
+          link: "https://www.sensus.se/om-sensus/var-organisation/sensus-norrland/",
+          src: require("../assets/sensus-logo.png"),
+        },
+        {
+          name: "Länsförsäkringar",
+          link: "https://www.lansforsakringar.se/jamtland/privat/",
+          src: require("../assets/lansforsakringar-logo.png"),
+        },
+        {
+          name: "Jämtkraft",
+          link: "https://www.jamtkraft.se",
+          src: require("../assets/jamtkraft-logo-white.png"),
+        },
+        {
+          name: "Billetto",
+          link: "https://billetto.se/users/stuck-on",
+          src: require("../assets/billetto.png"),
+        },
+      ],
     };
+  },
+  computed: {
+    duplicatedLogos() {
+      // Dubblar listan så att loopen blir sömlös
+      return [...this.logos, ...this.logos];
+    },
   },
 };
 </script>
 
 <style scoped>
-.sponsorbanner-container {
-  margin: 0 0 32px 0;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background: var(--primary-color);
-  border-radius: 6px;
+/* YTTRE WRAPPER */
+.sponsorbanner-wrapper {
+  overflow: hidden;
   width: 92%;
-  padding: 40px 0;
+  background: var(--primary-color);
+  padding: 70px 0;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* BANDETS KONTAINER */
+.sponsorbanner-track {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Avstånd mellan loggor */
+  width: max-content;
+  animation: scrollLeft 25s linear infinite;
+}
+
+/* INDIVIDUELL LOGG-KONTAINER */
 .icon-container {
-  flex: 1;
-  flex-direction: column;
-  text-align: center;
-  font-family: var(--font-main);
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* LOGGORNA SJÄLVA */
 .sponsor-logo {
-  width: 75px;
+  height: 25px; /* Samma höjd för alla loggor */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+  filter: brightness(0) invert(1); /* valfritt om bakgrund är mörk */
 }
-.graphic-quarter {
-  position: absolute;
-height: 50%;  
-bottom: 0;
-  right:-5px;
-  border-radius: 100% 0 0 0;
-}
+
+/* Hover-effekt */
 .sponsor-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
-.icons-title {
-  font-size: 14px;
+
+/* Animation som flyttar loggorna åt vänster */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
+/* Pausa när man hovrar över hela bannern */
+.sponsorbanner-wrapper:hover .sponsorbanner-track {
+  animation-play-state: paused;
+}
+
+/* RESPONSIV JUSTERING */
 @media (min-width: 700px) {
-  .sponsorbanner-container {
-    margin: 0 0 42px 0;
-    border-radius: 8px;
-    width: 90%;
+    .sponsorbanner-wrapper {
+          max-width: 923px;
+
+
   }
+}
+@media (max-width: 700px) {
   .sponsor-logo {
-    width: 100px;
+  height: 20px; /* Samma höjd för alla loggor */
+
   }
-}
-@media (min-width: 900px) {
-  .sponsorbanner-container {
-    width: 92%;
-    max-width: 923px;
+  .sponsorbanner-track {
+    gap: 40px;
+    animation-duration: 20s;
   }
-  .graphic-quarter {
-  position: absolute;
-bottom: 0;
-  right:-5px;
-  border-radius: 100% 0 0 0;
-}
 }
 </style>

@@ -3,11 +3,11 @@
     <Hero />
     <!-- <News /> -->
     <UntilNews />
-    <MailList />
-    <Calendar />
     <Sponsorbanner />
+    <Calendar />
+    <Trustbanner />   
     <Blog />
-    <Trustbanner />
+    <MailList />
     <Carousel />    
     <Scener />
     <Footer />
