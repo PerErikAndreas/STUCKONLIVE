@@ -192,7 +192,7 @@ export default {
   }
 
   .my-nav-links {
-    color: var(--primary-color);
+    color: #e7492e;
   }
 }
 

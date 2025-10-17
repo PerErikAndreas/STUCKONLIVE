@@ -21,8 +21,7 @@
     <!-- Paragraph -->
     <div class="paragraph-container">
       <p>
-        Fler än 100 genomförda konserter med lokala till internationella akter –
-        upplev musiken på nära håll!
+        Vi närmar oss 150 genomförda konserter med lokala till internationella akter!
       </p>
     </div>
   </div>
@@ -90,13 +89,13 @@ export default {
 /* Existing hero styles */
 .lottie-container {
   position: absolute;
-  top: 67px;
+  top: 390px;
   right: 73%;
   display: inline;
   flex-direction: column;
   border-radius: 50%;
-  height: 67px;
-  width: 67px;
+  height: 80px;
+  width: 80px;
   overflow: hidden;
 }
 
