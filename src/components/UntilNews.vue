@@ -108,13 +108,13 @@ a:hover { text-decoration: underline; }
   flex-direction: column;
   width: 90%;
   max-width: 923px;
-  margin: 0 auto 52px auto;
+  margin: 52px auto 52px auto;
 }
 
 h2 {
   font-family: var(--font-main);
   color: #e7492e;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   margin-top: 0;
   text-align: left;
   opacity: 0;
@@ -238,6 +238,9 @@ h2 {
   }
   .picture-text-container {
     margin-left: 16px;
+  }
+  .scener-container {
+      margin: 0 auto 52px auto;
   }
 }
 
