@@ -20,7 +20,7 @@
           </div>
           <div v-else class="swish-info">
             <p>Swisha <strong>{{ product.price }} kr</strong> till <strong>123 456 7890</strong></p>
-            <p>Skriv: <em>{{ product.name }}</em> + ditt namn i meddelandet</p>
+            <p>Skriv: <em>{{ product.name }}</em> + ditt namn, och eventuell storlek, i meddelandet</p>
           </div>
         </div>
       </div>
@@ -32,6 +32,7 @@
 
 <script>
 import Footer from '../components/Footer.vue';
+import MugPicture from '../assets/MerchMug.jpg';
 
 export default {
   name: "Shop",
@@ -39,10 +40,10 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "T-shirt Stuck On", price: 300, image: "../assets/MerchMug.jpg", showSwishInfo: false },
-        { id: 2, name: "Tygväska Stuck On", price: 350, image: "../assets/vinyl.png", showSwishInfo: false },
-        { id: 3, name: "Mugg Stuck On", price: 150, image: "../assets/mug.png", showSwishInfo: false },
-        { id: 4, name: "Tygpatch", price: 60, image: "../assets/poster.png", showSwishInfo: false }
+        { id: 1, name: "T-shirt Stuck On", price: 300, image: MugPicture, showSwishInfo: false },
+        { id: 2, name: "Tygväska Stuck On", price: 350, image: MugPicture, showSwishInfo: false },
+        { id: 3, name: "Mugg Stuck On", price: 150, image: MugPicture, showSwishInfo: false },
+        { id: 4, name: "Tygpatch", price: 60, image: MugPicture, showSwishInfo: false }
       ]
     };
   },
@@ -103,10 +104,12 @@ export default {
   overflow: hidden;
 }
 
+/* 🔹 Ändringen här: bilden fyller 90% av kortet och beskärs proportionerligt */
 .product-card img {
   width: 100%;
-  max-height: 220px;
-  object-fit: contain;
+  height: 90%;
+  max-height: 300px;             /* fyller 90% av kortets höjd */
+  object-fit: cover;       /* beskär bilden snyggt */
   border-radius: 8px;
   margin: 0 auto 15px;
   display: block;
