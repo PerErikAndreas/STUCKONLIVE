@@ -9,6 +9,15 @@
       />
     </div>
 
+    <!-- Small Circle (ny) -->
+    <div class="small-circle-container" style="top: 80px; left: 70%;">
+      <img
+        class="small-circle"
+        src="../assets/small-circle.png"
+        alt="Small circle"
+      />
+    </div>
+
     <!-- Hero Title -->
     <div class="title-container">
       <h1 ref="heroTitle">
@@ -31,12 +40,12 @@
 export default {
   name: "HeroSection",
   mounted() {
-    // IntersectionObserver for title sliding in from left
+    // IntersectionObserver för att animera titeln
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("in-view");
-          observer.unobserve(entry.target); // animate only once
+          observer.unobserve(entry.target);
         }
       },
       { threshold: 0.1 }
@@ -47,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-/* Slide-in animations */
+/* Slide-in animationer */
 @keyframes slideFromLeft {
   0% {
     opacity: 0;
@@ -70,7 +79,7 @@ export default {
   }
 }
 
-/* Title animation on entering viewport */
+/* Titelanimation vid synlighet */
 .title-container h1 {
   opacity: 0;
   transform: translateX(-50px);
@@ -81,12 +90,11 @@ export default {
   transform: translateX(0);
 }
 
-/* Circle animation on load */
+/* Cirklar */
 .slide-in-right {
   animation: slideFromRight 1s ease-out forwards;
 }
 
-/* Existing hero styles */
 .lottie-container {
   position: absolute;
   top: 390px;
@@ -103,6 +111,24 @@ export default {
   width: 120px;
 }
 
+/* Ny lilla cirkeln */
+.small-circle-container {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* Top och left justeras inline */
+}
+
+.small-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: slideFromRight 1s ease-out forwards;
+}
+
+/* Textstyling */
 .paragraph-container {
   display: flex;
   flex-direction: column;
