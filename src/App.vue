@@ -64,12 +64,12 @@ body {
   body {
     background: radial-gradient(
         circle 950px at right top,
-        #000000 50%,
+        var(--primary-color) 50%,
         transparent 50%
         ),
     radial-gradient(
       circle 750px at center bottom,
-      #000000 50%,
+      var(--primary-color) 50%,
       transparent 50%
       );
 
@@ -83,12 +83,12 @@ body {
   body {
     background: radial-gradient(
         circle 1000px at top,
-        #000000 50%,
+        var(--primary-color) 50%,
         transparent 50%
         ),
     radial-gradient(
       circle 750px at center bottom,
-      #000000 50%,
+      var(--primary-color) 50%,
       transparent 50%
       );
 
