@@ -41,12 +41,12 @@ body {
   padding: 0;
   background: radial-gradient(
       circle 900px at center top,
-      #000000 50%,
+      var(--primary-color) 50%,
       transparent 50%
     ),
     radial-gradient(
       circle 750px at center bottom,
-      #000000 50%,
+      var(--primary-color) 50%,
       transparent 50%
     );
   background-size: 
