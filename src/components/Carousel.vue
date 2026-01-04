@@ -4,9 +4,21 @@
       <h2>TIDIGARE EVENTS</h2>
     </div>
     <div class="carousel" @mouseenter="stopCarousel" @mouseleave="startCarousel">
-      <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-        <div class="carousel-item" v-for="(group, index) in slides" :key="index">
-          <div class="image-container" v-for="(image, idx) in group" :key="idx" :class="{ 'single-image': group.length === 1 }">
+      <div
+        class="carousel-inner"
+        :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+      >
+        <div
+          class="carousel-item"
+          v-for="(group, index) in slides"
+          :key="index"
+        >
+          <div
+            class="image-container"
+            v-for="(image, idx) in group"
+            :key="idx"
+            :class="{ 'single-image': group.length === 1 }"
+          >
             <img :src="image.image" :alt="image.alt" loading="lazy" />
           </div>
         </div>
@@ -28,6 +40,8 @@ export default {
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
       [{ image: require('@/assets/posters/ErinRaeDeepDarkWoods.jpg'), alt: "ErinRae + Deep Dark Woods" }, { image: require('@/assets/posters/CarsonMcHone.jpg'), alt: "Carson McHone" }],
       [{ image: require('@/assets/posters/Vapnet.jpg'), alt: "Vapnet" }, { image: require('@/assets/posters/TerraLightfootposter.jpg'), alt: "Terra Lightfoot" }],
+      [{ image: require('@/assets/posters/JerryLeger2025.jpg'), alt: "Jerry Leger" }, { image: require('@/assets/posters/JesperLindell2.jpg'), alt: "Jesper Lindell" }],
+      [{ image: require('@/assets/posters/Luciarocken'), alt: "Luciarocken" }, { image: require('@/assets/posters/JuniorBrielle2.jpg'), alt: "Junior Brielle" }],
       [{ image: require('@/assets/posters/Perpersson2024.jpg'), alt: "Per Persson" }, { image: require('@/assets/posters/Hemvandarkvall.jpg'), alt: "Hämvändarkväll" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/PinkStones.jpg'), alt: "Pink Stones" }, { image: require('@/assets/posters/BobbyBareJR.jpg'), alt: "Bobby Bare JR" }],
@@ -86,6 +100,13 @@ export default {
       [{ image: require('@/assets/posters/AnnaugkondaBrattland.jpg'), alt: "Annaugkonda/Brattland" }]
     ]);
 
+    const shuffleSlides = (array) => {
+      return array
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+    };
+
     const startCarousel = () => {
       if (!intervalId.value) {
         intervalId.value = setInterval(() => {
@@ -102,6 +123,7 @@ export default {
     };
 
     onMounted(() => {
+      slides.value = shuffleSlides(slides.value);
       startCarousel();
     });
 
@@ -159,21 +181,5 @@ export default {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-}
-
-@media (min-width: 700px) {
-  .carousel-container {
-    margin: 0 45px 62px 45px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .carousel-container {
-    max-width: 923px;
-    margin: 0 auto 62px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 </style>
