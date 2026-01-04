@@ -3,7 +3,12 @@
     <div class="carousel-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
-    <div class="carousel" @mouseenter="stopCarousel" @mouseleave="startCarousel">
+
+    <div
+      class="carousel"
+      @mouseenter="stopCarousel"
+      @mouseleave="startCarousel"
+    >
       <div
         class="carousel-inner"
         :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -35,7 +40,8 @@ export default {
     const currentIndex = ref(0);
     const intervalId = ref(null);
 
-    const slides = ref([
+    // ORIGINAL SLIDES (STATIC SOURCE)
+    const originalSlides = [
       [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
       [{ image: require('@/assets/posters/ErinRaeDeepDarkWoods.jpg'), alt: "ErinRae + Deep Dark Woods" }, { image: require('@/assets/posters/CarsonMcHone.jpg'), alt: "Carson McHone" }],
@@ -98,19 +104,24 @@ export default {
       [{ image: require('@/assets/posters/DeepDarkWoods.jpg'), alt: "Deep Dark Woods" }],
       [{ image: require('@/assets/posters/Halm2.jpg'), alt: "Halm" }],
       [{ image: require('@/assets/posters/AnnaugkondaBrattland.jpg'), alt: "Annaugkonda/Brattland" }]
-    ]);
+    ];
+
+    const slides = ref([]);
 
     const shuffleSlides = (array) => {
-      return array
-        .map(value => ({ value, sort: Math.random() }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(({ value }) => value);
+      const shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
     };
 
     const startCarousel = () => {
       if (!intervalId.value) {
         intervalId.value = setInterval(() => {
-          currentIndex.value = (currentIndex.value + 1) % slides.value.length;
+          currentIndex.value =
+            (currentIndex.value + 1) % slides.value.length;
         }, 2000);
       }
     };
@@ -123,7 +134,8 @@ export default {
     };
 
     onMounted(() => {
-      slides.value = shuffleSlides(slides.value);
+      slides.value = shuffleSlides(originalSlides);
+      currentIndex.value = Math.floor(Math.random() * slides.value.length);
       startCarousel();
     });
 
