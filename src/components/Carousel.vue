@@ -3,27 +3,10 @@
     <div class="carousel-title">
       <h2>TIDIGARE EVENTS</h2>
     </div>
-
-    <div
-      class="carousel"
-      @mouseenter="stopCarousel"
-      @mouseleave="startCarousel"
-    >
-      <div
-        class="carousel-inner"
-        :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
-      >
-        <div
-          class="carousel-item"
-          v-for="(group, index) in slides"
-          :key="index"
-        >
-          <div
-            class="image-container"
-            v-for="(image, idx) in group"
-            :key="idx"
-            :class="{ 'single-image': group.length === 1 }"
-          >
+    <div class="carousel" @mouseenter="stopCarousel" @mouseleave="startCarousel">
+      <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+        <div class="carousel-item" v-for="(group, index) in slides" :key="index">
+          <div class="image-container" v-for="(image, idx) in group" :key="idx" :class="{ 'single-image': group.length === 1 }">
             <img :src="image.image" :alt="image.alt" loading="lazy" />
           </div>
         </div>
@@ -40,8 +23,7 @@ export default {
     const currentIndex = ref(0);
     const intervalId = ref(null);
 
-    // ORIGINAL SLIDES (STATIC SOURCE)
-    const originalSlides = [
+    const slides = ref([
       [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
       [{ image: require('@/assets/posters/ErinRaeDeepDarkWoods.jpg'), alt: "ErinRae + Deep Dark Woods" }, { image: require('@/assets/posters/CarsonMcHone.jpg'), alt: "Carson McHone" }],
@@ -104,24 +86,12 @@ export default {
       [{ image: require('@/assets/posters/DeepDarkWoods.jpg'), alt: "Deep Dark Woods" }],
       [{ image: require('@/assets/posters/Halm2.jpg'), alt: "Halm" }],
       [{ image: require('@/assets/posters/AnnaugkondaBrattland.jpg'), alt: "Annaugkonda/Brattland" }]
-    ];
-
-    const slides = ref([]);
-
-    const shuffleSlides = (array) => {
-      const shuffled = [...array];
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      return shuffled;
-    };
+    ]);
 
     const startCarousel = () => {
       if (!intervalId.value) {
         intervalId.value = setInterval(() => {
-          currentIndex.value =
-            (currentIndex.value + 1) % slides.value.length;
+          currentIndex.value = (currentIndex.value + 1) % slides.value.length;
         }, 2000);
       }
     };
@@ -134,8 +104,6 @@ export default {
     };
 
     onMounted(() => {
-      slides.value = shuffleSlides(originalSlides);
-      currentIndex.value = Math.floor(Math.random() * slides.value.length);
       startCarousel();
     });
 
@@ -193,5 +161,21 @@ export default {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
+}
+
+@media (min-width: 700px) {
+  .carousel-container {
+    margin: 0 45px 62px 45px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carousel-container {
+    max-width: 923px;
+    margin: 0 auto 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>
