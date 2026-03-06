@@ -24,6 +24,7 @@ export default {
     const intervalId = ref(null);
 
     const slides = ref([
+      [{ image: require('@/assets/posters/JohanAirijoki26.jpg'), alt: "Johan Airijoki" }, { image: require('@/assets/posters/Huggorm.jpg'), alt: "Huggorm" }],
       [{ image: require('@/assets/posters/JoelAlme.jpg'), alt: "Joel Alme" }, { image: require('@/assets/posters/Sodrasverige.jpg'), alt: "Södra Sverige" }],
       [{ image: require('@/assets/posters/Horndal2024.jpg'), alt: "Horndal" }, { image: require('@/assets/posters/Alkberg2024.jpg'), alt: "Mattias Alberg" }],
       [{ image: require('@/assets/posters/ErinRaeDeepDarkWoods.jpg'), alt: "ErinRae + Deep Dark Woods" }, { image: require('@/assets/posters/CarsonMcHone.jpg'), alt: "Carson McHone" }],
@@ -46,12 +47,14 @@ export default {
       [{ image: require('@/assets/posters/AnnaVonHauswolf.jpg'), alt: "Anna Von Hauswolf" }, { image: require('@/assets/posters/Tallestman.jpg'), alt: "The Tallest Man On Earth" }],
       [{ image: require('@/assets/posters/TeddyErnehed.jpg'), alt: "Teddy" }, { image: require('@/assets/posters/Skraekodlan.jpg'), alt: "Skraekodlan" }],
       [{ image: require('@/assets/posters/Slowgold.jpg'), alt: "Slowgold" }, { image: require('@/assets/posters/CharlesW.jpg'), alt: "Charlie Watson" }],
+      [{ image: require('@/assets/posters/Dalmatin.jpg'), alt: "Dalmatin" }, { image: require('@/assets/posters/Svartkatt2jpg'), alt: "Svart Katt" }],
       [{ image: require('@/assets/posters/Tonbruket.jpg'), alt: "Tonbruket" }, { image: require('@/assets/posters/DavidRitchards.jpg'), alt: "David Ritchards" }],
       [{ image: require('@/assets/posters/BrorGunnar.jpg'), alt: "Bror Gunnar" }, { image: require('@/assets/posters/roseline.jpg'), alt: "Roseline" }],
       [{ image: require('@/assets/posters/VannaInget.jpg'), alt: "Vånna Inget" }, { image: require('@/assets/posters/WhitneyRose.jpg'), alt: "Whitney Rose" }],
       [{ image: require('@/assets/posters/TrummorOrgel.jpg'), alt: "Trummor & Orgel" }, { image: require('@/assets/posters/Treburt.jpg'), alt: "Tré Burt" }],
       [{ image: require('@/assets/posters/Dahmers.jpg'), alt: "The Dahmers" }, { image: require('@/assets/posters/DanielRomanosOutfit.jpg'), alt: "Daniel Romanos Outfit" }],
       [{ image: require('@/assets/posters/PaulStelling.jpg'), alt: "Paul Stelling" }],
+      [{ image: require('@/assets/posters/MarielBuckley.jpg'), alt: "Mariel Buckley" }],
       [{ image: require('@/assets/posters/JennyDont.jpg'), alt: "Jenny Dont & The Spurs" }],
       [{ image: require('@/assets/posters/HospitaletNaraDoden.jpg'), alt: "Hospitalet + Nära Döden" }],
       [{ image: require('@/assets/posters/EstherRoseAndrewCombs.jpg'), alt: "Ester Rose + Andrew Combs" }],
