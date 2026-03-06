@@ -47,7 +47,7 @@ export default {
       [{ image: require('@/assets/posters/AnnaVonHauswolf.jpg'), alt: "Anna Von Hauswolf" }, { image: require('@/assets/posters/Tallestman.jpg'), alt: "The Tallest Man On Earth" }],
       [{ image: require('@/assets/posters/TeddyErnehed.jpg'), alt: "Teddy" }, { image: require('@/assets/posters/Skraekodlan.jpg'), alt: "Skraekodlan" }],
       [{ image: require('@/assets/posters/Slowgold.jpg'), alt: "Slowgold" }, { image: require('@/assets/posters/CharlesW.jpg'), alt: "Charlie Watson" }],
-      [{ image: require('@/assets/posters/Dalmatin.jpg'), alt: "Dalmatin" }, { image: require('@/assets/posters/Svartkatt2jpg'), alt: "Svart Katt" }],
+      [{ image: require('@/assets/posters/Dalmatin.jpg'), alt: "Dalmatin" }, { image: require('@/assets/posters/Svartkatt2.jpg'), alt: "Svart Katt" }],
       [{ image: require('@/assets/posters/Tonbruket.jpg'), alt: "Tonbruket" }, { image: require('@/assets/posters/DavidRitchards.jpg'), alt: "David Ritchards" }],
       [{ image: require('@/assets/posters/BrorGunnar.jpg'), alt: "Bror Gunnar" }, { image: require('@/assets/posters/roseline.jpg'), alt: "Roseline" }],
       [{ image: require('@/assets/posters/VannaInget.jpg'), alt: "Vånna Inget" }, { image: require('@/assets/posters/WhitneyRose.jpg'), alt: "Whitney Rose" }],
