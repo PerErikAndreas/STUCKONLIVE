@@ -30,7 +30,7 @@ export default {
       [{ image: require('@/assets/posters/ErinRaeDeepDarkWoods.jpg'), alt: "ErinRae + Deep Dark Woods" }, { image: require('@/assets/posters/CarsonMcHone.jpg'), alt: "Carson McHone" }],
       [{ image: require('@/assets/posters/Vapnet.jpg'), alt: "Vapnet" }, { image: require('@/assets/posters/TerraLightfootposter.jpg'), alt: "Terra Lightfoot" }],
       [{ image: require('@/assets/posters/JerryLeger2025.jpg'), alt: "Jerry Leger" }, { image: require('@/assets/posters/JesperLindell2.jpg'), alt: "Jesper Lindell" }],
-      [{ image: require('@/assets/posters/Luciarocken'), alt: "Luciarocken" }, { image: require('@/assets/posters/JuniorBrielle2.jpg'), alt: "Junior Brielle" }],
+      [{ image: require('@/assets/posters/Luciarocken.jpg'), alt: "Luciarocken" }, { image: require('@/assets/posters/JuniorBrielle2.jpg'), alt: "Junior Brielle" }],
       [{ image: require('@/assets/posters/Perpersson2024.jpg'), alt: "Per Persson" }, { image: require('@/assets/posters/Hemvandarkvall.jpg'), alt: "Hämvändarkväll" }],
       [{ image: require('@/assets/posters/Kazzivalazza.jpg'), alt: "Kassi Valazza" }, { image: require('@/assets/posters/SarahKlang.jpg'), alt: "Sarah Klang" }],
       [{ image: require('@/assets/posters/PinkStones.jpg'), alt: "Pink Stones" }, { image: require('@/assets/posters/BobbyBareJR.jpg'), alt: "Bobby Bare JR" }],
