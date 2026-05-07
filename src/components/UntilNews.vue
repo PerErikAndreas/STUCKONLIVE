@@ -8,7 +8,7 @@
           <div class="card" v-if="currentNews">
             <!-- Event Image -->
             <div class="card-image">
-              <img src="@/assets/posters/MarielBuckley.jpg" alt="Event" />
+              <img src="@/assets/posters/Duschpalatset.jpg" alt="Event" />
             </div>
 
             <!-- Event Text -->
