@@ -8,7 +8,7 @@
           <div class="card" v-if="currentNews">
             <!-- Event Image -->
             <div class="card-image">
-              <img src="@/assets/posters/HannahJuanita.jpg" alt="Event" />
+              <img src="@/assets/posters/ChristianKjellvander2026.jpg" alt="Event" />
             </div>
 
             <!-- Event Text -->
