@@ -1,6 +1,6 @@
 <template>
   <div class="scener-container">
-    <h2>NÄSTA EVENT</h2>
+    <h2>NYHETER</h2>
     <div class="cards-containers">
       <div class="cards">
         <div class="cards-container">
@@ -8,9 +8,9 @@
           <div class="card" v-if="currentNews">
             <!-- Event Image -->
             <div class="card-image">
-              <img src="@/assets/posters/ChristianKjellvander2026.jpg" alt="Event" />
+              <img src="@/assets/Stipendie1Kape.jpg" alt="Event" />
             </div>
-
+s
             <!-- Event Text -->
             <div class="picture-text-container">
               <div class="story-container">
